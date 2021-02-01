@@ -102,9 +102,131 @@ code {
 
 .sidebar-container{
   position: fixed;
-  height: 110vh;
-  width: 26%;
+  height: 100vh;
+  width: 24%;
+  padding: 2.5vh 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: var(--dark-blue-color);
+}
+
+.sidebar-content{
+  height: 95vh;
+  width: 95%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: white; */
+}
+
+.side{
+  height: 19%;
+  margin-bottom: 15px;
+  padding: 0px 30px;
+}
+
+.side-brand{
+  height: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 700;
+  /* background-color: yellow; */
+}
+
+.side-links{
+  height: fit-content;
+  display: flex;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  /* background-color: red; */
+}
+
+.side-links-list{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-links-list li{
+  display: flex;
+  align-items: space-evenly;
+  margin-bottom: 10px;
+}
+
+.coaching-links{
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  transition: 1.2s;
+  list-style-type: none;
+  z-index: -1;
+}
+
+.coaching-links li{
+  font-size: 15px; 
+}
+
+.moveable-list{
+  position: relative;
+  top: -42%;
+  transition: 1s;
+}
+
+.border-div{
+  width: 100%;
+  border-top: 1.8px solid white;
+  margin: 20px 0px;
+  opacity: 0.5;
+}
+
+.side-blog{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+  font-weight: 600;
+  /* background-color: green; */
+}
+
+.blog-title{
+  margin-bottom: 15px;
+}
+
+.blog-link{
+  font-size: 18px;
+}
+
+.side-icons{
+  height: 20%;
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  /* background-color: purple; */
+}
+
+.side-icon-container{
+  height: 35px;
+  width: 35px;
+  display: flex;
+  margin-right: 15px;
+  color: white;
+  /* background-color: yellow; */
+}
+
+.side-icon-container:hover{
+  transform: scale(1.1);
 }
 
 .about-container{
