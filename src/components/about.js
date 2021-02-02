@@ -5,13 +5,13 @@ const About = () => {
         <div className='about-container'>
             <div className='about-images-container'>
                 <div className='about-image-container'>
-                    <img src='/imgs/placeholder_img2.jpg' alt='cup' className='about-img'/>
+                    <img src='./imgs/placeholder_img2.jpg' alt='cup' className='about-img'/>
                 </div>
                 <div className='about-image-container'>
-                    <img src='/imgs/placeholder_img2.jpg' alt='book' className='about-img'/>
+                    <img src='./imgs/placeholder_img2.jpg' alt='book' className='about-img'/>
                 </div>
                 <div className='about-image-container'>
-                    <img src='/imgs/placeholder_img2.jpg' alt='portrait' className='about-img'/>
+                    <img src='./imgs/placeholder_img2.jpg' alt='portrait' className='about-img'/>
                 </div>
             </div>
             <div className='about-info-container'>

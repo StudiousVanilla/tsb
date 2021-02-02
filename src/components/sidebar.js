@@ -50,7 +50,7 @@ const Sidebar = () => {
             <div className="sidebar-content">
                 <div className="side-brand side">
                     <p>Mona Eames</p>
-                    <img src="/imgs/brand.png" alt=""/>
+                    <img src="./imgs/brand.png" alt=""/>
                 </div>
                 <div className="side-links side">
                     <ul className="side-links-list">
@@ -76,13 +76,13 @@ const Sidebar = () => {
                 </div>
                 <div className="side-icons side">
                     <span className='side-icon-container'>
-                        <img src="/icons/fb2.png" alt=""/>
+                        <img src="./icons/fb2.png" alt=""/>
                      </span>
                      <span className='side-icon-container'>
-                        <img src="/icons/in2.png" alt=""/>
+                        <img src="./icons/in2.png" alt=""/>
                     </span>
                     <span className='side-icon-container'>
-                        <img src="/icons/mail2.png" alt=""/>
+                        <img src="./icons/mail2.png" alt=""/>
                     </span>
 
                 </div>
