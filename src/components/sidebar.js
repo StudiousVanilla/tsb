@@ -44,7 +44,7 @@ const Sidebar = () => {
         <div className='sidebar-container' id='side-bar'>
             <div className='top-bar'>
                 <button className='top-bar-btn' onClick={sideBarReveal}>
-                    <img src="/icons/menu.svg" alt=""/>
+                    <img src="./icons/menu.svg" alt=""/>
                 </button>
             </div>
             <div className="sidebar-content">
