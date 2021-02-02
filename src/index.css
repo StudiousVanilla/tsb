@@ -94,6 +94,11 @@ code {
     monospace;
 }
 
+
+:focus { outline: 2px solid var(--orange-color); } 
+
+
+
 .main-container{
   height: 100%;
   width: 100%;
@@ -123,7 +128,6 @@ code {
 
 .side{
   height: 19%;
-  margin-bottom: 15px;
   padding: 0px 30px;
 }
 
@@ -132,18 +136,18 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 25px;
-  font-size: 25px;
-  font-weight: 700;
+  align-items: flex-start;
+  margin-bottom: 1vh;
+  font-size: 1em;
+  font-weight: 400;
   /* background-color: yellow; */
 }
 
 .side-links{
   height: fit-content;
   display: flex;
-  margin-top: 10px;
-  font-size: 20px;
+  margin-top: 1vh;
+  font-size: 2.3vh;
   font-weight: 500;
   /* background-color: red; */
 }
@@ -167,25 +171,32 @@ code {
   position: relative;
   left: -100%;
   opacity: 0;
-  transition: 1.2s;
   list-style-type: none;
   z-index: -1;
 }
 
 .coaching-links li{
-  font-size: 15px; 
+  font-size: 0.85em; 
 }
 
 .moveable-list{
   position: relative;
-  top: -42%;
+  top: -47%;
   transition: 1s;
+}
+
+.about-link, .coaching-link{
+  transition: 1s;
+}
+
+.about-link{
+  text-decoration: underline;
 }
 
 .border-div{
   width: 100%;
   border-top: 1.8px solid white;
-  margin: 20px 0px;
+  margin: 1vh 0px 2vh 0px;
   opacity: 0.5;
 }
 
@@ -195,17 +206,17 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 2.5vh;
+  font-weight: 450;
   /* background-color: green; */
 }
 
 .blog-title{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .blog-link{
-  font-size: 18px;
+  font-size: .8em;
 }
 
 .side-icons{
@@ -217,8 +228,8 @@ code {
 }
 
 .side-icon-container{
-  height: 35px;
-  width: 35px;
+  height: 3vh;
+  width: 2vw;
   display: flex;
   margin-right: 15px;
   color: white;
@@ -239,7 +250,10 @@ code {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
-  
+}
+
+.div-spacer{
+  margin-bottom: 80px;
 }
 
 .about-images-container{
@@ -264,23 +278,45 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px;
+  padding: 5px 65px 5px 5px;
 }
 
 .about-info{
-  font-size: 18px;
+  font-size: 1.1em;
   margin: 40px 0px 40px 0px;
-  padding: 0px 30px 0px 10px;
   
 }
 
 .about-info h2{
-  font-size: 40px;
+  font-size: 2.1em;
   margin-bottom: 20px;
 }
 
+.booking-btn-container{
+  position: fixed;
+  right: 4%;
+  width: 320px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
 
+.booking-btn{
+  padding: 9px 35px;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--dark-blue-color);
+  box-shadow: 1px 1px 5px var(--dark-blue-color);
+}
 
+.booking-btn-container:hover{
+  transform: scale(1.015);
+}
+
+.booking-btn:focus{
+  outline: none;
+  color: var(--orange-color);
+}
 
 
 

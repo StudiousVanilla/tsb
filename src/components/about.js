@@ -1,6 +1,6 @@
 const About = () => {
 
-    return ( 
+    return (
         
         <div className='about-container'>
             <div className='about-images-container'>
@@ -15,6 +15,7 @@ const About = () => {
                 </div>
             </div>
             <div className='about-info-container'>
+                <div className='div-spacer'></div>
                 <div className='about-info'>
                     <h2> About Me </h2>
                     <p> Laborum laborum laborum esse aliqua occaecat non culpa ea Lorem proident cillum. Cillum sunt voluptate magna eiusmod laboris laboris ut nisi non et nisi. Reprehenderit voluptate deserunt ad eu eiusmod eiusmod. Laborum laborum laborum esse aliqua occaecat non culpa ea Lorem proident cillum. Cillum sunt voluptate magna eiusmod laboris laboris ut nisi non et nisi. Reprehenderit voluptate deserunt ad eu eiusmod eiusmod. </p>
@@ -27,6 +28,11 @@ const About = () => {
                     <h2> My Coaching Style </h2>
                     <p> Laborum laborum laborum esse aliqua occaecat non culpa ea Lorem proident cillum. Cillum sunt voluptate magna eiusmod laboris laboris ut nisi non et nisi. Reprehenderit voluptate deserunt ad eu eiusmod eiusmod. Laborum laborum laborum esse aliqua occaecat non culpa ea Lorem proident cillum. Cillum sunt voluptate magna eiusmod laboris laboris ut nisi non et nisi. Reprehenderit voluptate deserunt ad eu eiusmod eiusmod. </p>
                 </div>
+            </div>
+            <div className='booking-btn-container'>
+                <button className='booking-btn'>
+                    Book a complimentary coaching session with Mona
+                </button>
             </div>
         </div>
 
