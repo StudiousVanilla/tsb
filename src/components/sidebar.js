@@ -1,6 +1,6 @@
 const Sidebar = () => {
 
-
+    // reveals coachig links within side bar
     const listReveal = () =>{
 
         // grabs all the links below potential sub-link list
@@ -29,9 +29,24 @@ const Sidebar = () => {
 
     }
 
+    // reveals side bar on tablets (Maybe phones too?)
+    const sideBarReveal = () =>{
+        let sidebar = document.getElementById('side-bar')
+        if(sidebar.style.left === '' || sidebar.style.left === '-50.5%'){
+            sidebar.style.left = '0%'
+            return
+        }
+        sidebar.style.left = '-50.5%'
+    }
+
     return ( 
 
-        <div className='sidebar-container'>
+        <div className='sidebar-container' id='side-bar'>
+            <div className='top-bar'>
+                <button className='top-bar-btn' onClick={sideBarReveal}>
+                    <img src="/icons/menu.svg" alt=""/>
+                </button>
+            </div>
             <div className="sidebar-content">
                 <div className="side-brand side">
                     <p>Mona Eames</p>
