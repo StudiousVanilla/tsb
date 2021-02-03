@@ -5,6 +5,7 @@ import inIcon from "../icons/in2.png";
 import mailIcon from "../icons/mail2.png";
 
 
+
 const Sidebar = () => {
 
     // reveals coachig links within side bar
@@ -67,19 +68,19 @@ const Sidebar = () => {
                 </div>
                 <div className="side-links side">
                     <ul className="side-links-list">
-                        <li className='about-link'>About</li>
+                        <li className='about-link link'>About</li>
                         {/* triggers sub-links drop down menu */}
-                        <li className='coaching-link' onClick={listReveal}>Coaching</li>
+                        <li className='coaching-link link' onClick={listReveal}>Coaching</li>
                         <ul className="coaching-links" id ='coaching-links'>
-                            <li> - Executive</li>
-                            <li> - Lifestyle</li>
-                            <li> - Career</li>
-                            <li> - Mentor</li>
+                            <li className='link'> - Executive</li>
+                            <li className='link'> - Lifestyle</li>
+                            <li className='link'> - Career</li>
+                            <li className='link'> - Mentor</li>
                         </ul>
                         <div className="moveable-list" id='moveable-list'>
-                            <li>Training & Facilitation</li>
-                            <li>HR Consultancy</li>
-                            <li>Contact</li>
+                            <li className='link'>Training & Facilitation</li>
+                            <li className='link'>HR Consultancy</li>
+                            <li className='link'>Contact</li>
                         </div>
                     </ul>
                 </div>
@@ -90,13 +91,13 @@ const Sidebar = () => {
                 </div>
                 <div className="side-icons side">
                     <span className='side-icon-container'>
-                        <img src={fbIcon} alt=""/>
+                        <img src={fbIcon} alt="facebook"/>
                      </span>
                      <span className='side-icon-container'>
-                        <img src={inIcon} alt=""/>
+                        <img src={inIcon} alt="LinkedIn"/>
                     </span>
                     <span className='side-icon-container'>
-                        <img src={mailIcon} alt=""/>
+                        <img src={mailIcon} alt="Email"/>
                     </span>
 
                 </div>
