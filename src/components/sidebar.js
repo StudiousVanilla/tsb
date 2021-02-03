@@ -50,7 +50,7 @@ const Sidebar = () => {
             <div className='top-bar'>
                 {/* triggers side bar reveal on tablet sized devices */}
                 <button className='top-bar-btn' onClick={sideBarReveal}>
-                    <img src="/icons/menu.svg" alt=""/>
+                    <img src="./icons/menu.svg" alt=""/>
                 </button>
             </div>
             <div className="sidebar-content">
