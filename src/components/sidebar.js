@@ -1,3 +1,10 @@
+import menuIcon from "../icons/menu.svg";
+import brandLogo from "../imgs/brand.png"
+import fbIcon from "../icons/fb2.png";
+import inIcon from "../icons/in2.png";
+import mailIcon from "../icons/mail2.png";
+
+
 const Sidebar = () => {
 
     // reveals coachig links within side bar
@@ -50,13 +57,13 @@ const Sidebar = () => {
             <div className='top-bar'>
                 {/* triggers side bar reveal on tablet sized devices */}
                 <button className='top-bar-btn' onClick={sideBarReveal}>
-                    <img src="./icons/menu.svg" alt=""/>
+                    <img src={menuIcon} alt=""/>
                 </button>
             </div>
             <div className="sidebar-content">
                 <div className="side-brand side">
                     <p>Mona Eames</p>
-                    <img src="./imgs/brand.png" alt=""/>
+                    <img src={brandLogo} alt=""/>
                 </div>
                 <div className="side-links side">
                     <ul className="side-links-list">
@@ -83,13 +90,13 @@ const Sidebar = () => {
                 </div>
                 <div className="side-icons side">
                     <span className='side-icon-container'>
-                        <img src="./icons/fb2.png" alt=""/>
+                        <img src={fbIcon} alt=""/>
                      </span>
                      <span className='side-icon-container'>
-                        <img src="./icons/in2.png" alt=""/>
+                        <img src={inIcon} alt=""/>
                     </span>
                     <span className='side-icon-container'>
-                        <img src="./icons/mail2.png" alt=""/>
+                        <img src={mailIcon} alt=""/>
                     </span>
 
                 </div>
