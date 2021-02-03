@@ -6,11 +6,12 @@ const Sidebar = () => {
         // grabs all the links below potential sub-link list
         let moveableList = document.getElementById('moveable-list')
 
-        // slides sub-links in from the left
+        // grabs sub-links
         let links = document.getElementById('coaching-links')
-        console.log(links.style.opacity);
-        // '' logical condition for the first time the function is fired
-        if(links.style.opacity === '' || links.style.opacity === '0'){
+
+        // triggers if style is pulled from style sheet
+        if(links.style.opacity === ''){
+            // slides sub-links in from the left
             links.style.opacity = 1
             links.style.left = '0%'
             links.style.transition = '1.2s'
@@ -19,12 +20,12 @@ const Sidebar = () => {
             return
         }
         else{
-            // moves sub-links back left, off-screen
-            links.style.opacity = 0
-            links.style.left = '-100%'
+            // revert links back to stylesheet
+            links.style.opacity = null
+            links.style.left = null
             links.style.transition = '0.5s'
-            // moves standard links back up
-            moveableList.style.top = '-47%'
+            // revert moveableList back to stylesheet
+            moveableList.style.top = null
         }
 
     }
@@ -32,19 +33,24 @@ const Sidebar = () => {
     // reveals side bar on tablets (Maybe phones too?)
     const sideBarReveal = () =>{
         let sidebar = document.getElementById('side-bar')
-        if(sidebar.style.left === '' || sidebar.style.left === '-50.5%'){
+        // triggers if style is pulled from style sheet
+        /// slides side-bar in from the left
+        if(sidebar.style.left === ''){
             sidebar.style.left = '0%'
             return
         }
-        sidebar.style.left = '-50.5%'
+        // reverts style back to stylesheet
+        sidebar.style.left = null
     }
 
     return ( 
 
         <div className='sidebar-container' id='side-bar'>
+            {/* only visible on tablet sized devices */}
             <div className='top-bar'>
+                {/* triggers side bar reveal on tablet sized devices */}
                 <button className='top-bar-btn' onClick={sideBarReveal}>
-                    <img src="./icons/menu.svg" alt=""/>
+                    <img src="/icons/menu.svg" alt=""/>
                 </button>
             </div>
             <div className="sidebar-content">
@@ -55,6 +61,7 @@ const Sidebar = () => {
                 <div className="side-links side">
                     <ul className="side-links-list">
                         <li className='about-link'>About</li>
+                        {/* triggers sub-links drop down menu */}
                         <li className='coaching-link' onClick={listReveal}>Coaching</li>
                         <ul className="coaching-links" id ='coaching-links'>
                             <li> - Executive</li>
