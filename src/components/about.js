@@ -1,4 +1,4 @@
-import placeholderImg from '../imgs/placeholder_img2.jpg';
+import placeholderImg from '../imgs/about-img.png';
 
 const About = () => {
 
@@ -6,12 +6,6 @@ const About = () => {
         
         <div className='about-container'>
             <div className='about-images-container'>
-                <div className='about-image-container'>
-                    <img src={placeholderImg} alt='book' className='about-img'/>
-                </div>
-                <div className='about-image-container'>
-                    <img src={placeholderImg} alt='book' className='about-img'/>
-                </div>
                 <div className='about-image-container'>
                     <img src={placeholderImg} alt='book' className='about-img'/>
                 </div>
@@ -33,7 +27,7 @@ const About = () => {
             </div>
             <div className='booking-btn-container'>
                 <button className='booking-btn'>
-                    Book a complimentary coaching session with Mona
+                    Book a Free Consultation
                 </button>
             </div>
         </div>

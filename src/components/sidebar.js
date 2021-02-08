@@ -1,8 +1,8 @@
 import menuIcon from "../icons/menu.svg";
-import brandLogo from "../imgs/brand.png"
-import fbIcon from "../icons/fb2.png";
-import inIcon from "../icons/in2.png";
-import mailIcon from "../icons/mail2.png";
+import brandLogo from "../icons/brand.svg"
+import fbIcon from "../icons/brand.svg";
+import inIcon from "../icons/brand.svg";
+import mailIcon from "../icons/brand.svg";
 
 
 
@@ -22,7 +22,7 @@ const Sidebar = () => {
             // slides sub-links in from the left
             links.style.opacity = 1
             links.style.left = '0%'
-            links.style.transition = '1.2s'
+            links.style.transition = '1s'
             // moves standard links down 
             moveableList.style.top = '0%'
             return
@@ -31,7 +31,7 @@ const Sidebar = () => {
             // revert links back to stylesheet
             links.style.opacity = null
             links.style.left = null
-            links.style.transition = '0.5s'
+            links.style.transition = '0.25s'
             // revert moveableList back to stylesheet
             moveableList.style.top = null
         }
@@ -63,19 +63,24 @@ const Sidebar = () => {
             </div>
             <div className="sidebar-content">
                 <div className="side-brand side">
-                    <p>Mona Eames</p>
-                    <img src={brandLogo} alt=""/>
+                    <div className="logo-container">
+                        <img src={brandLogo} alt="The Sounding Board" className="logo"/>
+                    </div>
+                    <div className="brand-text">
+                        <p className='logo-text'>Mona Eames</p>
+                        <p className='logo-text brand-name'>The Sounding Board</p>
+                    </div>
                 </div>
                 <div className="side-links side">
                     <ul className="side-links-list">
                         <li className='about-link link'>About</li>
                         {/* triggers sub-links drop down menu */}
-                        <li className='coaching-link link' onClick={listReveal}>Coaching</li>
+                        <li className='coaching-link link' onClick={listReveal}>Coaching...</li>
                         <ul className="coaching-links" id ='coaching-links'>
-                            <li className='link'> - Executive</li>
-                            <li className='link'> - Lifestyle</li>
-                            <li className='link'> - Career</li>
-                            <li className='link'> - Mentor</li>
+                            <li className='link'>Executive</li>
+                            <li className='link'>Lifestyle</li>
+                            <li className='link'>Career</li>
+                            <li className='link'>Mentor</li>
                         </ul>
                         <div className="moveable-list" id='moveable-list'>
                             <li className='link'>Training & Facilitation</li>
@@ -83,11 +88,6 @@ const Sidebar = () => {
                             <li className='link'>Contact</li>
                         </div>
                     </ul>
-                </div>
-                <div className='border-div'></div>
-                <div className="side-blog side">
-                    <p className='blog-title'>"Forming Habits - How long does it take to form a habit?"</p>
-                    <p className='blog-link'>Visit the Blog</p>
                 </div>
                 <div className="side-icons side">
                     <span className='side-icon-container'>
@@ -100,6 +100,11 @@ const Sidebar = () => {
                         <img src={mailIcon} alt="Email"/>
                     </span>
 
+                </div>
+                <div className='border-div'></div>
+                <div className="side-blog side">
+                    <p className='blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
+                    <p className='blog-link'>Visit TSB Blog</p>
                 </div>
             </div>
         </div>
