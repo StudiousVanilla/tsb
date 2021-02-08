@@ -1,4 +1,5 @@
 import placeholderImg from '../imgs/about-img.png';
+import Bookingbtn from './booking-btn'
 
 const About = () => {
 
@@ -25,11 +26,7 @@ const About = () => {
                     <p> Laborum laborum laborum esse aliqua occaecat non culpa ea Lorem proident cillum. Cillum sunt voluptate magna eiusmod laboris laboris ut nisi non et nisi. Reprehenderit voluptate deserunt ad eu eiusmod eiusmod. Laborum laborum laborum esse aliqua occaecat non culpa ea Lorem proident cillum. Cillum sunt voluptate magna eiusmod laboris laboris ut nisi non et nisi. Reprehenderit voluptate deserunt ad eu eiusmod eiusmod. </p>
                 </div>
             </div>
-            <div className='booking-btn-container'>
-                <button className='booking-btn'>
-                    Book a Free Consultation
-                </button>
-            </div>
+            <Bookingbtn/>
         </div>
 
      );
