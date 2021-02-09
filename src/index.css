@@ -233,8 +233,9 @@ code {
 
 .moveable-list{
   position: relative;
-  top: -48%;
+  top: -46%;
   transition: 0.75s;
+  margin-bottom: 10px;
 }
 
 .about-link, .coaching-link{
@@ -249,6 +250,8 @@ code {
 }
 
 .side-blog{
+  position: relative;
+  top: -120px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -257,6 +260,7 @@ code {
   padding-top: 25px;
   margin-bottom: 20px;
   border-top: 1px solid var(--tsb-blue);
+  transition: 0.75s;
 }
 
 .blog-title{
@@ -272,14 +276,16 @@ code {
 }
 
 .side-icons{
-  height: fit-content;
+  position: relative;
+  top:-130px;
+  height: 3vh;
   width: 100%;
   align-self: center;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 120px;
-  transition: none;
+  margin-bottom: 30px;
+  transition: 0.75s;
   transform: translateZ(0);
 }
 
@@ -292,7 +298,6 @@ code {
   color: red;
   transform: translateZ(0);
   cursor: pointer;
-  /* background-color: yellow; */
 }
 
 .side-icon-container:hover{

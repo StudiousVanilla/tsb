@@ -17,14 +17,22 @@ const Sidebar = () => {
         // grabs sub-links
         let links = document.getElementById('coaching-links')
 
+        // grabs icons
+        let sideIcons = document.getElementById('side-icons')
+
+        //grabs blog
+        let blog = document.getElementById('side-blog')
+
         // triggers if style is pulled from style sheet
         if(links.style.opacity === ''){
             // slides sub-links in from the left
             links.style.opacity = 1
             links.style.left = '0%'
             links.style.transition = '1s'
-            // moves standard links down 
+            // moves standard links, icons and blog down 
             moveableList.style.top = '0%'
+            sideIcons.style.top = '0%'
+            blog.style.top = '0%'
             return
         }
         else{
@@ -32,8 +40,10 @@ const Sidebar = () => {
             links.style.opacity = null
             links.style.left = null
             links.style.transition = '0.25s'
-            // revert moveableList back to stylesheet
+            // revert moveableList, icons and blog back to stylesheet
             moveableList.style.top = null
+            sideIcons.style.top = null
+            blog.style.top = null
         }
 
     }
@@ -89,7 +99,7 @@ const Sidebar = () => {
                         </div>
                     </ul>
                 </div>
-                <div className="side-icons side">
+                <div className="side-icons side" id="side-icons">
                     <span className='side-icon-container'>
                         <img src={fbIcon} alt="facebook"/>
                      </span>
@@ -99,10 +109,8 @@ const Sidebar = () => {
                     <span className='side-icon-container'>
                         <img src={mailIcon} alt="Email"/>
                     </span>
-
                 </div>
-                <div className='border-div'></div>
-                <div className="side-blog side">
+                <div className="side-blog side" id="side-blog">
                     <p className='blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
                     <p className='blog-link'>Visit TSB Blog</p>
                 </div>
