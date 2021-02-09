@@ -110,7 +110,6 @@ code {
   margin: 0px 30px;
   display: flex;
   font-family: 'PT serif', serif;
-  /* font-family: 'Inter', sans-serif; */
 }
 
 .link{
@@ -125,7 +124,8 @@ code {
   height: 100%;
   min-height: 814px;
   width: 26%;
-  padding: 50px 15px 2.5vh 20px;
+  max-width: 360px;
+  padding: 50px 19px 2.5vh 19px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -187,11 +187,11 @@ code {
 .logo-text, .brand-name{
   line-height: 20px;
   width: 100%;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .brand-name{
-  font-size: 24.5px;
+  font-size: 21.5px;
   line-height: 25px;
   font-weight: bold;
 }
@@ -200,7 +200,7 @@ code {
   height: fit-content;
   display: flex;
   margin-top: 1vh;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -233,7 +233,7 @@ code {
 
 .moveable-list{
   position: relative;
-  top: -46%;
+  top: -48%;
   transition: 0.75s;
   margin-bottom: 10px;
 }
@@ -265,14 +265,14 @@ code {
 
 .blog-title{
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-style: italic;
   font-weight: bold;
 }
 
 .blog-link{
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .side-icons{
@@ -304,24 +304,23 @@ code {
   transform: scale(1.08) translateZ(0);
 }
 
-.about-container{
+.content-container{
   height: 100%;
-  width: 80%;
-  max-width: 1500px;
-  margin-top: 20px;
-  margin-left: 25%;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  min-width: 1450px;
+  margin-left: 24%;
+  padding: 10px 10px 10px 30px;
 }
 
-.div-spacer{
-  margin-bottom: 80px;
+.about-container{
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: 25% 38% 27%;
+  gap: 20px;
 }
 
 .about-images-container{
-  height: fit-content;
+  height: 500px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,7 +328,7 @@ code {
 
 .about-image-container{
   height: 550px;
-  width: 525px;
+  width: 100%;
   margin-bottom: 20px;
   transition: 1s;
 }
@@ -343,27 +342,30 @@ code {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 5px 45px 5px 30px;
+  align-items: flex-start;
+  padding: 5px 10px 5px 10px;
 }
 
 .about-info{
-  font-size: 1.1em;
-  margin: 40px 0px 40px 0px;
+  font-size: 19px;
+  margin: 40px 0px 0px 0px;
+  padding-bottom: 40px;
+  color: var(--tsb-navy);
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid var(--tsb-blue);
 }
 
-.about-info h2{
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.about-content{
-  font-family: 'PT sans', Sans-serif;   
+.about-head{
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: var(--tsb-orange);
+  font-family: 'PT serif', serif;
 }
 
 .booking-btn-container{
   position: fixed;
-  right: 3%;
+  right: 1%;
   top: 5%;
   width: 320px;
   font-size: 1.1em;
@@ -433,6 +435,10 @@ code {
     margin-right: 50px;
   }
 
+  .about-container{
+    margin-left: 38%;
+  }
+
   .about-image-container{
     height: 425px;
     width: 425px;
@@ -449,22 +455,23 @@ code {
     padding-right: 10px;
   }
 
-  .about-info h2{
-    font-size: 1.8em;
+  .about-head{
+    font-size: 38px;
     margin-bottom: 10px;
+    color: var(--tsb-orange);
   }
 
   .booking-btn-container{
     position: fixed;
     right: 3%;
-    width: 250px;
+    width: 280px;
     font-size: 0.8em;
     font-weight: 500;
     transition: 0s;
   }
 
   .booking-btn{
-    padding: 9px 35px;
+    padding: 9px 20px;
   }
 
   /* font size changes */
@@ -541,7 +548,7 @@ code {
 @media only screen and (max-width: 1115px) {
 
   .sidebar-container{
-    left: -50.5%;
+    left: -360px;
     width: 50.5%;
     background-color: var(--bg-grey);
     height: 100vh;
@@ -550,13 +557,14 @@ code {
   .top-bar{
     display: block;
     position: absolute;
-    left: 100%;
+    right: -62px;
     top: 0%;
     height: 60px;
     width: 60px;
     display: flex;
     opacity: 0.8;
-    background-color: var(--dark-blue-color);
+    color: red;
+    background-color: var(--tsb-navy);
   }
 
   .top-bar-btn{
@@ -573,7 +581,6 @@ code {
   }
 
   .about-container{
-    width: 100%;
     margin-left: 10px;
     margin-top: 60px;
     padding-right: 30px;
@@ -581,7 +588,8 @@ code {
   }
 
   .about-images-container{
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .about-image-container{
@@ -623,7 +631,16 @@ code {
 
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 900px) {
+
+  .sidebar-container{
+    left: -450px;
+    width: 450px;
+  }
+
+  .top-bar{
+    left: 100%;
+  }
 
   .about-image-container{
     height: 290px;
@@ -653,18 +670,6 @@ code {
 /* ************************************************************ */
 /* ************************************************************ */
 
-
-
-/* *** Needs to be fixed *** */
-
-@media only screen and (max-width: 1024px) {
-
-  .sidebar-container{
-    width: 35%;
-  }
-
-
-}
 
 
 
