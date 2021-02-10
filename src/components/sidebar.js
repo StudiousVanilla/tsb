@@ -3,6 +3,7 @@ import brandLogo from "../icons/brand.svg"
 import fbIcon from "../icons/brand.svg";
 import inIcon from "../icons/brand.svg";
 import mailIcon from "../icons/brand.svg";
+import { Link } from 'react-router-dom'
 
 
 
@@ -72,30 +73,48 @@ const Sidebar = () => {
                 </button>
             </div>
             <div className="sidebar-content">
-                <div className="side-brand side">
-                    <div className="logo-container">
-                        <img src={brandLogo} alt="The Sounding Board" className="logo"/>
+                <Link to='/tsb'>
+                    <div className="side-brand side">
+                        <div className="logo-container">
+                            <img src={brandLogo} alt="The Sounding Board" className="logo"/>
+                        </div>
+                        <div className="brand-text">
+                            <p className='logo-text'>Mona Eames</p>
+                            <p className='logo-text brand-name'>The Sounding Board</p>
+                        </div>
                     </div>
-                    <div className="brand-text">
-                        <p className='logo-text'>Mona Eames</p>
-                        <p className='logo-text brand-name'>The Sounding Board</p>
-                    </div>
-                </div>
+                </Link>
                 <div className="side-links side">
                     <ul className="side-links-list">
-                        <li className='about-link link'>About</li>
+                        <li className='about-link link'>
+                           <Link to='/about'>About</Link>
+                        </li>
                         {/* triggers sub-links drop down menu */}
                         <li className='coaching-link link' onClick={listReveal}>Coaching...</li>
                         <ul className="coaching-links" id ='coaching-links'>
-                            <li className='link'>Executive</li>
-                            <li className='link'>Lifestyle</li>
-                            <li className='link'>Career</li>
-                            <li className='link'>Mentor</li>
+                            <Link to='/coaching/executive'>
+                                <li className='link'>Executive</li>
+                            </Link>
+                            <Link to='/coaching/lifestyle'>
+                                <li className='link'>Lifestyle</li>
+                            </Link>
+                            <Link to='/coaching/career'>
+                                <li className='link'>Career</li>
+                            </Link>
+                            <Link to='/coaching/mentor'>
+                                <li className='link'>Mentor</li>
+                            </Link>
                         </ul>
                         <div className="moveable-list" id='moveable-list'>
-                            <li className='link'>Training & Facilitation</li>
-                            <li className='link'>HR Consultancy</li>
-                            <li className='link'>Contact</li>
+                            <Link to='/traning&facilitation'>
+                                <li className='link'>Training & Facilitation</li>
+                            </Link>
+                            <Link to='/consultancy'>
+                                <li className='link'>HR Consultancy</li>
+                            </Link>
+                            <Link to='/contact'>
+                                <li className='link'>Contact</li>
+                            </Link>
                         </div>
                     </ul>
                 </div>
@@ -112,7 +131,9 @@ const Sidebar = () => {
                 </div>
                 <div className="side-blog side" id="side-blog">
                     <p className='blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
-                    <p className='blog-link'>Visit TSB Blog</p>
+                    <Link to='/blog'>
+                        <p className='blog-link'> Visit TSB Blog </p>
+                    </Link>
                 </div>
             </div>
         </div>

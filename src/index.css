@@ -82,6 +82,11 @@ select {
 --unnamed-color-ffffff: #FFFFFF;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -224,7 +229,6 @@ code {
   left: -20%;
   opacity: 0;
   list-style-type: none;
-  z-index: -1;
 }
 
 .coaching-links li{
@@ -309,7 +313,56 @@ code {
   min-width: 1450px;
   margin-left: 24%;
   padding: 10px 10px 10px 30px;
+  color: var(--tsb-navy);
 }
+
+.home-container{
+  margin-top: 70px;
+  padding-left: 50px;
+}
+
+.welcome{
+  margin-bottom: 40px;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.welcome-sub{
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.home-img-container{
+  height: 480px;
+  width: 800px;
+  margin-bottom: 40px;
+}
+
+.home-img{
+  width: 100%;
+  height: 100%;
+}
+
+.quote{
+  width: 530px;
+  padding-left: 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.quote-text{
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.quote-name{
+  font-family: 'PT Serif', serif;
+  font-weight: 600;
+}
+
+
 
 .about-container{
   margin-top: 140px;

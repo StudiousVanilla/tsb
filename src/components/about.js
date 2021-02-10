@@ -1,5 +1,5 @@
 import placeholderImg from '../imgs/about-img.png';
-import Bookingbtn from './booking-btn'
+import Bookingbtn from './Bookingbtn'
 
 const About = () => {
 
