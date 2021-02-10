@@ -416,6 +416,91 @@ code {
   font-family: 'PT serif', serif;
 }
 
+
+
+
+
+.coaching-container{
+  height: 100vh;
+  padding-top: 0px;
+  margin-left: 330px;
+}
+
+
+.color-tile{
+  height: 70%;
+  min-height: 620px;
+  color: var(--bg-grey);
+  background-color: var(--tsb-navy);
+}
+
+.coaching-main{
+  height: 100%;
+  width: 55%;
+  min-width: 75px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coaching-category-title, .coaching-info-title{
+  width: 100%;
+  margin-top: -50px;
+  padding-bottom: 10px;
+  font-size: 45px;
+  font-family: 'PT Serif', serif;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.coaching-category-info, .coaching-info{
+  width: 75%;
+  margin-top: 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.coaching-img-conatiner{
+  margin-top: -140px;
+  padding-left: 80px;
+  width: 55%;
+  min-width: 75px;
+}
+
+.coaching-info-container{
+  width: 55%;
+  min-width: 75px;
+  padding-left: 80px;
+}
+
+.coaching-info{
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.coaching-info-title{
+  margin-top: 0;
+  border: none;
+  font-size: 28px;
+  color: var(--tsb-orange);
+}
+
+.coaching-info-text{
+ color: var(--tsb-navy);
+}
+
+
+
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+
+
+
+
+
 .booking-btn-container{
   position: fixed;
   right: 1%;
