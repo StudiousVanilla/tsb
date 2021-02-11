@@ -2,6 +2,7 @@ import placeHolderImg from '../imgs/coaching.png'
 import Bookingbtn from './Bookingbtn'
 
 const CareerCoaching = () => {
+
     return ( 
         <div className='content-container coaching-container'>
             <Bookingbtn/>

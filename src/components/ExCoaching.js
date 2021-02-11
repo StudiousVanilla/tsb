@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
 import placeHolderImg from '../imgs/coaching.png'
 import Bookingbtn from './Bookingbtn'
-import Footer from './Footer'
 
 const ExCoaching = () => {
+
+    useEffect(()=>{
+        let button = document.getElementById('Bookingbtn')
+        button.style.transition = '0s'
+        button.style.color = 'var(--bg-grey)'
+        button.style.backgroundColor = 'var(--tsb-orange)'
+        button.style.border = 'none'
+    })
+
     return ( 
         <div className='content-container coaching-container'>
             <Bookingbtn/>

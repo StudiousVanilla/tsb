@@ -1,7 +1,16 @@
+import { useEffect } from 'react';
 import placeholderImg from '../imgs/about-img.png';
 import Bookingbtn from './Bookingbtn'
 
 const About = () => {
+
+    useEffect(()=>{
+        let button = document.getElementById('Bookingbtn')
+        button.style.transition = '0s'
+        button.style.color = 'var(--bg-grey)'
+        button.style.backgroundColor = 'var(--tsb-orange)'
+        button.style.border = 'none'
+    })
 
     return (
         

@@ -111,6 +111,7 @@ code {
 
 body, .root, .App{
   height: 100%;
+  max-width: 1500px;
 }
 
 
@@ -133,13 +134,14 @@ body, .root, .App{
   bottom: 0;
   height: 100%;
   min-height: 814px;
-  width: 26%;
+  width: 360px;
   max-width: 360px;
   padding: 50px 19px 2.5vh 19px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border-right: 1px solid var(--tsb-blue);
+  background-color: var(--bg-grey);
 }
 
 .top-bar{
@@ -322,9 +324,10 @@ body, .root, .App{
 
 .content-container{
   height: 100%;
-  min-width: 1450px;
-  margin-left: 24%;
-  padding: 10px 10px 10px 0px;
+  width: 100%;
+  max-width: 1350px;
+  margin-left: 360px;
+  padding: 0px;
   color: var(--tsb-navy);
 }
 
@@ -381,6 +384,7 @@ body, .root, .App{
   display: grid;
   grid-template-columns: 25% 38% 27%;
   gap: 20px;
+  padding: 0;
 }
 
 .about-images-container{
@@ -435,6 +439,8 @@ body, .root, .App{
 }
 
 .color-tile{
+  width: 90vw;
+  max-width: 1442px;
   height: 35%;
   min-height: 620px;
 }
@@ -462,6 +468,7 @@ body, .root, .App{
 .coaching-main{
   height: 100%;
   width: 55%;
+  
   min-width: 75px;
   padding-top: 200px;
   padding-left: 80px;
@@ -472,6 +479,8 @@ body, .root, .App{
 
 .coaching-category-title, .coaching-info-title{
   width: 100%;
+  min-width: 650px;
+  max-width: 670px;
   margin-top: -50px;
   padding-bottom: 10px;
   font-size: 45px;
@@ -497,15 +506,17 @@ body, .root, .App{
 
 .coaching-category-info, .coaching-info{
   width: 75%;
+  min-width: 525px;;
   margin-top: 20px;
   font-family: 'PT Sans', sans-serif;
 }
 
 .coaching-img-conatiner{
+  width: 55%;
+  min-width: 650px;
+  max-width: 730px;
   margin-top: -140px;
   padding-left: 80px;
-  width: 55%;
-  min-width: 75px;
 }
 
 .coaching-info-container{
@@ -555,13 +566,13 @@ body, .root, .App{
 
 .booking-btn{
   padding: 9px 20px;
-  color: var(--bg-grey);
-  border: none;
-  background-color: var(--tsb-orange);
   font-size: 18px;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   cursor: pointer;
+  color: var(--tsb-navy);
+  background-color: var(--bg-grey);
+  border: 2px solid var(--tsb-navy)
 }
 
 .booking-btn-container:hover{
@@ -575,6 +586,8 @@ body, .root, .App{
 }
 
 .footer{
+  width: 90vw;
+  max-width: 1440px;
   margin-top: 60px;
   margin-left: 330px;
   padding: 10px 50px;
@@ -618,7 +631,7 @@ body, .root, .App{
   }
 
   .sidebar-container{
-    width: 27%;
+    width: 360px;
     padding-right: 5px;
     padding-left: 5px;
     margin-right: 50px;
