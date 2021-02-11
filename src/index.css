@@ -109,8 +109,13 @@ code {
   transition: 0.2s;
 }
 
+body, .root, .App{
+  height: 100%;
+}
+
+
 .main-container{
-  height: fit-content;
+  height: 100%;
   width: 100%;
   margin: 0px 30px;
   display: flex;
@@ -134,7 +139,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-right: 2px solid var(--tsb-blue);
+  border-right: 1px solid var(--tsb-blue);
 }
 
 .top-bar{
@@ -308,11 +313,18 @@ code {
   transform: scale(1.08) translateZ(0);
 }
 
+.non-side-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .content-container{
   height: 100%;
   min-width: 1450px;
   margin-left: 24%;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 0px;
   color: var(--tsb-navy);
 }
 
@@ -416,32 +428,46 @@ code {
   font-family: 'PT serif', serif;
 }
 
-
-
-
-
 .coaching-container{
-  height: 100vh;
+  height: 100%;
   padding-top: 0px;
   margin-left: 330px;
 }
 
-
 .color-tile{
-  height: 70%;
+  height: 35%;
   min-height: 620px;
+}
+
+.ex-color-tile{
   color: var(--bg-grey);
   background-color: var(--tsb-navy);
+}
+
+.life-color-tile{
+  color: var(--bg-grey);
+  background-color: var(--tsb-orange);
+}
+
+.career-color-tile{
+  color: var(--bg-grey);
+  background-color: var(--tsb-blue);
+}
+
+.mentor-color-tile{
+  color: var(--tsb-navy);
+  background-color: var(--unnamed-color-ffffff);
 }
 
 .coaching-main{
   height: 100%;
   width: 55%;
   min-width: 75px;
+  padding-top: 200px;
   padding-left: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .coaching-category-title, .coaching-info-title{
@@ -450,7 +476,23 @@ code {
   padding-bottom: 10px;
   font-size: 45px;
   font-family: 'PT Serif', serif;
+  border-bottom: 1px solid var(--bg-grey);
+}
+
+.ex-title{
   border-bottom: 1px solid var(--tsb-blue);
+}
+
+.life-title{
+  border-bottom: 1px solid var(--unnamed-color-ffffff);
+}
+
+.career-title{
+  border-bottom: 1px solid var(--unnamed-color-ffffff);
+}
+
+.mentor-title{
+  border-bottom: 2px solid #D9D9D9;
 }
 
 .coaching-category-info, .coaching-info{
@@ -530,6 +572,15 @@ code {
 .booking-btn:focus{
   outline: none;
   color: var(--orange-color);
+}
+
+.footer{
+  margin-top: 60px;
+  margin-left: 330px;
+  padding: 10px 50px;
+  font-size: 12px;
+  border-top: 1px solid var(--tsb-blue);
+  color: var(--tsb-blue);
 }
 
 
