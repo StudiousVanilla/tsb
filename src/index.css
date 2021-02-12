@@ -374,6 +374,8 @@ body, .root, .App{
 
 
 .about-container{
+  width: 100%;
+  min-width: 1250px;
   margin-top: 140px;
   display: grid;
   grid-template-columns: 25% 38% 27%;
@@ -592,6 +594,15 @@ body, .root, .App{
 }
 
 
+
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+
+
+
+
+/* 
 @media only screen and (max-width: 1385px) {
 
   .logo-container{
@@ -606,112 +617,14 @@ body, .root, .App{
     font-size: 23.6px;
   }
 
-}
+} */
 
 /* ************************************************************ */
 /* ************************************************************ */
 /* ************************************************************ */
-
-
-@media only screen and (max-width: 1350px) {
-
-  body {
-    min-height: fit-content;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-  }
-
-  .main-container{
-    height: 100vh;
-  }
-
-  .sidebar-container{
-    width: 360px;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-right: 50px;
-  }
-
-  .about-container{
-    margin-left: 38%;
-  }
-
-  .about-image-container{
-    height: 425px;
-    width: 425px;
-    margin-bottom: 20px;
-  }
-  
-  .about-image{
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-info-container{
-    font-size: 0.8em;
-    padding-right: 10px;
-  }
-
-  .about-head{
-    font-size: 38px;
-    margin-bottom: 10px;
-    color: var(--tsb-orange);
-  }
-
-  .booking-btn-container{
-    position: fixed;
-    right: 3%;
-    width: 280px;
-    font-size: 0.8em;
-    font-weight: 500;
-    transition: 0s;
-  }
-
-  .booking-btn{
-    padding: 9px 20px;
-  }
-
-  /* font size changes */
-
-  .logo-text{
-    font-size: 17px;
-  }
-
-  .brand-name, .blog-title{
-    font-size: 22px;
-  }
-
-  .side-links{
-    font-size: 18px;
-  }
-
-  .coaching-links, .blog-link{
-    font-size: 15px;
-  }
-
-}
-
-
-
-/* ************************************************************ */
-/* ************************************************************ */
-/* ************************************************************ */
-
 
 
 @media only screen and (max-width: 1170px) {
-
-  .about-image-container{
-    height: 325px;
-    width: 325px;
-    margin-bottom: 20px;
-    transition: 1s;
-  }
-  
-  .about-image{
-    width: 100%;
-    height: 100%;
-  }
 
   .logo-text{
     font-size: 16px;
@@ -742,7 +655,7 @@ body, .root, .App{
 
 
 
-@media only screen and (max-width: 1115px) {
+/* @media only screen and (max-width: 1115px) {
 
   .sidebar-container{
     left: -360px;
@@ -818,7 +731,7 @@ body, .root, .App{
     width: 300px;
   }
 
-}
+} */
 
 
 
