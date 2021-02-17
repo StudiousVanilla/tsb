@@ -1,5 +1,5 @@
 import Bookingbtn from "./Bookingbtn";
-import homeImg from "../imgs/home.png"
+import landingImg from "../imgs/landing.png"
 
 const Home = () => {
     return ( 
@@ -11,7 +11,7 @@ const Home = () => {
                     <h1 className="welcome-main">The Sounding Board</h1>
                 </div>
                 <div className='home-img-container'>
-                    <img src={homeImg} alt="" className='home-img'/>
+                    <img src={landingImg} alt="" className='home-img'/>
                 </div>
                 <div className='quote'>
                     <p className='quote-text'>Are you feeling stuck, and in need of a non-judegmental, confidential space to sound out the 'how' of getting yourself unstuck? I firmly believe that by commiting to coaching time for yourself, you are taking thr best possible first-step to getting yourself unstuck.</p>

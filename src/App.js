@@ -24,9 +24,9 @@ function App() {
               <Route exact path="/coaching/mentor"> <MentorCoaching /> </Route>
               <Route exact path="/tsb"> <Home /> </Route>
             </Switch>
-            <Footer/>
           </div>
         </div>
+            <Footer/>
       </div>
     </Router>
   );

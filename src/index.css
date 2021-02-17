@@ -111,13 +111,18 @@ code {
 
 body, .root, .App{
   height: 100%;
-  max-width: 1500px;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 
 .main-container{
   height: 100%;
-  width: 99vw;
+  width: 99%;
   display: flex;
   font-family: 'PT serif', serif;
 }
@@ -296,11 +301,15 @@ body, .root, .App{
 }
 
 .side-icon-container{
-  height: 3vh;
-  width: 3vh;
+  height: 2.5vh;
+  width: 2.5vh;
+  min-height: 22px;
+  min-width: 22px;
+  max-height: 30px;
+  max-width: 30px;
   display: flex;
-  margin-top: -15px;
-  margin-right: 15px;
+  margin-top: -25px;
+  margin-right: 7px;
   color: red;
   transform: translateZ(0);
   cursor: pointer;
@@ -436,8 +445,7 @@ body, .root, .App{
 }
 
 .color-tile{
-  width: 100%;
-  max-width: 1560px;
+  width: 102%;
   min-width: 100%;
   height: 35%;
   min-height: 620px;
@@ -555,7 +563,7 @@ body, .root, .App{
   position: fixed;
   right: 2%;
   top: 5%;
-  width: 300px;
+  width: fit-content;
   font-size: 1.1em;
   font-weight: 500;
   transition: 0s;
@@ -584,12 +592,12 @@ body, .root, .App{
 
 .footer{
   width: 100%;
-  max-width: 1560px;
-  margin-top: 60px;
-  margin-left: 0px;
+  margin-top: 0px;
+  margin-left: 359px;
   padding: 10px 50px;
   font-size: 12px;
   border-top: 1px solid var(--tsb-blue);
+  border-left: 1px solid var(--tsb-blue);
   color: var(--tsb-blue);
 }
 

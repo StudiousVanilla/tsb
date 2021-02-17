@@ -1,8 +1,7 @@
 import menuIcon from "../icons/menu.svg";
 import brandLogo from "../icons/brand.svg"
-import fbIcon from "../icons/brand.svg";
-import inIcon from "../icons/brand.svg";
-import mailIcon from "../icons/brand.svg";
+import fbIcon from "../icons/fb.svg";
+import inIcon from "../icons/in.svg";
 import { Link } from 'react-router-dom'
 
 
@@ -87,10 +86,13 @@ const Sidebar = () => {
                 <div className="side-links side">
                     <ul className="side-links-list">
                         <li className='about-link link'>
-                           <Link to='/about'>About</Link>
+                           <Link to='/about'>About Me</Link>
+                        </li>
+                        <li className='about-link link'>
+                           <Link to='/coaching/explained'>What is Coaching?</Link>
                         </li>
                         {/* triggers sub-links drop down menu */}
-                        <li className='coaching-link link' onClick={listReveal}>Coaching...</li>
+                        <li className='coaching-link link' onClick={listReveal}>Individual Coaching...</li>
                         <ul className="coaching-links" id ='coaching-links'>
                             <Link to='/coaching/executive'>
                                 <li className='link'>Executive</li>
@@ -106,9 +108,6 @@ const Sidebar = () => {
                             </Link>
                         </ul>
                         <div className="moveable-list" id='moveable-list'>
-                            <Link to='/traning&facilitation'>
-                                <li className='link'>Training & Facilitation</li>
-                            </Link>
                             <Link to='/consultancy'>
                                 <li className='link'>HR Consultancy</li>
                             </Link>
@@ -124,9 +123,6 @@ const Sidebar = () => {
                      </span>
                      <span className='side-icon-container'>
                         <img src={inIcon} alt="LinkedIn"/>
-                    </span>
-                    <span className='side-icon-container'>
-                        <img src={mailIcon} alt="Email"/>
                     </span>
                 </div>
                 <div className="side-blog side" id="side-blog">
