@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
 
-    // reveals coachig links within side bar
+    // reveals coaching links within side bar
     const listReveal = () =>{
 
         // grabs all the links below potential sub-link list
@@ -61,6 +61,26 @@ const Sidebar = () => {
         sidebar.style.left = null
     }
 
+    // reverts all links back to navy
+    const allLinksNavy = () =>{
+        
+        const links = document.getElementsByClassName('link-text')
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].style.color = null;
+        };;
+
+    }
+
+    // highlights selected link in orange
+    const highlightLink = (e) =>{
+
+        allLinksNavy()
+
+        e.target.style.color = 'var(--tsb-orange)'
+
+    }
+
     return ( 
 
         <div className='sidebar-container' id='side-bar'>
@@ -86,34 +106,66 @@ const Sidebar = () => {
                 <div className="side-links side">
                     <ul className="side-links-list">
                         <li className='about-link link'>
-                           <Link to='/about'>About Me</Link>
+                           <Link to='/about' 
+                           className='link-text' 
+                           onClick={highlightLink}>
+                               About Me
+                           </Link>
                         </li>
                         <li className='about-link link'>
-                           <Link to='/coaching/explained'>What is Coaching?</Link>
+                           <Link to='/coaching/explained' 
+                           className='link-text'
+                           onClick={highlightLink}>
+                               What is Coaching?
+                            </Link>
                         </li>
                         {/* triggers sub-links drop down menu */}
                         <li className='coaching-link link' onClick={listReveal}>Individual Coaching...</li>
                         <ul className="coaching-links" id ='coaching-links'>
-                            <Link to='/coaching/executive'>
-                                <li className='link'>Executive</li>
-                            </Link>
-                            <Link to='/coaching/lifestyle'>
-                                <li className='link'>Lifestyle</li>
-                            </Link>
-                            <Link to='/coaching/career'>
-                                <li className='link'>Career</li>
-                            </Link>
-                            <Link to='/coaching/mentor'>
-                                <li className='link'>Mentor</li>
-                            </Link>
+                            <li className='link'>
+                                <Link to='/coaching/executive'
+                                className='link-text'
+                                onClick={highlightLink}>
+                                    Executive
+                                </Link>
+                            </li>
+                            <li className='link'>
+                                <Link to='/coaching/lifestyle'
+                                className='link-text'
+                                onClick={highlightLink}>
+                                    Lifestyle
+                                </Link>
+                            </li>
+                            <li className='link'>
+                                <Link to='/coaching/career'
+                                className='link-text'
+                                onClick={highlightLink}>
+                                    Career
+                                </Link>
+                            </li>
+                            <li className='link'>
+                                <Link to='/coaching/mentor'
+                                className='link-text'
+                                onClick={highlightLink}>
+                                    Coach Mentoring
+                                </Link>
+                            </li>
                         </ul>
                         <div className="moveable-list" id='moveable-list'>
-                            <Link to='/consultancy'>
-                                <li className='link'>HR Consultancy</li>
-                            </Link>
-                            <Link to='/contact'>
-                                <li className='link'>Contact</li>
-                            </Link>
+                                <li className='link'>
+                                    <Link to='/consultancy'
+                                    className='link-text'
+                                    onClick={highlightLink}>
+                                        HR Consultancy
+                                    </Link>
+                                </li>
+                                <li className='link'>
+                                    <Link to='/contact'
+                                    className='link-text'
+                                    onClick={highlightLink}>
+                                        Contact
+                                    </Link>
+                                </li>
                         </div>
                     </ul>
                 </div>
@@ -127,8 +179,8 @@ const Sidebar = () => {
                 </div>
                 <div className="side-blog side" id="side-blog">
                     <p className='blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
-                    <Link to='/blog'>
-                        <p className='blog-link'> Visit TSB Blog </p>
+                    <Link to='/blog' className='link' onClick={highlightLink}>
+                        <p className='link-text blog-link'> Visit TSB Blog </p>
                     </Link>
                 </div>
             </div>

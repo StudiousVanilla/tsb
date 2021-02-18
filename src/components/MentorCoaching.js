@@ -10,7 +10,15 @@ const MentorCoaching = () => {
                     <h1 className='coaching-category-title mentor-title'>
                         Coach Mentoring
                     </h1>
-                     <p className='coaching-category-info'>Mollit sunt ipsum non officia exercitation minim nulla non sit nisi cillum incididunt minim. Exercitation labore nulla id exercitation aliqua ullamco Lorem nulla aliqua occaecat sit reprehenderit consequat. Minim sunt ipsum aliqua voluptate et sint do labore veniam ullamco laboris in culpa. Voluptate labore fugiat est voluptate sunt ex eiusmod aliqua eiusmod voluptate consequat officia velit aliquip. Velit duis non occaecat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt libero eius asperiores.</p>
+                    <div className='testimony-container'>
+                        <p className='coaching-category-testimony'>“By raising my awareness of the issues and all the angles and the options, I was able to see more opportunities and different perspectives. Mona’s questions were thought proving and really made me explore my own thinking and approaches and I definitely got clarity. I found her approach very helpful and it challenged me to look at issues from my own perspective which I found has really been positive. Coaching is a wonderful way to assist people to find a way forward.”
+                        </p>
+                        <div className='attestant-container'>
+                            <p className='attestant'>
+                                Testimony (2020) from Mella, a farmer and coaching client.
+                            </p>
+                        </div>
+                    </div>
                 </main>
             </div>
             <div className='coaching-img-conatiner'>
