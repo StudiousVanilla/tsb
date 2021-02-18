@@ -1,7 +1,16 @@
+import { useEffect } from 'react'
 import placeHolderImg from '../imgs/coaching.png'
 import Bookingbtn from './Bookingbtn'
 
 const CareerCoaching = () => {
+
+    useEffect(()=>{
+        let button = document.getElementById('Bookingbtn')
+        button.style.transition = '0s'
+        button.style.color = 'var(--bg-grey)'
+        button.style.backgroundColor = 'var(--tsb-navy)'
+        button.style.border = 'none'
+    })
 
     return ( 
         <div className='content-container coaching-container'>
@@ -12,11 +21,11 @@ const CareerCoaching = () => {
                         Career Coaching
                     </h1>
                     <div className='testimony-container'>
-                        <p className='coaching-category-testimony'>“By raising my awareness of the issues and all the angles and the options, I was able to see more opportunities and different perspectives. Mona’s questions were thought proving and really made me explore my own thinking and approaches and I definitely got clarity. I found her approach very helpful and it challenged me to look at issues from my own perspective which I found has really been positive. Coaching is a wonderful way to assist people to find a way forward.”
+                        <p className='coaching-category-testimony'>“Mona Eames is a fantastic life coach, she made me feel so at ease and went above and beyond to help me and guide me through the coaching process. She gave me guidance for the future. Opening my eyes to new possibilities and helping me achieve a new job. I now feel motivated and confident in many aspects of my life.”
                         </p>
                         <div className='attestant-container'>
                             <p className='attestant'>
-                                Testimony (2020) from Mella, a farmer and coaching client.
+                            Testimony (2020) from Loraine, a career coaching client.
                             </p>
                         </div>
                     </div>
@@ -27,11 +36,11 @@ const CareerCoaching = () => {
             </div>
             <section className='coaching-info-container'>
                 <div className='coaching-info'>
-                    <h2 className='coaching-info-title'>Heading</h2>
+                    <h2 className='coaching-info-title'>What is Career Coaching?</h2>
                     <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo eos fuga laborum dolor qui doloremque porro modi numquam explicabo atque alias, consequuntur ratione, deleniti nisi et autem dolores officiis.</p>
                 </div>
                 <div className='coaching-info' style={{border: 'none'}}>
-                    <h2 className='coaching-info-title'>Heading</h2>
+                    <h2 className='coaching-info-title'>CTA</h2>
                     <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo atque sequi odit quasi, vel architecto. Harum ullam porro nostrum ipsam necessitatibus doloribus iusto ducimus nesciunt aliquid enim rem, ea deserunt?</p>
                 </div>
             </section>

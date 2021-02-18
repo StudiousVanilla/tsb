@@ -79,6 +79,7 @@ select {
 --tsb-blue: #B1CEE9;
 --tsb-navy: #0D274F;
 --tsb-orange: #F4AD2F;
+--tsb-mauve: #A57982;
 --unnamed-color-ffffff: #FFFFFF;
 }
 
@@ -477,6 +478,7 @@ body::-webkit-scrollbar {
 }
 
 .qual-list{
+  padding-left: 20px;
   margin-top: 30px;
   margin-bottom: 200px;
 }
@@ -491,6 +493,109 @@ body::-webkit-scrollbar {
 /* *********************************** */
 /* *********************************** */
 
+/* what is coaching */
+
+.what-container{
+  margin-top: 150px;
+  max-width: 1000px;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: var(--tsb-orange);
+}
+
+.what-info-container{
+  padding: 20px;
+  width: 500px;
+}
+
+.what-info-title{
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.what-info{
+  color: var(--tsb-navy);
+  font-family: 'PT sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.what-quote-container{
+  width: 810px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: var(--tsb-blue);
+}
+
+.what-quote{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.competency-container{
+  width: 720px;
+}
+
+.competency-title{
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 0px;
+  margin-left: 20px;
+  font-size: 34px;
+  font-weight: 600;
+  border-top: 1px solid var(--tsb-blue);
+}
+
+.competency-tiles-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.competency-tile{
+  width: 300px;
+  height: 140px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--tsb-navy);
+  background-color: white;
+  border: 2px solid #a3a3a3;
+}
+
+.tile-text{
+  text-align: center;
+}
+
+.faq{
+  margin-bottom: 160px;
+}
+
+
+.faq-container{
+  padding-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(149, 183, 214, 0.5);
+  
+}
+
+
+
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+
 /* coaching */
 
 .coaching-container{
@@ -498,6 +603,7 @@ body::-webkit-scrollbar {
   height: 100%;
   padding-top: 0px;
   margin-left: 0px;
+  margin-bottom: 100px;
 }
 
 .color-tile{
@@ -519,12 +625,12 @@ body::-webkit-scrollbar {
 
 .career-color-tile{
   color: var(--bg-grey);
-  background-color: var(--tsb-blue);
+  background-color: var(--tsb-mauve);
 }
 
 .mentor-color-tile{
   color: var(--tsb-navy);
-  background-color: var(--unnamed-color-ffffff);
+  background-color: var(--tsb-blue);
 }
 
 .coaching-main{
@@ -550,19 +656,29 @@ body::-webkit-scrollbar {
 }
 
 .ex-title{
-  border-bottom: 1px solid var(--tsb-blue);
+  border-bottom: 1px solid rgba(155, 208, 243, 0.5);
 }
 
 .life-title{
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.workshop-list{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.workshop-list-item{
+  margin-bottom: 15px;
+}
+
 .career-title{
-  border-bottom: 1px solid var(--unnamed-color-ffffff);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .mentor-title{
-  border-bottom: 2px solid #D9D9D9;
+  border-bottom: 2px solid rgba(134, 164, 192, 0.5);
 }
 
 .testimony-container{
@@ -655,8 +771,8 @@ body::-webkit-scrollbar {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   cursor: pointer;
-  color: var(--tsb-navy);
-  background-color: var(--bg-grey);
+  color: var(--bg-grey);
+  background-color: var(--bg-navy);
   border: 2px solid var(--tsb-navy);
   border-radius: 10px;
 }
@@ -679,6 +795,7 @@ body::-webkit-scrollbar {
 /* *********************************** */
 /* *********************************** */
 
+/* footer */
 
 
 .footer{

@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Footer from './components/Footer'
 import Home from './components/Home'
 import About from './components/About';
+import WhatIsCoaching from './components/WhatIsCoaching';
 import ExCoaching from './components/ExCoaching'
 import LifeCoaching from './components/LifeCoaching'
 import CareerCoaching from './components/CareerCoaching'
@@ -17,12 +18,13 @@ function App() {
           <Sidebar/>
           <div className='non-side-content'>
             <Switch>
+              <Route exact path="/tsb"> <Home /> </Route>
               <Route exact path="/about"> <About /> </Route>
+              <Route exact path="/coaching/explained"> <WhatIsCoaching/> </Route>
               <Route exact path="/coaching/executive"> <ExCoaching /> </Route>
               <Route exact path="/coaching/lifestyle"> <LifeCoaching /> </Route>
               <Route exact path="/coaching/career"> <CareerCoaching /> </Route>
               <Route exact path="/coaching/mentor"> <MentorCoaching /> </Route>
-              <Route exact path="/tsb"> <Home /> </Route>
             </Switch>
           </div>
         </div>

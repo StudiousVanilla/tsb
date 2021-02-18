@@ -1,7 +1,17 @@
 import Bookingbtn from "./Bookingbtn";
 import landingImg from "../imgs/landing.png"
+import { useEffect } from "react";
 
 const Home = () => {
+
+    useEffect(()=>{
+        let button = document.getElementById('Bookingbtn')
+        button.style.transition = '0s'
+        button.style.color = 'var(--bg-grey)'
+        button.style.backgroundColor = 'var(--tsb-orange)'
+        button.style.border = 'none'
+    })
+
     return ( 
         <div>
             <Bookingbtn />

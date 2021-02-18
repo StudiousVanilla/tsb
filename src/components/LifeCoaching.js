@@ -36,12 +36,23 @@ const LifeCoaching = () => {
             </div>
             <section className='coaching-info-container'>
                 <div className='coaching-info'>
-                    <h2 className='coaching-info-title'>Heading</h2>
+                    <h2 className='coaching-info-title'>What is Lifestyle Coaching?</h2>
                     <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo eos fuga laborum dolor qui doloremque porro modi numquam explicabo atque alias, consequuntur ratione, deleniti nisi et autem dolores officiis.</p>
                 </div>
-                <div className='coaching-info' style={{border: 'none'}}>
-                    <h2 className='coaching-info-title'>Heading</h2>
+                <div className='coaching-info'>
+                    <h2 className='coaching-info-title'>Call to Action</h2>
                     <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo atque sequi odit quasi, vel architecto. Harum ullam porro nostrum ipsam necessitatibus doloribus iusto ducimus nesciunt aliquid enim rem, ea deserunt?</p>
+                </div>
+                <div className='coaching-info' style={{border: 'none'}}>
+                    <h2 className='coaching-info-title'>Coaching Workshops</h2>
+                    <p className='coaching-info-text'>TSB Coaching workshops are virtual classroom based currently , are interactive with a blended learning approach and are relevant to... Workshops can be created to suit the needs of your particular group to get maximum benefit. Replacing therapy with coaching / consultancy / training. Previous workshops include:</p>
+                    <ul className='workshop-list'>
+                        <li className='workshop-list-item'>Press Pause (Lifestyle)</li>
+                        <li className='workshop-list-item'>OT / Coaching (Lifestyle</li>
+                        <li className='workshop-list-item'>MBTI practitioner - teams Exec</li>
+                        <li className='workshop-list-item'>Coaching Skills for Managers Exec</li>
+                        <li className='workshop-list-item'>Designing your CV-....Career</li>
+                    </ul>
                 </div>
             </section>
         </div>
