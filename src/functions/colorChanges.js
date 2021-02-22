@@ -40,6 +40,7 @@ const sideBarNavy = () =>{
 
     let sideContent = document.getElementById('side-content')
     sideContent.style.color = 'var(--bg-grey)'
+
 }
 
 
