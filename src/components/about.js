@@ -1,15 +1,13 @@
 import { useEffect } from 'react';
 import placeholderImg from '../imgs/about-img.png';
 import Bookingbtn from './Bookingbtn'
+import {buttonToOrange, sideBarGrey} from '../functions/colorChanges'
 
 const About = () => {
 
     useEffect(()=>{
-        let button = document.getElementById('Bookingbtn')
-        button.style.transition = '0s'
-        button.style.color = 'var(--bg-grey)'
-        button.style.backgroundColor = 'var(--tsb-orange)'
-        button.style.border = 'none'
+        buttonToOrange()
+        sideBarGrey()
     })
 
     return (

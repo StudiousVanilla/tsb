@@ -91,7 +91,7 @@ const Sidebar = () => {
                     <img src={menuIcon} alt=""/>
                 </button>
             </div>
-            <div className="sidebar-content">
+            <div className="sidebar-content" id="side-content">
                 <Link to='/tsb'>
                     <div className="side-brand side">
                         <div className="logo-container">

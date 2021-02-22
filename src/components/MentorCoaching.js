@@ -1,15 +1,13 @@
 import { useEffect } from 'react'
 import placeHolderImg from '../imgs/coaching.png'
 import Bookingbtn from './Bookingbtn'
+import {buttonToNavy, sideBarGrey} from '../functions/colorChanges'
 
 const MentorCoaching = () => {
 
     useEffect(()=>{
-        let button = document.getElementById('Bookingbtn')
-        button.style.transition = '0s'
-        button.style.color = 'var(--bg-grey)'
-        button.style.backgroundColor = 'var(--tsb-navy)'
-        button.style.border = 'none'
+        buttonToNavy()
+        sideBarGrey()
     })
 
     return ( 
