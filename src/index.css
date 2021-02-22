@@ -119,9 +119,10 @@ body::-webkit-scrollbar {
 
 .main-container{
   height: 100%;
-  width: 99%;
+  width: 100%;
   display: flex;
   font-family: 'PT serif', serif;
+  background-color: var(--bg-grey);
 }
 
 /* *********************************** */
@@ -272,7 +273,7 @@ body::-webkit-scrollbar {
   transition: 0.75s;
 }
 
-.blog-title{
+.side-blog-title{
   margin-bottom: 10px;
   padding-top: 15px;
   padding-right: 10px;
@@ -344,6 +345,7 @@ body::-webkit-scrollbar {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-grey);
 }
 
 .content-container{
@@ -744,6 +746,97 @@ body::-webkit-scrollbar {
 }
 
 
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+
+/* blogs */
+
+
+
+.blogs-container{
+  margin: 160px 0px 250px 60px;
+  width: 100%;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: var(--tsb-navy);
+  background-color: var(--bg-grey);
+}
+
+.blogs-title-container{
+  margin-bottom: 60px;
+  padding-bottom: 15px;
+  width: 70%;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.blogs-title{
+  min-width: 300px;
+  font-size: 45px;
+}
+
+.blog-post-container{
+  width: 650px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-family: 'PT sans', sans-serif;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.blog-img-container{
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.blog-img{
+  height: 100%;
+  width: 100%;
+}
+
+.blog-info-container{
+  width: 60%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+}
+
+.blog-date-theme{
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 700px;
+  color: var(--tsb-orange);
+}
+
+.blog-title{
+  margin: 5px 0px 10px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'PT serif', serif;
+}
+
+.blog-upper{
+  margin-bottom: 10px;
+}
+
+.read-more-link{
+  margin-top: 10px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
 
 /* *********************************** */
 /* *********************************** */
@@ -751,6 +844,7 @@ body::-webkit-scrollbar {
 /* *********************************** */
 /* *********************************** */
 
+/* Booking button */
 
 
 
@@ -807,6 +901,7 @@ body::-webkit-scrollbar {
   border-top: 1px solid var(--tsb-blue);
   border-left: 1px solid var(--tsb-blue);
   color: var(--tsb-blue);
+  background-color: var(--bg-grey);
 }
 
 .dev-credit{

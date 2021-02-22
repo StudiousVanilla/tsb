@@ -178,7 +178,7 @@ const Sidebar = () => {
                     </span>
                 </div>
                 <div className="side-blog side" id="side-blog">
-                    <p className='blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
+                    <p className='side-blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
                     <Link to='/blog' className='link' onClick={highlightLink}>
                         <p className='link-text blog-link'> Visit TSB Blog </p>
                     </Link>
