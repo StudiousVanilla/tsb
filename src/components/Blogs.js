@@ -57,10 +57,10 @@ const Blogs = () => {
     
 
     useEffect(()=>{
+        navySide()
         buttonToOrange()
         sideBarNavy()
         logoSRC(logo)
-        navySide()
         getData()
     }, [])
 
