@@ -685,7 +685,9 @@ body::-webkit-scrollbar {
 
 .testimony-container{
   display: flex;
-  width: 100%;
+  width: 650px;
+  /* min-width: 650px;
+  max-width: 650px; */
   margin-top: 30px;
 }
 
@@ -695,19 +697,19 @@ body::-webkit-scrollbar {
 
 .coaching-category-testimony{
   width: 90%;
-  padding-right: 70px;
+  padding-right: 20px;
   font-style: italic;
 }
 
 .attestant-container{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 250px;
 }
 
 .attestant{
   width: 80%;
-  margin-right: 20px;
+  max-width: 130px;
   font-size: 13px;
   font-weight: 600;
 }
