@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import About from './components/About';
 import Blogs from './components/Blogs';
+import BlogPost from './components/BlogPost';
 import WhatIsCoaching from './components/WhatIsCoaching';
 import ExCoaching from './components/ExCoaching'
 import LifeCoaching from './components/LifeCoaching'
@@ -21,6 +22,7 @@ function App() {
             <Switch>
               <Route exact path="/tsb"> <Home /> </Route>
               <Route exact path="/about"> <About /> </Route>
+              <Route path="/blog/:blogURL"> <BlogPost /> </Route>
               <Route exact path="/blog"> <Blogs /> </Route>
               <Route exact path="/coaching/explained"> <WhatIsCoaching/> </Route>
               <Route exact path="/coaching/executive"> <ExCoaching /> </Route>

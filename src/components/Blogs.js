@@ -3,6 +3,7 @@ import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy} from '../functions/colorChanges'
 import firebase from '../configs/fbConfig'
 import placeHolder from '../imgs/landing.png'
+import { Link } from "react-router-dom"
 
 const Blogs = () => {
 
@@ -46,6 +47,12 @@ const Blogs = () => {
         let dateString = `${day} ${month} ${year}`
         return dateString
     }
+
+    // makes URL more readable as dymaic route parameter
+    const tidyURL = (blogTitle) =>{
+        const tidyURLString = blogTitle.replace(/\s/g , '-')
+        return tidyURLString
+    }
     
 
     useEffect(()=>{
@@ -61,11 +68,18 @@ const Blogs = () => {
                 <h2 className="blogs-title">The TSB Blog</h2>
             </div>
             
+            
             {blogs.length>1 && blogs.map((blog)=>(
                 <div className="blog-post-container" key={blog.title}>
-                    <div className="blog-img-container">
-                        <img className='blog-img' src={placeHolder} alt=""/>
-                    </div>
+                    {/* sends blog title to post component as a BlogRef */}
+                    <Link to={{
+                        pathname: 'blog/'+tidyURL(blog.title),
+                        state: {blogRef: blog.title}
+                    }}>
+                        <div className="blog-img-container">
+                            <img className='blog-img' src={placeHolder} alt=""/>
+                        </div>
+                    </Link>
                     <div className='blog-info-container'>
                         <div className="blog-date-theme">
                             <span>{convertDate(blog.date)}</span>
@@ -78,7 +92,13 @@ const Blogs = () => {
                         <p className="blog-upper">
                             {blog.upper.substring(0, 300)}...
                         </p>
-                        <p className="read-more-link">Read more</p>
+                        <Link to={{
+                            /* sends blog title to post component as a BlogRef */
+                            pathname: 'blog/'+tidyURL(blog.title),
+                            state: {blogRef: blog.title}
+                        }}>
+                            <p className="read-more-link">Read more</p>
+                        </Link>
                     </div>
                 </div>
             ))}
