@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import placeHolder from '../imgs/landing.png'
 import logo from '../icons/logo-grey.svg'
 
-const Blogs = () => {
+const FilteredBlogs = () => {
 
 
     // sets sate for blogs that will populate page
@@ -68,7 +68,7 @@ const Blogs = () => {
     return ( 
         <main className='blogs-container'>
             <div className="blogs-title-container">
-                <h2 className="blogs-title">The TSB Blog</h2>
+                <h2 className="blogs-title">Filtered</h2>
             </div>
             
             
@@ -97,7 +97,7 @@ const Blogs = () => {
                         </p>
                         <Link to={{
                             /* sends blog title to post component as a BlogRef */
-                            pathname: tidyURL(blog.title),
+                            pathname: '/blog/'+tidyURL(blog.title),
                             state: {blogRef: blog.title}
                         }}>
                             <p className="read-more-link">Read more</p>
@@ -111,4 +111,4 @@ const Blogs = () => {
      );
 }
  
-export default Blogs;
+export default FilteredBlogs;

@@ -3,10 +3,46 @@ import brandLogo from "../icons/logo-navy.svg"
 import fbIcon from "../icons/fb-grey.svg";
 import inIcon from "../icons/in-grey.svg";
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from "react";
+import firebase from '../configs/fbConfig'
 
 
 
 const Sidebar = () => {
+
+    useEffect(()=>{
+        getBlogThemes()
+
+    },[])
+
+    const [blogThemes, setBlogThemes] = useState('')
+
+    const getBlogThemes = () => {
+
+        // connects to firestore db
+        const db = firebase.firestore()
+        
+        // pulls blog information based on number of blogs and if they are published
+        db.collection("blogs").where('published', '==', true)
+        .get()
+        .then((querySnapshot) => {
+            // addes blog data to blogsArray
+            let blogThemeArray = []
+            querySnapshot.docs.forEach(doc =>{
+                let blog = doc.data()
+                blogThemeArray.push(blog)
+            })
+
+            // sort blogArray by date
+            const sortedArray = blogThemeArray.sort((a, b) => a.theme > b.theme ? -1 : 1)
+
+            // update Sate
+            setBlogThemes(sortedArray)
+        })
+        .catch((error) => {
+            console.log("Error getting documents: ", error);
+        });
+    }
 
     // reveals coaching links within side bar
     const listReveal = () =>{
@@ -183,21 +219,38 @@ const Sidebar = () => {
                         <p className='link-text blog-link'> Visit TSB Blog </p>
                     </Link>
                 </div>
-                <div className="side-blogs-nav-container side-navy">
+                
+                {/* only appears on blog pages */}
+                <div className="side-blogs-nav-container side side-navy">
                     <div className="side-blog-nav">
-                        <p>Blog Feed</p>
-                        <p>Home</p>
+                        <Link to='/blog'>
+                            <p className='link side-blog-nav-link link-text'
+                             onClick={highlightLink}>Blog Feed</p>
+                        </Link>
+                        <Link to='/tsb'>
+                            <p className='link side-blog-nav-link link-text' 
+                            onClick={highlightLink}>Visit The Sounding Board Home</p>
+                        </Link>
                     </div>
                     <div className="side-blog-themes">
-                        <p>Blog Themes</p>
-                        <ul>
-                            <li>Goal Setting</li>
-                            <li>Goal Setting</li>
-                            <li>Goal Setting</li>
-                            <li>Goal Setting</li>
-                            <li>Goal Setting</li>
-                            <li>Goal Setting</li>
+                        <p className="theme-list-title">Blog Themes</p>
+                        {blogThemes.length > 1 &&
+                        <ul className="theme-list">
+                            {blogThemes.map((blog)=>
+                                <li className="theme-list-item link link-text" key={blog.title}>
+                                    <Link to={{
+                                    /* sends blog title to post component as a BlogRef */
+                                    pathname: '/blog/theme/'+ blog.theme,
+                                    state: {blogRef: blog.title}
+                                    }}>
+                                        <p>{blog.theme}</p>
+
+                                    </Link>
+                                </li>
+                            )
+                            }
                         </ul>
+                        }
                     </div>
                 </div>           
             </div>

@@ -747,6 +747,32 @@ body::-webkit-scrollbar {
  color: var(--tsb-navy);
 }
 
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+
+/* sidebar for blogs */
+
+.side-blogs-nav-container{
+  padding-top: 50px;
+}
+
+.side-blog-nav{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-bottom: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.side-blog-nav-link{
+  margin-bottom: 5px;
+}
+
 
 /* *********************************** */
 /* *********************************** */
@@ -836,6 +862,15 @@ body::-webkit-scrollbar {
   font-weight: 700;
   font-style: italic;
 }
+
+.theme-list-title{
+  font-size: 20px;
+}
+
+.theme-list{
+  list-style-type: none;
+}
+
 
 
 /* *********************************** */
