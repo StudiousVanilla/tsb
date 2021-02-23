@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
-import {buttonToOrange, sideBarNavy} from '../functions/colorChanges'
+import {buttonToOrange, sideBarNavy, logoSRC} from '../functions/colorChanges'
 import firebase from '../configs/fbConfig'
-import placeHolder from '../imgs/landing.png'
 import { Link } from "react-router-dom"
+import placeHolder from '../imgs/landing.png'
+import logo from '../icons/logo-grey.svg'
 
 const Blogs = () => {
 
@@ -58,6 +59,7 @@ const Blogs = () => {
     useEffect(()=>{
         buttonToOrange()
         sideBarNavy()
+        logoSRC(logo)
         getData()
     }, [])
 

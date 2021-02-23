@@ -1,13 +1,15 @@
 import { useEffect } from 'react'
 import placeHolderImg from '../imgs/coaching.png'
 import Bookingbtn from './Bookingbtn'
-import {buttonToNavy, sideBarGrey} from '../functions/colorChanges'
+import {buttonToNavy, sideBarGrey, logoSRC} from '../functions/colorChanges'
+import logo from '../icons/logo-navy.svg'
 
 const CareerCoaching = () => {
 
     useEffect(()=>{
         buttonToNavy()
         sideBarGrey()
+        logoSRC(logo)
     })
 
     return ( 

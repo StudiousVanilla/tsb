@@ -43,6 +43,12 @@ const sideBarNavy = () =>{
 
 }
 
+const logoSRC = (src) =>{
 
-export {buttonToOrange, buttonToNavy, sideBarNavy, sideBarGrey}
+    let logo = document.getElementById('logo')
+    logo.src= src
+}
+
+
+export {buttonToOrange, buttonToNavy, sideBarNavy, sideBarGrey, logoSRC}
 

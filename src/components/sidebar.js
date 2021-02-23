@@ -1,7 +1,7 @@
 import menuIcon from "../icons/menu.svg";
-import brandLogo from "../icons/brand.svg"
-import fbIcon from "../icons/fb.svg";
-import inIcon from "../icons/in.svg";
+import brandLogo from "../icons/logo-navy.svg"
+import fbIcon from "../icons/fb-grey.svg";
+import inIcon from "../icons/in-grey.svg";
 import { Link } from 'react-router-dom'
 
 
@@ -95,7 +95,7 @@ const Sidebar = () => {
                 <Link to='/tsb'>
                     <div className="side-brand side">
                         <div className="logo-container">
-                            <img src={brandLogo} alt="The Sounding Board" className="logo"/>
+                            <img src={brandLogo} id="logo" alt="The Sounding Board" className="logo"/>
                         </div>
                         <div className="brand-text">
                             <p className='logo-text'>Mona Eames</p>

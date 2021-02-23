@@ -1,13 +1,15 @@
 import Bookingbtn from "./Bookingbtn";
 import landingImg from "../imgs/landing.png"
 import { useEffect } from "react";
-import {buttonToOrange, sideBarGrey} from '../functions/colorChanges'
+import {buttonToOrange, sideBarGrey, logoSRC} from '../functions/colorChanges'
+import logo from '../icons/logo-navy.svg'
 
 const Home = () => {
 
     useEffect(()=>{
         buttonToOrange()
         sideBarGrey()
+        logoSRC(logo)
     })
 
     return ( 

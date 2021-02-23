@@ -1,13 +1,15 @@
 import { useEffect } from 'react';
 import placeholderImg from '../imgs/about-img.png';
 import Bookingbtn from './Bookingbtn'
-import {buttonToOrange, sideBarGrey} from '../functions/colorChanges'
+import {buttonToOrange, sideBarGrey, logoSRC} from '../functions/colorChanges'
+import logo from '../icons/logo-navy.svg'
 
 const About = () => {
 
     useEffect(()=>{
         buttonToOrange()
         sideBarGrey()
+        logoSRC(logo)
     })
 
     return (
