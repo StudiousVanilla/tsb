@@ -950,6 +950,11 @@ body::-webkit-scrollbar {
 .share-icon{
   margin: 0px 10px;
   color: red;
+  cursor: pointer;
+}
+
+.share-icon:hover{
+  transform: scale(1.01) translateZ(0);
 }
 
 .blog-post-nav-container{

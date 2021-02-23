@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
-import {buttonToOrange, sideBarNavy, logoSRC} from '../functions/colorChanges'
+import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
 import firebase from '../configs/fbConfig'
 import { Link, useLocation, useParams } from "react-router-dom"
 import placeHolder from '../imgs/landing.png'
@@ -40,6 +40,7 @@ const Blogs = () => {
    
 
     useEffect(()=>{
+        navySide()
         buttonToOrange()
         sideBarNavy()
         logoSRC(logo)

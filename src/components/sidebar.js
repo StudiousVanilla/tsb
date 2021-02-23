@@ -103,7 +103,7 @@ const Sidebar = () => {
                         </div>
                     </div>
                 </Link>
-                <div className="side-links side">
+                <div className="side-links side side-grey">
                     <ul className="side-links-list">
                         <li className='about-link link'>
                            <Link to='/about' 
@@ -169,7 +169,7 @@ const Sidebar = () => {
                         </div>
                     </ul>
                 </div>
-                <div className="side-icons side" id="side-icons">
+                <div className="side-icons side side-grey" id="side-icons">
                     <span className='side-icon-container'>
                         <img src={fbIcon} alt="facebook"/>
                      </span>
@@ -177,12 +177,29 @@ const Sidebar = () => {
                         <img src={inIcon} alt="LinkedIn"/>
                     </span>
                 </div>
-                <div className="side-blog side" id="side-blog">
+                <div className="side-blog side side-grey" id="side-blog">
                     <p className='side-blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
                     <Link to='/blog' className='link' onClick={highlightLink}>
                         <p className='link-text blog-link'> Visit TSB Blog </p>
                     </Link>
                 </div>
+                <div className="side-blogs-nav-container side-navy">
+                    <div className="side-blog-nav">
+                        <p>Blog Feed</p>
+                        <p>Home</p>
+                    </div>
+                    <div className="side-blog-themes">
+                        <p>Blog Themes</p>
+                        <ul>
+                            <li>Goal Setting</li>
+                            <li>Goal Setting</li>
+                            <li>Goal Setting</li>
+                            <li>Goal Setting</li>
+                            <li>Goal Setting</li>
+                            <li>Goal Setting</li>
+                        </ul>
+                    </div>
+                </div>           
             </div>
         </div>
 

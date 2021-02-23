@@ -29,7 +29,6 @@ const sideBarGrey = () =>{
     sideContent.style.color = 'var(--tsb-navy)'
 }
 
-
 const sideBarNavy = () =>{
 
     let app = document.getElementById('App')
@@ -48,7 +47,31 @@ const logoSRC = (src) =>{
     let logo = document.getElementById('logo')
     logo.src= src
 }
+const navySide = () =>{
+    const hideElements = document.getElementsByClassName('side-grey')
+    for(let element of hideElements){
+        element.style.display = 'none'
+    }
+
+    const revealElements = document.getElementsByClassName('side-navy')
+    for(let element of revealElements){
+        element.style.display = null
+    }
+}
+
+const greySide = () =>{
+    const hideElements = document.getElementsByClassName('side-navy')
+    for(let element of hideElements){
+        element.style.display = 'none'
+    }
+
+    const revealElements = document.getElementsByClassName('side-grey')
+    for(let element of revealElements){
+        element.style.display = null
+    }
+}
 
 
-export {buttonToOrange, buttonToNavy, sideBarNavy, sideBarGrey, logoSRC}
+
+export {buttonToOrange, buttonToNavy, sideBarNavy, sideBarGrey, logoSRC, greySide, navySide}
 
