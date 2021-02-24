@@ -795,9 +795,10 @@ body::-webkit-scrollbar {
 }
 
 .blogs-title-container{
+  width: 70%;
+  min-width: fit-content;
   margin-bottom: 60px;
   padding-bottom: 15px;
-  width: 70%;
   border-bottom: 1px solid var(--tsb-blue);
 }
 
@@ -869,6 +870,10 @@ body::-webkit-scrollbar {
 
 .theme-list{
   list-style-type: none;
+}
+
+.theme-highlight{
+  color: var(--tsb-orange);
 }
 
 

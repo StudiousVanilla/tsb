@@ -27,17 +27,31 @@ const Sidebar = () => {
         .get()
         .then((querySnapshot) => {
             // addes blog data to blogsArray
-            let blogThemeArray = []
+            let blogArray = []
             querySnapshot.docs.forEach(doc =>{
                 let blog = doc.data()
-                blogThemeArray.push(blog)
+                blogArray.push(blog)
             })
 
+            let blogThemeArray = []
+            
             // sort blogArray by date
-            const sortedArray = blogThemeArray.sort((a, b) => a.theme > b.theme ? -1 : 1)
+            const sortedArray = blogArray.sort((a, b) => a.theme > b.theme ? -1 : 1)
+
+            // filters blogs based on theme
+            const filteredArray = sortedArray.filter((blog)=>{
+                if(blogThemeArray.includes(blog.theme)){
+                    
+                }
+                else{
+                    blogThemeArray.push(blog.theme)
+                    return blog
+                }
+                return null
+            })
 
             // update Sate
-            setBlogThemes(sortedArray)
+            setBlogThemes(filteredArray)
         })
         .catch((error) => {
             console.log("Error getting documents: ", error);
@@ -238,13 +252,8 @@ const Sidebar = () => {
                         <ul className="theme-list">
                             {blogThemes.map((blog)=>
                                 <li className="theme-list-item link link-text" key={blog.title}>
-                                    <Link to={{
-                                    /* sends blog title to post component as a BlogRef */
-                                    pathname: '/blog/theme/'+ blog.theme,
-                                    state: {blogRef: blog.title}
-                                    }}>
+                                    <Link to={'/blog/theme/'+blog.theme}>
                                         <p>{blog.theme}</p>
-
                                     </Link>
                                 </li>
                             )

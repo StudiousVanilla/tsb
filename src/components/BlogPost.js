@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
 import firebase from '../configs/fbConfig'
-import { Link, useLocation, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import placeHolder from '../imgs/landing.png'
 import logo from '../icons/logo-grey.svg'
 import fbIcon from '../icons/fb-navy.svg'
@@ -10,16 +10,14 @@ import inIcon from '../icons/in-navy.svg'
 
 const Blogs = () => {
 
-    // gets original title of blog from blog index component and sets it to blogRef
-    // blogRef is used to pull post from data base
-    let location = useLocation()
-    let blogRef = location.state.blogRef
-
+    
     // sets sate for blogs that will populate page
     const [blog, setBlog] = useState({title: ''});
-    
-    // grabs dynamic Route parameter to use to pull blog data
-    let  { blogURL} = useParams()
+
+    let  { blogRef} = useParams()
+    let blogNumber = Number(blogRef)
+
+
 
     const convertDate = (timeStamp) => {
         // now timestamp is in milliseconds
@@ -52,7 +50,7 @@ const Blogs = () => {
             const db = firebase.firestore()
             
             // pulls blog information for blog that matches title (the blogRef)
-            db.collection("blogs").where('title', '==', blogRef)
+            db.collection("blogs").where('blogID', '==', blogNumber)
             .get()
             .then((querySnapshot) => {
                 // addes blog data to blogsArray
@@ -70,7 +68,7 @@ const Blogs = () => {
         }
         getBlogPost()
         
-    }, [blogURL, blogRef])
+    }, [blogNumber])
 
 
     return (

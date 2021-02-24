@@ -48,12 +48,6 @@ const Blogs = () => {
         let dateString = `${day} ${month} ${year}`
         return dateString
     }
-
-    // makes URL more readable as dymaic route parameter
-    const tidyURL = (blogTitle) =>{
-        const tidyURLString = blogTitle.replace(/\s/g , '-')
-        return tidyURLString
-    }
     
 
     useEffect(()=>{
@@ -75,10 +69,7 @@ const Blogs = () => {
             {blogs.length>1 && blogs.map((blog)=>(
                 <div className="blog-post-container" key={blog.title}>
                     {/* sends blog title to post component as a BlogRef */}
-                    <Link to={{
-                        pathname: 'blog/'+tidyURL(blog.title),
-                        state: {blogRef: blog.title}
-                    }}>
+                    <Link to={'/blog/'+blog.blogID}>
                         <div className="blog-img-container">
                             <img className='blog-img' src={placeHolder} alt=""/>
                         </div>
@@ -95,11 +86,7 @@ const Blogs = () => {
                         <p className="blog-upper">
                             {blog.upper.substring(0, 300)}...
                         </p>
-                        <Link to={{
-                            /* sends blog title to post component as a BlogRef */
-                            pathname: tidyURL(blog.title),
-                            state: {blogRef: blog.title}
-                        }}>
+                        <Link to={'/blog/'+blog.blogID}>
                             <p className="read-more-link">Read more</p>
                         </Link>
                     </div>

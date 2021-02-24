@@ -23,7 +23,7 @@ function App() {
             <Switch>
               <Route exact path="/tsb"> <Home /> </Route>
               <Route exact path="/about"> <About /> </Route>
-              <Route exact path="/blog/:blogURL"> <BlogPost /> </Route>
+              <Route exact path="/blog/:blogRef"> <BlogPost /> </Route>
               <Route exact path="/blog/theme/:theme"> <FilteredBlogs/> </Route>
               <Route exact path="/blog"> <Blogs /> </Route>
               <Route exact path="/coaching/explained"> <WhatIsCoaching/> </Route>
