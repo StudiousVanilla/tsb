@@ -1,8 +1,8 @@
-import placeHolder from '../imgs/landing.png'
 import { useEffect } from "react"
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import TSBmap from './Map'
 import fbIcon from '../icons/fb-navy.svg'
 import inIcon from '../icons/in-grey.svg'
 
@@ -25,7 +25,7 @@ const Contact = () => {
                 <p className='contact-intro'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
             </div>
             <div className="map-container">
-                <img className='map' src={placeHolder} alt=""/>
+                <TSBmap/>                
             </div>
             <div className="contact-info-container">
                 <div className="contact-text-container">
