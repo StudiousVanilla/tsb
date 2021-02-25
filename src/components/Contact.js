@@ -72,7 +72,9 @@ const Contact = () => {
                     <input type="text" name='email' className="contact-form-input"/>
                     <label htmlFor="name" className="contact-form-labels">
                         Message</label>
-                    <input type="text" name='message'className="contact-form-input"/>
+                    <textarea 
+                    type="text" name='message'className="contact-form-textarea"
+                    rows="10" cols="50"/>
                     <button className="contact-form-btn">Send</button>
                 </form>
             </div>
@@ -80,5 +82,6 @@ const Contact = () => {
         </main>
      );
 }
+
  
 export default Contact;

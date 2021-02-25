@@ -851,12 +851,16 @@ body::-webkit-scrollbar {
   margin-bottom: 10px;
 }
 
-.contact-form-input{
-  width: 250px;
+.contact-form-input, .contact-form-textarea{
   margin-bottom: 30px;
   padding: 3px 5px;
-  font-size: 20px;
+  font-size: 158x;
   border: 1px solid var(--tsb-navy);
+}
+
+.contact-form-input{
+  width: 350px;
+  font-size: 20px;
 }
 
 .contact-form-btn{
