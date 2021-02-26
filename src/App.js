@@ -12,6 +12,7 @@ import LifeCoaching from './components/LifeCoaching'
 import CareerCoaching from './components/CareerCoaching'
 import MentorCoaching from './components/MentorCoaching'
 import Contact from './components/Contact';
+import Consultancy from './components/Consultancy';
 
 
 function App() {
@@ -24,15 +25,16 @@ function App() {
             <Switch>
               <Route exact path="/tsb"> <Home /> </Route>
               <Route exact path="/about"> <About /> </Route>
-              <Route exact path="/contact"> <Contact /> </Route>
-              <Route exact path="/blog"> <Blogs /> </Route>
-              <Route exact path="/blog/:blogRef"> <BlogPost /> </Route>
-              <Route exact path="/blog/theme/:theme"> <FilteredBlogs/> </Route>
               <Route exact path="/coaching/explained"> <WhatIsCoaching/> </Route>
               <Route exact path="/coaching/executive"> <ExCoaching /> </Route>
               <Route exact path="/coaching/lifestyle"> <LifeCoaching /> </Route>
               <Route exact path="/coaching/career"> <CareerCoaching /> </Route>
               <Route exact path="/coaching/mentor"> <MentorCoaching /> </Route>
+              <Route exact path="/blog"> <Blogs /> </Route>
+              <Route exact path="/blog/:blogRef"> <BlogPost /> </Route>
+              <Route exact path="/blog/theme/:theme"> <FilteredBlogs/> </Route>
+              <Route exact path="/contact"> <Contact /> </Route>
+              <Route exact path="/consultancy"> <Consultancy /> </Route>
             </Switch>
           </div>
         </div>
