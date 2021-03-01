@@ -248,7 +248,7 @@ const Sidebar = () => {
                     </div>
                     <div className="side-blog-themes">
                         <p className="theme-list-title">Blog Themes</p>
-                        {blogThemes.length > 1 &&
+                        {blogThemes.length >= 1 &&
                         <ul className="theme-list">
                             {blogThemes.map((blog)=>
                                 <li className="theme-list-item link link-text" key={blog.title}>

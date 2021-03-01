@@ -3,7 +3,6 @@ import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
 import firebase from '../configs/fbConfig'
 import { Link } from "react-router-dom"
-import placeHolder from '../imgs/landing.png'
 import logo from '../icons/logo-grey.svg'
 
 const Blogs = () => {
@@ -66,12 +65,12 @@ const Blogs = () => {
             </div>
             
             
-            {blogs.length>1 && blogs.map((blog)=>(
+            {blogs.length>=1 && blogs.map((blog)=>(
                 <div className="blog-post-container" key={blog.title}>
                     {/* sends blog title to post component as a BlogRef */}
                     <Link to={'/blog/'+blog.blogID}>
                         <div className="blog-img-container">
-                            <img className='blog-img' src={placeHolder} alt=""/>
+                            <img className='blog-img' src="https://firebasestorage.googleapis.com/v0/b/tsb-blog-a1382.appspot.com/o/trees.png?alt=media&token=3dd0fcaa-5994-4492-8e3b-0379ad7a9958" alt=""/>
                         </div>
                     </Link>
                     <div className='blog-info-container'>
@@ -80,9 +79,11 @@ const Blogs = () => {
                             <span>|</span>
                             <span>{blog.theme}</span>
                         </div>
-                        <p className="blog-title">
-                            {blog.title}
-                        </p>
+                        <Link to={'/blog/'+blog.blogID}>
+                            <p className="blog-title">
+                                {blog.title}
+                            </p>
+                        </Link>
                         <p className="blog-upper">
                             {blog.upper.substring(0, 300)}...
                         </p>

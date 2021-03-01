@@ -3,7 +3,6 @@ import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
 import firebase from '../configs/fbConfig'
 import { Link, useParams } from "react-router-dom"
-import placeHolder from '../imgs/landing.png'
 import logo from '../icons/logo-grey.svg'
 import fbIcon from '../icons/fb-navy.svg'
 import inIcon from '../icons/in-navy.svg'
@@ -87,7 +86,7 @@ const Blogs = () => {
                     <h3 className="post-subtitle">{blog.subtitle}</h3>
                 </div>
                 <div className="blog-post-img-container">
-                    <img className="blog-post-img" src={placeHolder} alt=""/>
+                    <img className="blog-post-img" src={blog.imgSRC} alt=""/>
                 </div>
                 <div className="blog-post-upper-container">
                     <p className="post-upper">{blog.upper}</p>
