@@ -3,7 +3,6 @@ import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
 import firebase from '../configs/fbConfig'
 import { Link, useParams } from "react-router-dom"
-import placeHolder from '../imgs/landing.png'
 import logo from '../icons/logo-grey.svg'
 
 const FilteredBlogs = () => {
@@ -46,8 +45,7 @@ const FilteredBlogs = () => {
     }
 
     const convertDate = (timeStamp) => {
-        // now timestamp is in milliseconds
-        let date = timeStamp.toDate()
+        let date = new Date(timeStamp)
         let day = date.getDate()
         let month = date.toLocaleString('default', { month: 'long' });
         let year = date.getFullYear()
@@ -79,7 +77,7 @@ const FilteredBlogs = () => {
                     {/* sends blog title to post component as a BlogRef */}
                     <Link to={'/blog/'+blog.blogID}>
                         <div className="blog-img-container">
-                            <img className='blog-img' src={placeHolder} alt=""/>
+                            <img className='blog-img' src={blog.imgSRC} alt=""/>
                         </div>
                     </Link>
                     <div className='blog-info-container'>
@@ -88,9 +86,11 @@ const FilteredBlogs = () => {
                             <span>|</span>
                             <span>{blog.theme}</span>
                         </div>
-                        <p className="blog-title">
-                            {blog.title}
-                        </p>
+                        <Link to={'/blog/'+blog.blogID}>
+                            <p className="blog-title">
+                                {blog.title}
+                            </p>
+                        </Link>
                         <p className="blog-upper">
                             {blog.upper.substring(0, 300)}...
                         </p>

@@ -19,8 +19,7 @@ const Blogs = () => {
 
 
     const convertDate = (timeStamp) => {
-        // now timestamp is in milliseconds
-        let date = timeStamp.toDate()
+        let date = new Date(timeStamp)
         let day = date.getDate()
         let month = date.toLocaleString('default', { month: 'long' });
         let year = date.getFullYear()
