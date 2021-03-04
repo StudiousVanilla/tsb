@@ -8,12 +8,39 @@ import inIcon from '../icons/in-grey.svg'
 
 const Contact = () => {
 
+    // fires to copy email address to clipboard
+    const copyEmail = () =>{
+
+        if (document.selection) {
+            let range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById('emailAdress'));
+            range.select().createTextRange();
+            document.execCommand("copy");
+
+            let copyConfirm = document.getElementById('copyConfirm')
+            copyConfirm.style.visibility = 'visible'
+            copyConfirm.style.color = 'var(--tsb-orange)'
+        } 
+        else if (window.getSelection) {
+            let range = document.createRange();
+            range.selectNode(document.getElementById('emailAdress'));
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            
+            let copyConfirm = document.getElementById('copyConfirm')
+            copyConfirm.style.visibility = 'visible'
+            copyConfirm.style.color = 'var(--tsb-orange)'
+        }
+    }
+
+
     useEffect(()=>{
         greySide()
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
     })
+
 
 
     return ( 
@@ -35,15 +62,20 @@ const Contact = () => {
                     <div className='contact-link'>
                         <span>
                             <img src={fbIcon} alt="email" 
-                            className="contact-icon"/>
+                            className="contact-icon" onClick={copyEmail}/>
                         </span>
-                        <span className="contact-link-text">
+                        <span className="contact-link-text" id="emailAdress" onClick={copyEmail}>
                             tsbcoaching@gmail.com
+                        </span>
+                        <span className="copy-confirm" id="copyConfirm">
+                            copied &#10003;
                         </span>
                     </div>
                     <div className='contact-link'>
                         <span>
-                            <img src={inIcon} alt="LinkedIn" className="contact-icon"/>
+                            <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer">
+                                <img src={inIcon} alt="LinkedIn" className="contact-icon"/>
+                            </a>
                         </span>
                         <span className="contact-link-text">
                             The Sounding Board
@@ -51,7 +83,9 @@ const Contact = () => {
                     </div>
                     <div className='contact-link'>
                         <span>
-                            <img src={fbIcon} alt="facebook" className="contact-icon"/>
+                            <a href="https://www.facebook.com/thesoundingboardtsb/" target="_blank" rel="noreferrer">
+                                <img src={fbIcon} alt="facebook" className="contact-icon"/>
+                            </a>
                         </span>
                         <span className="contact-link-text">
                             The Sounding Board

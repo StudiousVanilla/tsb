@@ -823,10 +823,23 @@ body::-webkit-scrollbar {
 
 .contact-icon{
   padding-right: 10px;
+  cursor: pointer;
+}
+
+.contact-icon:hover{
+  transform: scale(1.05);
 }
 
 .contact-link-text{
   text-align: center;
+}
+
+.copy-confirm{
+  margin-left: 225px;
+  position: absolute;
+  color: var(--bg-grey);
+  visibility: hidden;
+  transition: 1s;
 }
 
 .contact-form-container{

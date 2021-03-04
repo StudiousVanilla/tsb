@@ -2,7 +2,7 @@ const Bookingbtn = () => {
     return ( 
 
     <div className='booking-btn-container'>
-        <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03">
+        <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer">
             <button className='booking-btn' id="Bookingbtn">
                     Book a Free Consultation
             </button>
