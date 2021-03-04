@@ -69,7 +69,7 @@ const Blogs = () => {
                     {/* sends blog title to post component as a BlogRef */}
                     <Link to={'/blog/'+blog.blogID}>
                         <div className="blog-img-container">
-                            <img className='blog-img' src="https://firebasestorage.googleapis.com/v0/b/tsb-blog-a1382.appspot.com/o/trees.png?alt=media&token=3dd0fcaa-5994-4492-8e3b-0379ad7a9958" alt=""/>
+                            <img className='blog-img' src={blog.imgSRC} alt=""/>
                         </div>
                     </Link>
                     <div className='blog-info-container'>
