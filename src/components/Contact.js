@@ -16,10 +16,6 @@ const Contact = () => {
             range.moveToElementText(document.getElementById('emailAdress'));
             range.select().createTextRange();
             document.execCommand("copy");
-
-            let copyConfirm = document.getElementById('copyConfirm')
-            copyConfirm.style.visibility = 'visible'
-            copyConfirm.style.color = 'var(--tsb-orange)'
         } 
         else if (window.getSelection) {
             let range = document.createRange();
