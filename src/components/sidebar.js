@@ -221,10 +221,14 @@ const Sidebar = () => {
                 </div>
                 <div className="side-icons side side-grey" id="side-icons">
                     <span className='side-icon-container'>
-                        <img src={fbIcon} alt="facebook"/>
+                        <a href="https://www.facebook.com/thesoundingboardtsb/">
+                            <img src={fbIcon} alt="facebook"/>
+                        </a>
                      </span>
                      <span className='side-icon-container'>
-                        <img src={inIcon} alt="LinkedIn"/>
+                         <a href="https://www.linkedin.com/in/monaeamestsb/">
+                            <img src={inIcon} alt="LinkedIn"/>
+                         </a>
                     </span>
                 </div>
                 <div className="side-blog side side-grey" id="side-blog">

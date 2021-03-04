@@ -100,10 +100,15 @@ const Blogs = () => {
                     <p className="post-footer">{blog.footer}</p>
                 </div>
                 <div className="blog-post-tags-container">
-                    <p className="post-tags">
+                    <p className="post-tags tags">
                         Tags: {listTags(blog.tags)}
                     </p>
-                    <p className="post-tags">Image: John Smith @ www.images.com</p>
+                    <p className="post-tags img-credit">
+                        Image credit: {blog.imgCred}
+                    </p>
+                    <p className="post-tags img-link">
+                        Image link: {blog.imgLink}
+                    </p>
                 </div>
                 <div className="blog-post-info-share-container">
                     <div className="post-info">

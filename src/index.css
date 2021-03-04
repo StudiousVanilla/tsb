@@ -1234,7 +1234,7 @@ font-family: 'PT Sans', sans-serif;
 }
 
 .blog-post-footer-container{
-  margin-bottom: 15px;
+  margin-bottom: 55px;
   font-style: italic;
   color: var(--tsb-mauve);
 }
@@ -1244,6 +1244,14 @@ font-family: 'PT Sans', sans-serif;
   font-style: italic;
   color: var(--tsb-blue);
   border-bottom: 1px solid var(--tsb-blue);
+}
+
+.tags{
+  margin-bottom: 15px;
+}
+
+.img-credit{
+  margin-bottom: 10px;
 }
 
 .blog-post-info-share-container{
