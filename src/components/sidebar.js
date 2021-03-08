@@ -17,6 +17,7 @@ const Sidebar = () => {
 
     const [blogThemes, setBlogThemes] = useState('')
 
+    // gets blog links
     const getBlogThemes = () => {
 
         // connects to firestore db

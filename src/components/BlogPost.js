@@ -118,11 +118,11 @@ const Blogs = () => {
                     <div className="post-share-container">
                         <p className="post-share">
                             Visit
-                            <a href={blog.fblink}>
+                            <a href={blog.fblink} target="_blank" rel="noreferrer">
                                 <img className="share-icon" src={fbIcon} alt="Facebook"/>
                             </a>
                             or
-                            <a href={blog.inlink}>
+                            <a href={blog.inlink} target="_blank" rel="noreferrer">
                                 <img className="share-icon" src={inIcon} alt="LinkedIn"/>
                             </a>
                             to share or comment

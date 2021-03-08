@@ -15,8 +15,8 @@ const ExCoaching = () => {
 
     return ( 
         <div className='content-container coaching-container'>
-            <Bookingbtn/>
-            <div className='color-tile ex-color-tile'>
+            <Bookingbtn/>ol
+            <div className='color-tile ex-cor-tile'>
                 <main className='coaching-main'>
                     <h1 className='coaching-category-title  ex-title'>
                         Executive Coaching
