@@ -534,6 +534,7 @@ body::-webkit-scrollbar {
 .what-quote{
   font-size: 50px;
   font-weight: 600;
+  line-height: 65px;
 }
 
 .competency-container{
@@ -559,24 +560,44 @@ body::-webkit-scrollbar {
 }
 
 .competency-tile{
+  position: relative;
   width: 300px;
   height: 140px;
   margin-right: 50px;
   margin-bottom: 50px;
-  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 500;
   color: var(--tsb-navy);
-  background-color: white;
-  border: 2px solid #a3a3a3;
 }
 
-.tile-text{
+.competency-tile:hover .competency-img{
+ z-index: 0;
+}
+
+.competency-img{
+  z-index: 2;
+}
+
+.competnecy-reverse{
+  position: absolute;
+  height: 103%;
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 20px;
   text-align: center;
+  background-color: var(--bg-grey);
+  border: 1px solid var(--tsb-navy);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.reverse-unique{
+  font-size: 14px;
 }
 
 .faq{
@@ -822,6 +843,8 @@ body::-webkit-scrollbar {
 }
 
 .contact-icon{
+  height: 2.5rem;
+  width: 2.5rem;
   padding-right: 10px;
   cursor: pointer;
 }

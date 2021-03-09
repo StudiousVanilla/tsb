@@ -4,7 +4,8 @@ import logo from '../icons/logo-navy.svg'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import TSBmap from './Map'
 import fbIcon from '../icons/fb-navy.svg'
-import inIcon from '../icons/in-grey.svg'
+import inIcon from '../icons/in-navy.svg'
+import mailIcon from '../icons/mail.svg'
 
 const Contact = () => {
 
@@ -57,8 +58,7 @@ const Contact = () => {
                 <div className="contact-links-container">
                     <div className='contact-link'>
                         <span>
-                            <img src={fbIcon} alt="email" 
-                            className="contact-icon" onClick={copyEmail}/>
+                            <img src={mailIcon} alt="email" className="contact-icon" onClick={copyEmail}/>
                         </span>
                         <span className="contact-link-text" id="emailAdress" onClick={copyEmail}>
                             tsbcoaching@gmail.com
