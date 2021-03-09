@@ -2,8 +2,15 @@ import { useEffect } from "react"
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import logo from '../icons/logo-navy.svg'
+import what1 from '../imgs/what/what1.png'
+import what2 from '../imgs/what/what2.png'
+import what3 from '../imgs/what/what3.png'
+import what4 from '../imgs/what/what4.png'
+import what5 from '../imgs/what/what5.png'
+import what6 from '../imgs/what/what6.png'
 
-const WhatIsCoaching = () => {
+
+const WhatIsCoaching = () =>{ 
 
     useEffect(()=>{
         greySide()
@@ -30,52 +37,61 @@ const WhatIsCoaching = () => {
                 </p>
                 <div className='competency-tiles-container'>
                     <div className='competency-tile'>
-                    <p className='tile-text'>Confidentiality & Trust</p>                       
+                        <img src={what1} alt="Embodies a Coaching Mindest"
+                        className="competency-img"/>
+                        <p className="competnecy-reverse">
+                            A coach develops a mindset that is open, curious, flexible and client-centred.
+                        </p>                      
                     </div>
                     <div className='competency-tile'>
-                        <p className='tile-text'>Coaching Presence</p>
+                        <img src={what2} alt="Cultivates Trust and Safety"
+                        className="competency-img"/>
+                       <p className="competnecy-reverse reverse-unique">
+                            A coach partners with the client to create a safe supportive environment that allows the client to share freely. <br/><br/> They maintain a relationship of mutual respect and trust.
+                        </p>                       
                     </div>
                     <div className='competency-tile'>
-                        <p className='tile-text'>Building Rapport</p>
+                        <img src={what3} alt="Maintinas Presence"
+                        className="competency-img"/>
+                       <p className="competnecy-reverse">
+                            A coach is fully present with the client.
+                        </p>                       
                     </div>
                     <div className='competency-tile'>
-                        <p className='tile-text'>Direct Communication</p>
+                        <img src={what4} alt="Listens Actively"
+                        className="competency-img"/>
+                       <p className="competnecy-reverse">
+                            A coach focuses on what the client is and is not sayingd.
+                        </p>                     
                     </div>
                     <div className='competency-tile'>
-                        <p className='tile-text'>Active Listening</p>
+                        <img src={what5} alt="Evokes Awerness"
+                        className="competency-img"/>
+                       <p className="competnecy-reverse">
+                            A coach facilitates client insight and learning by using tools and techniques.
+                        </p>                       
                     </div>
                     <div className='competency-tile'>
-                        <p className='tile-text'>Creating Awareness</p>
-                    </div>
-                    <div className='competency-tile'>
-                        <p className='tile-text'>Asking Good Questions</p>
-                    </div>
-                    <div className='competency-tile'>
-                        <p className='tile-text'>Desiging Actions</p>
-                    </div>
-                    <div className='competency-tile'>
-                        <p className='tile-text'>Planning & Goal Setting</p>
-                    </div>
-                    <div className='competency-tile'>
-                        <p className='tile-text'>Managing Progress</p>
-                    </div>
-                    <div className='competency-tile'>
-                        <p className='tile-text'>Accountability</p>
+                        <img src={what6} alt="Facilitates Client Growth"
+                        className="competency-img"/> 
+                       <p className="competnecy-reverse">
+                            A coach partners with the client to transform learning into action.
+                        </p>                      
                     </div>
                 </div>
             </div>
             <div className='faq'>
                 <div className='what-info-container faq-container'>
-                    <h2 className='what-info-title'>FAQ 1</h2>
-                    <p className='what-info'>I help people to get clarity about their life direction, career or busines. The coaching process allows you to “sound out” your ideas in a confidential space. I help you to see new perspectives which enable you as you design positive actions to make changes, to keep moving forward to improve your life.</p>
+                    <h2 className='what-info-title'>FAQ: How long does the coaching process take?</h2>
+                    <p className='what-info'>Coaching helps the client to transform learning and insights into actions. This generally happens over a number of months. Five or six sessions are advisable and the frequency will be agreed between coach and client in the first session which sets the foundation and identifies the goals for the coaching.</p>
                 </div>
                 <div className='what-info-container faq-container'>
-                    <h2 className='what-info-title'>FAQ 2</h2>
-                    <p className='what-info'>I help people to get clarity about their life direction, career or busines. The coaching process allows you to “sound out” your ideas in a confidential space. I help you to see new perspectives which enable you as you design positive actions to make changes, to keep moving forward to improve your life.</p>
+                    <h2 className='what-info-title'>FAQ: How do Counselling and Mentoring differ from Coaching?</h2>
+                    <p className='what-info'> <b>Counselling</b> is the provision of professional assistance and guidance in resolving personal or psychological problems. <br/><br/> <b>Mentoring</b> is a system of semi-structured guidance whereby one person shares their knowledge, skills and experience to assist others to progress in their own lives and careers</p>
                 </div>
                 <div className='what-info-container faq-container'>
-                    <h2 className='what-info-title'>FAQ 3</h2>
-                    <p className='what-info'>I help people to get clarity about their life direction, career or busines. The coaching process allows you to “sound out” your ideas in a confidential space. I help you to see new perspectives which enable you as you design positive actions to make changes, to keep moving forward to improve your life.</p>
+                    <h2 className='what-info-title'>FAQ: Are TSB sessions face-to-face or online?</h2>
+                    <p className='what-info'>Currently, coaching sessions are being held virtually, online. Coaching by phone is also available and face-to-face coaching will resume when Covid-19 restrictions allow. <br/><br/> You can book your appointment using the button at the top of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking. You and your coach will join this Zoom call at the agreed time and proceed from there.</p>
                 </div>
             </div>
             <Bookingbtn/>
