@@ -21,13 +21,16 @@ const Contact = () => {
         else if (window.getSelection) {
             let range = document.createRange();
             range.selectNode(document.getElementById('emailAdress'));
+            // removes all ranges so that clipboard is reset
+            window.getSelection().removeAllRanges()
             window.getSelection().addRange(range);
             document.execCommand("copy");
-            
-            let copyConfirm = document.getElementById('copyConfirm')
-            copyConfirm.style.visibility = 'visible'
-            copyConfirm.style.color = 'var(--tsb-orange)'
         }
+
+        let copyConfirm = document.getElementById('copyConfirm')
+        copyConfirm.style.visibility = 'visible'
+        copyConfirm.style.color = 'var(--tsb-orange)'
+
     }
 
 
