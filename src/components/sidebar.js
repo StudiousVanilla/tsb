@@ -15,9 +15,13 @@ const Sidebar = () => {
 
     },[])
 
+    // used to populatres sidebar themes list
     const [blogThemes, setBlogThemes] = useState('')
 
-    // gets blog links
+    // used to set most recent blog - title and link is pulled for side bar menu
+    const [blog, setBlog] = useState('')
+
+    // gets blog themes, and newest blog for the side bar
     const getBlogThemes = () => {
 
         // connects to firestore db
@@ -34,13 +38,22 @@ const Sidebar = () => {
                 blogArray.push(blog)
             })
 
+            // sort blogArray by date
+            const sortedByDate = blogArray.sort((a, b) => a.date > b.date ? -1 : 1)
+            // grab mosr recent blog
+            let recentBlog = sortedByDate[0]
+            // sets blog state to recent blog object
+            setBlog(recentBlog)
+
+
+            // holds all the themes from the blog database
             let blogThemeArray = []
             
             // sort blogArray by date
-            const sortedArray = blogArray.sort((a, b) => a.theme > b.theme ? -1 : 1)
+            const sortedByTheme = blogArray.sort((a, b) => a.theme > b.theme ? 1 : -1)
 
             // filters blogs based on theme
-            const filteredArray = sortedArray.filter((blog)=>{
+            const filteredArray = sortedByTheme.filter((blog)=>{
                 if(blogThemeArray.includes(blog.theme)){
                     
                 }
@@ -233,7 +246,12 @@ const Sidebar = () => {
                     </span>
                 </div>
                 <div className="side-blog side side-grey" id="side-blog">
-                    <p className='side-blog-title'>"Forming Habits: How long does it take to form a habit?"</p>
+                    {/* Pulls title, subtitle and link id from most recent 'blog' set by the component state */}
+                    <Link to={'/blog/'+blog.blogID} className='link'>
+                        <p className='side-blog-title'>
+                            {blog.title}: <br/> {blog.subtitle}
+                        </p>
+                    </Link>
                     <Link to='/blog' className='link' onClick={highlightLink}>
                         <p className='link-text blog-link'> Visit TSB Blog </p>
                     </Link>
