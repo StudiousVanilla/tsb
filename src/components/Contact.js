@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
@@ -8,6 +8,8 @@ import inIcon from '../icons/in-navy.svg'
 import mailIcon from '../icons/mail.svg'
 
 const Contact = () => {
+
+    const [formMessage, setFormMessage] = useState({messasge: ''});
 
     // fires to copy email address to clipboard
     const copyEmail = () =>{
@@ -31,6 +33,47 @@ const Contact = () => {
         copyConfirm.style.visibility = 'visible'
         copyConfirm.style.color = 'var(--tsb-orange)'
 
+    }
+
+    // sends a POST request to mail server using form data
+    const postMessage = async (formData) =>{
+
+        const requestOptions = {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            // parse formData into a JSON object
+            body: JSON.stringify(formData)
+        };
+        try {
+            const response = await fetch('http://localhost:3000', requestOptions)
+            // response will be a success or error message
+            const data = await response.json()
+            // sets formMessage state to response (positive or negative)
+            setFormMessage(data)
+            
+        } catch (error) {
+            console.log(error);
+            // sets formMessage state due to error
+            setFormMessage({message: "There was a probelm sending your message. Please Refresh the page and try again"})
+        }
+    }
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+
+        // grabs data from form and puts into formData object
+        const form = document.getElementById('contactForm')
+        let formData = {
+            name: form.name.value, 
+            email: form.email.value, 
+            message: form.message.value
+        }
+
+        // sends a POST request to mail server using form data
+        postMessage(formData)    
     }
 
 
@@ -96,20 +139,21 @@ const Contact = () => {
                 <div className="contact-form-title">
                     <p>Get in Touch</p>
                 </div>
-                <form className="contact-form">
+                <form className="contact-form" id="contactForm" 
+                onSubmit={handleSubmit}>
                     <label htmlFor="name" className="contact-form-labels">
                         Name</label>
-                    <input type="text" name='name' className="contact-form-input"/>
+                    <input type="text" name='name' className="contact-form-input" required/>
                     <label htmlFor="email" className="contact-form-labels">
                         Email</label>
-                    <input type="text" name='email' className="contact-form-input"/>
+                    <input type="email" name='email' className="contact-form-input" required/>
                     <label htmlFor="name" className="contact-form-labels">
                         Message</label>
-                    <textarea 
-                    type="text" name='message'className="contact-form-textarea"
-                    rows="10" cols="50"/>
+                    <textarea type="text" name='message' className="contact-form-textarea"
+                    rows="10" cols="50" required/>
                     <button className="contact-form-btn">Send</button>
                 </form>
+                <p>{formMessage.message}</p>
             </div>
             <Bookingbtn/>
         </main>
