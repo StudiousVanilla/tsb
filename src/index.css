@@ -945,6 +945,17 @@ body::-webkit-scrollbar {
   transform: scale(1.01);
 }
 
+.contact-response-container{
+  margin-top: 20px;
+  padding: 15px 8px;
+  font-family: sans-serif;
+  color: var(--tsb-navy);
+}
+
+.contact-response-msg{
+  font-size: 20px;;
+}
+
 /* *********************************** */
 /* *********************************** */
 /* *********************************** */

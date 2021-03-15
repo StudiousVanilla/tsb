@@ -153,7 +153,9 @@ const Contact = () => {
                     rows="10" cols="50" required/>
                     <button className="contact-form-btn">Send</button>
                 </form>
-                <p>{formMessage.message}</p>
+                <div className="contact-response-container">
+                    <p className="contact-response-msg">{formMessage.message}</p>
+                </div>
             </div>
             <Bookingbtn/>
         </main>
