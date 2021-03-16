@@ -1,3 +1,7 @@
+// This component is no longer used due to the need to add billing to Google cloud account
+
+// May be reused ion the future
+
 // import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 // const TSBmap = () => {
@@ -18,7 +22,7 @@
       
 //       return (
 //          <LoadScript
-//            googleMapsApiKey='AIzaSyAyXPVsVlxNdUCxoWvyYNUQJDsbY1BV6EU'>
+//            googleMapsApiKey=APIKey>
 //             <GoogleMap
 //                 mapContainerStyle={mapStyles}
 //                 zoom={12.75}
