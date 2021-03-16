@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
-import TSBmap from './Map'
 import fbIcon from '../icons/fb-navy.svg'
 import inIcon from '../icons/in-navy.svg'
 import mailIcon from '../icons/mail.svg'
@@ -95,7 +94,7 @@ const Contact = () => {
                 <p className='contact-intro'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
             </div>
             <div className="map-container">
-                <TSBmap/>                
+                <iframe title="tsb-map" width="500" height="250" style={{border: "0"}} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeRg67omJXEgRIsx4awwoJhY&key=AIzaSyCRA1D6IKIuYtKF016SYEiTThh6nljicWo"/>            
             </div>
             <div className="contact-info-container">
                 <div className="contact-text-container">
