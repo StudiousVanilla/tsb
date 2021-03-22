@@ -45,7 +45,6 @@ const ExCoaching = () => {
                     <br/><br/>
                     <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
-                {/* The quote above is bigger than normal container so border has to be applied to div below it, whichi is the final div so need sime custom in-line CSS */}
                 <div className='coaching-info' style={{borderBottom: 'none'}}>
                     <h2 className='coaching-info-title'>
                         Executive Coaching Workshops

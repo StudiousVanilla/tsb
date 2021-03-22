@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import placeHolderImg from '../imgs/coaching.png'
+import menImg from '../imgs/menImg.png'
 import Bookingbtn from './Bookingbtn'
 import {buttonToNavy, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import logo from '../icons/logo-navy.svg'
@@ -22,27 +22,32 @@ const MentorCoaching = () => {
                         Coach Mentoring
                     </h1>
                     <div className='testimony-container'>
-                        <p className='coaching-category-testimony'>“Mona Eames is a fantastic life coach, she made me feel so at ease and went above and beyond to help me and guide me through the coaching process. She gave me guidance for the future. Opening my eyes to new possibilities and helping me achieve a new job. I now feel motivated and confident in many aspects of my life.”
+                        <p className='coaching-category-testimony'>“I have found Mona to be a very empathic and compassionate mentor who has provided a safe space for me to reflect on my coaching competencies. I have found each session to be an enriching experience which no doubt has helped me be a better coach.”
                         </p>
                         <div className='attestant-container'>
                             <p className='attestant'>
-                            Testimony (2020) from Mella, a farmer and coaching client.
+                                Testimony (2021) from Michelle, a Mentee Coach.
                             </p>
                         </div>
                     </div>
                 </main>
             </div>
             <div className='coaching-img-conatiner'>
-                <img src={placeHolderImg} alt="" className='coaching-img'/>
+                <img src={menImg} alt="" className='coaching-img'/>
             </div>
             <section className='coaching-info-container'>
                 <div className='coaching-info'>
                     <h2 className='coaching-info-title'>What is Coaching Mentoring?</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo eos fuga laborum dolor qui doloremque porro modi numquam explicabo atque alias, consequuntur ratione, deleniti nisi et autem dolores officiis.</p>
+                    <p className='coaching-info-text'>Mentor Coaching involves being coached on your coaching skills in preparation for certification as a coach, rather than coaching on work goals, personal elements, life balance or other topics unrelated to the development of your coaching skills.</p>
+                </div>
+                <div className="coaching-info statement-container">
+                    <h2 className="text-statement">Considering how to move towards your next Coaching credential?</h2>
+                    <br/><br/>
+                    <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
                 <div className='coaching-info' style={{border: 'none'}}>
                     <h2 className='coaching-info-title'>Get your ICF Credential</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo atque sequi odit quasi, vel architecto. Harum ullam porro nostrum ipsam necessitatibus doloribus iusto ducimus nesciunt aliquid enim rem, ea deserunt?</p>
+                    <p className='coaching-info-text'>Coaching involves lifelong learning – keep at the cutting edge of your profession and explore your next credential with the support of your Mentor Coach. <br/><br/>Mona at The Sounding Board is a certiﬁed coach (Associate Certified Coach) with the International Coaching Federation. With over 700 hours of coaching practice, she is currently studying for her next credential (PCC - Professional Certiﬁed Coach). She is passionate about the power of Coaching and thus interested in helping other coaches to move along their credentialing journey by helping them to explore their coaching competencies as they progress in their profession.</p>
                 </div>
             </section>
         </div>

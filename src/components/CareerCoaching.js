@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import placeHolderImg from '../imgs/coaching.png'
+import carImg from '../imgs/carImg.png'
 import Bookingbtn from './Bookingbtn'
 import {buttonToNavy, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import logo from '../icons/logo-navy.svg'
@@ -33,16 +33,26 @@ const CareerCoaching = () => {
                 </main>
             </div>
             <div className='coaching-img-conatiner'>
-                <img src={placeHolderImg} alt="" className='coaching-img'/>
+                <img src={carImg} alt="" className='coaching-img'/>
             </div>
             <section className='coaching-info-container'>
                 <div className='coaching-info'>
                     <h2 className='coaching-info-title'>What is Career Coaching?</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo eos fuga laborum dolor qui doloremque porro modi numquam explicabo atque alias, consequuntur ratione, deleniti nisi et autem dolores officiis.</p>
+                    <p className='coaching-info-text'>Career coaching helps you focus on your current situation, think about what you want from your future and then make a plan to get there. Career coaching can help the client to explore what’s not working in order to move forward and get unstuck. <br/><br/> Career coaching can help if you are feeling stuck in your career, unsure of the professional route you have chosen or if you need support to prepare for competency-based interview or to start your own business.</p>
+                </div>
+                <div className="coaching-info statement-container">
+                    <h2 className="text-statement">Start exploring your career path.</h2>
+                    <br/><br/>
+                    <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
                 <div className='coaching-info' style={{border: 'none'}}>
-                    <h2 className='coaching-info-title'>CTA</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo atque sequi odit quasi, vel architecto. Harum ullam porro nostrum ipsam necessitatibus doloribus iusto ducimus nesciunt aliquid enim rem, ea deserunt?</p>
+                    <h2 className='coaching-info-title'>Career Coaching Workshops</h2>
+                    <p className='coaching-info-text'>The Sounding Board coaching workshops are currently based in the virtual classroom. They are interactive, with a blended learning approach and can be created to suit the needs of your particular group in order to get maximum beneﬁt. Previous workshops include:</p>
+                    <ul className="text-list">
+                        <li className="text-list-item">Create your best elevator pitch</li>
+                        <li className="text-list-item">Funnelling questions at interview (Mock Interview)</li>
+                        <li className="text-list-item">Designing your CV for best impact</li>
+                    </ul>
                 </div>
             </section>
         </div>

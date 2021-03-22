@@ -1074,6 +1074,8 @@ button.rec-dot:hover, button.rec-dot:focus  {
 
 .card-text{
 font-family: 'PT Sans', sans-serif;
+font-size: 18px;
+text-align: center;
 }
 
 .consultancy-info{
