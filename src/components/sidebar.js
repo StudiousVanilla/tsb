@@ -132,6 +132,7 @@ const Sidebar = () => {
 
         for (let i = 0; i < links.length; i++) {
             links[i].style.color = null;
+            links[i].style.fontWeight = null
         };;
 
     }
@@ -142,6 +143,7 @@ const Sidebar = () => {
         allLinksNavy()
 
         e.target.style.color = 'var(--tsb-orange)'
+        e.target.style.fontWeight = '700'
 
     }
 

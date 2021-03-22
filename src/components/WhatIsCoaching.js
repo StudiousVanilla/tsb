@@ -39,42 +39,42 @@ const WhatIsCoaching = () =>{
                     <div className='competency-tile'>
                         <img src={what1} alt="Embodies a Coaching Mindest"
                         className="competency-img"/>
-                        <p className="competnecy-reverse">
+                        <p className="competency-reverse">
                             A coach develops a mindset that is open, curious, flexible and client-centred.
                         </p>                      
                     </div>
                     <div className='competency-tile'>
                         <img src={what2} alt="Cultivates Trust and Safety"
                         className="competency-img"/>
-                       <p className="competnecy-reverse reverse-unique">
+                       <p className="competency-reverse reverse-unique">
                             A coach partners with the client to create a safe supportive environment that allows the client to share freely. <br/><br/> They maintain a relationship of mutual respect and trust.
                         </p>                       
                     </div>
                     <div className='competency-tile'>
                         <img src={what3} alt="Maintinas Presence"
                         className="competency-img"/>
-                       <p className="competnecy-reverse">
+                       <p className="competency-reverse">
                             A coach is fully present with the client.
                         </p>                       
                     </div>
                     <div className='competency-tile'>
                         <img src={what4} alt="Listens Actively"
                         className="competency-img"/>
-                       <p className="competnecy-reverse">
+                       <p className="competency-reverse">
                             A coach focuses on what the client is and is not sayingd.
                         </p>                     
                     </div>
                     <div className='competency-tile'>
                         <img src={what5} alt="Evokes Awerness"
                         className="competency-img"/>
-                       <p className="competnecy-reverse">
+                       <p className="competency-reverse">
                             A coach facilitates client insight and learning by using tools and techniques.
                         </p>                       
                     </div>
                     <div className='competency-tile'>
                         <img src={what6} alt="Facilitates Client Growth"
                         className="competency-img"/> 
-                       <p className="competnecy-reverse">
+                       <p className="competency-reverse">
                             A coach partners with the client to transform learning into action.
                         </p>                      
                     </div>

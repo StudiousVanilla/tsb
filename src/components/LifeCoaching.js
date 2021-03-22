@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import placeHolderImg from '../imgs/coaching.png'
+import lifeImg from '../imgs/lifeImg.png'
 import Bookingbtn from './Bookingbtn'
 import {buttonToNavy, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import logo from '../icons/logo-navy.svg'
@@ -22,7 +22,7 @@ const LifeCoaching = () => {
                         Lifetsyle Coaching
                     </h1>
                     <div className='testimony-container'>
-                        <p className='coaching-category-testimony'>“By raising my awareness of the issues and all the angles and the options, I was able to see more opportunities and different perspectives. Mona’s questions were thought proving and really made me explore my own thinking and approaches and I definitely got clarity. I found her approach very helpful and it challenged me to look at issues from my own perspective which I found has really been positive. Coaching is a wonderful way to assist people to find a way forward.”
+                        <p className='coaching-category-testimony'>“By raising my awareness of the issues and all the angles and the options, I was able to see more opportunities and different perspectives. Mona’s questions were thought proving and really made me explore my own thinking and approaches
                         </p>
                         <div className='attestant-container'>
                             <p className='attestant'>
@@ -33,26 +33,25 @@ const LifeCoaching = () => {
                 </main>
             </div>
             <div className='coaching-img-conatiner'>
-                <img src={placeHolderImg} alt="" className='coaching-img'/>
+                <img src={lifeImg} alt="Life steps" className='coaching-img'/>
             </div>
             <section className='coaching-info-container'>
                 <div className='coaching-info'>
                     <h2 className='coaching-info-title'>What is Lifestyle Coaching?</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo eos fuga laborum dolor qui doloremque porro modi numquam explicabo atque alias, consequuntur ratione, deleniti nisi et autem dolores officiis.</p>
+                    <p className='coaching-info-text'>A lifestyle coach is a type of wellness professional who helps people make progress in their lives in order to attain greater fulfillment. Lifestyle coaches help their clients to press pause and consider what really matters to them in their relationships, careers, and day-to-day lives.</p>
                 </div>
-                <div className='coaching-info'>
-                    <h2 className='coaching-info-title'>Call to Action</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo atque sequi odit quasi, vel architecto. Harum ullam porro nostrum ipsam necessitatibus doloribus iusto ducimus nesciunt aliquid enim rem, ea deserunt?</p>
+                <div className="coaching-info statement-container">
+                    <h2 className="text-statement">Press pause and consider what really matters to you in your life.</h2>
+                    <br/><br/>
+                    <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
                 <div className='coaching-info' style={{border: 'none'}}>
                     <h2 className='coaching-info-title'>Coaching Workshops</h2>
-                    <p className='coaching-info-text'>TSB Coaching workshops are virtual classroom based currently , are interactive with a blended learning approach and are relevant to... Workshops can be created to suit the needs of your particular group to get maximum benefit. Replacing therapy with coaching / consultancy / training. Previous workshops include:</p>
+                    <p className='coaching-info-text'>The Sounding Board coaching workshops are currently based in the virtual classroom. They are interactive, with a blended learning approach and can be created to suit the needs of your particular group in order to get maximum beneﬁt. Previous workshops include:</p>
                     <ul className='workshop-list'>
-                        <li className='workshop-list-item'>Press Pause (Lifestyle)</li>
-                        <li className='workshop-list-item'>OT / Coaching (Lifestyle</li>
-                        <li className='workshop-list-item'>MBTI practitioner - teams Exec</li>
-                        <li className='workshop-list-item'>Coaching Skills for Managers Exec</li>
-                        <li className='workshop-list-item'>Designing your CV-....Career</li>
+                        <li className='workshop-list-item'>‘Press pause and consider what really matters to you’</li>
+                        <li className='workshop-list-item'>‘Where Occupational Therapy and Lifestyle Coaching meet’</li>
+                        <li className='workshop-list-item'>‘Settling into change – re-Invention, renewal and post-retirement’</li>
                     </ul>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import placeHolderImg from '../imgs/coaching.png'
+import exImg from '../imgs/exImg.png'
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import logo from '../icons/logo-navy.svg'
@@ -15,14 +15,14 @@ const ExCoaching = () => {
 
     return ( 
         <div className='content-container coaching-container'>
-            <Bookingbtn/>ol
-            <div className='color-tile ex-cor-tile'>
+            <Bookingbtn/>
+            <div className='color-tile ex-color-tile'>
                 <main className='coaching-main'>
                     <h1 className='coaching-category-title  ex-title'>
                         Executive Coaching
                     </h1>
                     <div className='testimony-container'>
-                        <p className='coaching-category-testimony'>“I decided to commit to a regular coaching programme with Mona when I took on a new and challenging senior management role at work. The coaching sessions were precious time to me when I could take a step back to reflect on my approaches and my effectiveness and to dial down the negative self-talk and back myself at bit more. Coaching with Mona was a great support to me in embracing work challenges as well as reminding me about the importance of work-life balance”.
+                        <p className='coaching-category-testimony'>“The coaching sessions were precious time to me when I could take a step back to reflect on my approaches and my effectiveness and to dial down the negative self-talk and back myself at bit more. Coaching with Mona was a great support to me in embracing work challenges as well as reminding me about the importance of work-life balance”.
                         </p>
                         <div className='attestant-container'>
                             <p className='attestant'>
@@ -33,16 +33,31 @@ const ExCoaching = () => {
                 </main>
             </div>
             <div className='coaching-img-conatiner'>
-                <img src={placeHolderImg} alt="" className='coaching-img'/>
+                <img src={exImg} alt="boardroom" className='coaching-img'/>
             </div>
             <section className='coaching-info-container'>
                 <div className='coaching-info'>
                     <h2 className='coaching-info-title'>What is Executive Coaching?</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo eos fuga laborum dolor qui doloremque porro modi numquam explicabo atque alias, consequuntur ratione, deleniti nisi et autem dolores officiis.</p>
+                    <p className='coaching-info-text'>An executive coach is a qualified professional who works with individuals or teams to help them increase self-awareness, clarify goals, achieve their development objectives, and identify in order to reach their potential.</p>
                 </div>
-                <div className='coaching-info' style={{border: 'none'}}>
-                    <h2 className='coaching-info-title'>Invest in yourself</h2>
-                    <p className='coaching-info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quaerat eos optio quam minima molestias delectus perferendis, corporis odio adipisci blanditiis debitis, soluta non quisquam, quibusdam accusantium minus quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo atque sequi odit quasi, vel architecto. Harum ullam porro nostrum ipsam necessitatibus doloribus iusto ducimus nesciunt aliquid enim rem, ea deserunt?</p>
+                <div className="coaching-info statement-container">
+                    <h2 className="text-statement">Invest in yourself.</h2>
+                    <br/><br/>
+                    <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
+                </div>
+                {/* The quote above is bigger than normal container so border has to be applied to div below it, whichi is the final div so need sime custom in-line CSS */}
+                <div className='coaching-info' style={{borderBottom: 'none'}}>
+                    <h2 className='coaching-info-title'>
+                        Executive Coaching Workshops
+                    </h2>
+                    <p className='coaching-info-text'>The Sounding Board coaching workshops are currently based in the virtual classroom. They are interactive, with a blended learning approach and can be created to suit the needs of your particular group in order to get maximum beneﬁt. <br/> Previous workshops include:</p>
+                    <ul className="text-list">
+                            <li className="text-list-item">Coaching skills for  managers</li>
+                            <li className="text-list-item">Myers Briggs personality types for teams</li>
+                            <li className="text-list-item">Building resilience in the workplace</li>
+                            <li className="text-list-item">Building rapport and communication skills</li>
+                            <li className="text-list-item">Building emotional intelligence</li>
+                        </ul>
                 </div>
             </section>
             

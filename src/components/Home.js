@@ -25,7 +25,7 @@ const Home = () => {
                     <img src={landingImg} alt="" className='home-img'/>
                 </div>
                 <div className='quote'>
-                    <p className='quote-text'>I help individuals and teams to develop themselves through bespoke coaching solutions that provide sustainable personal and professional development, enabling them to take positive action. If you’d like any further information, please don’t hesitate to get in touch.</p>
+                    <p className='quote-text'>I help individuals and teams to develop themselves through <b> bespoke coaching solutions </b> that provide sustainable personal and professional development, enabling them to take <b>positive action.</b> <br/><br/> If you’d like any further information, please don’t hesitate to get in touch.</p>
                     <p className='quote-name'>- Mona</p>
                 </div>
             </main>
