@@ -40,12 +40,13 @@ const ExCoaching = () => {
                     <h2 className='coaching-info-title'>What is Executive Coaching?</h2>
                     <p className='coaching-info-text'>An executive coach is a qualified professional who works with individuals or teams to help them increase self-awareness, clarify goals, achieve their development objectives, and identify in order to reach their potential.</p>
                 </div>
-                <div className="coaching-info statement-container">
+                <div className="statement-container" >
                     <h2 className="text-statement">Invest in yourself.</h2>
                     <br/><br/>
                     <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
-                <div className='coaching-info' style={{borderBottom: 'none'}}>
+                {/* Some in-line CSS is  */}
+                <div className='coaching-info coaching-info-final'>
                     <h2 className='coaching-info-title'>
                         Executive Coaching Workshops
                     </h2>

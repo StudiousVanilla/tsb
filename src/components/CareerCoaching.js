@@ -40,14 +40,14 @@ const CareerCoaching = () => {
                     <h2 className='coaching-info-title'>What is Career Coaching?</h2>
                     <p className='coaching-info-text'>Career coaching helps you focus on your current situation, think about what you want from your future and then make a plan to get there. Career coaching can help the client to explore what’s not working in order to move forward and get unstuck. <br/><br/> Career coaching can help if you are feeling stuck in your career, unsure of the professional route you have chosen or if you need support to prepare for competency-based interview or to start your own business.</p>
                 </div>
-                <div className="coaching-info statement-container">
+                <div className="statement-container">
                     <h2 className="text-statement">Start exploring your career path.</h2>
                     <br/><br/>
                     <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
-                <div className='coaching-info' style={{border: 'none'}}>
+                <div className='coaching-info coaching-info-final'>
                     <h2 className='coaching-info-title'>Career Coaching Workshops</h2>
-                    <p className='coaching-info-text'>The Sounding Board coaching workshops are currently based in the virtual classroom. They are interactive, with a blended learning approach and can be created to suit the needs of your particular group in order to get maximum beneﬁt. Previous workshops include:</p>
+                    <p className='coaching-info-text'>The Sounding Board coaching workshops are currently based in the virtual classroom. They are interactive, with a blended learning approach and can be created to suit the needs of your particular group in order to get maximum beneﬁt. <br/> Previous workshops include:</p>
                     <ul className="text-list">
                         <li className="text-list-item">Create your best elevator pitch</li>
                         <li className="text-list-item">Funnelling questions at interview (Mock Interview)</li>

@@ -40,12 +40,12 @@ const MentorCoaching = () => {
                     <h2 className='coaching-info-title'>What is Coaching Mentoring?</h2>
                     <p className='coaching-info-text'>Mentor Coaching involves being coached on your coaching skills in preparation for certification as a coach, rather than coaching on work goals, personal elements, life balance or other topics unrelated to the development of your coaching skills.</p>
                 </div>
-                <div className="coaching-info statement-container">
+                <div className="statement-container">
                     <h2 className="text-statement">Considering how to move towards your next Coaching credential?</h2>
                     <br/><br/>
                     <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
-                <div className='coaching-info' style={{border: 'none'}}>
+                <div className='coaching-info coaching-info-final'>
                     <h2 className='coaching-info-title'>Get your ICF Credential</h2>
                     <p className='coaching-info-text'>Coaching involves lifelong learning – keep at the cutting edge of your profession and explore your next credential with the support of your Mentor Coach. <br/><br/>Mona at The Sounding Board is a certiﬁed coach (Associate Certified Coach) with the International Coaching Federation. With over 700 hours of coaching practice, she is currently studying for her next credential (PCC - Professional Certiﬁed Coach). She is passionate about the power of Coaching and thus interested in helping other coaches to move along their credentialing journey by helping them to explore their coaching competencies as they progress in their profession.</p>
                 </div>

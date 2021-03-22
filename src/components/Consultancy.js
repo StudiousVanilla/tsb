@@ -41,7 +41,7 @@ const Consultancy = () => {
                     <ul className="consultancy-list consultancy-info-text">
                         <li className="consultancy-list-item">An Inital consultation to sound out where you are now in your individual or team senario</li>
                         <li className="consultancy-list-item">Attendance at Management Team meeting(s) (with confidentiality contracted) to Listen and Explore and asses needs.</li>
-                        <li className="consultancy-list-item">Exploration of Training and Developemtn Needs to devise action plan for virtual / face to face delivery</li>
+                        <li className="consultancy-list-item">Exploration of Training and Development Needs to devise action plan for virtual / face to face delivery</li>
                         <li className="consultancy-list-item">Provision of Executive Coaching to Management Team / Staff as a supportive resource</li>
                         <li className="consultancy-list-item">Provision of ongoing accountability support as identified</li>
                     </ul>

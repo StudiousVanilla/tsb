@@ -40,13 +40,13 @@ const LifeCoaching = () => {
                     <h2 className='coaching-info-title'>What is Lifestyle Coaching?</h2>
                     <p className='coaching-info-text'>A lifestyle coach is a type of wellness professional who helps people make progress in their lives in order to attain greater fulfillment. Lifestyle coaches help their clients to press pause and consider what really matters to them in their relationships, careers, and day-to-day lives.</p>
                 </div>
-                <div className="coaching-info statement-container">
+                <div className="statement-container">
                     <h2 className="text-statement">Press pause and consider what really matters to you in your life.</h2>
                     <br/><br/>
                     <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
                 </div>
-                <div className='coaching-info' style={{border: 'none'}}>
-                    <h2 className='coaching-info-title'>Coaching Workshops</h2>
+                <div className='coaching-info coaching-info-final'>
+                    <h2 className='coaching-info-title'>Lifestyle Coaching Workshops</h2>
                     <p className='coaching-info-text'>The Sounding Board coaching workshops are currently based in the virtual classroom. They are interactive, with a blended learning approach and can be created to suit the needs of your particular group in order to get maximum beneﬁt. Previous workshops include:</p>
                     <ul className='workshop-list'>
                         <li className='workshop-list-item'>‘Press pause and consider what really matters to you’</li>

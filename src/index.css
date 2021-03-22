@@ -432,7 +432,7 @@ body::-webkit-scrollbar {
 }
 
 .credentials-container{
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   padding-top: 10px;
   color: var(--tsb-navy);
 }
@@ -444,12 +444,14 @@ body::-webkit-scrollbar {
   font-style: italic;
   font-weight: 500;
   margin-bottom: 5px;
+  line-height: 18px;
 }
 
 .credential-title{
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .about-info-container{
@@ -485,11 +487,11 @@ body::-webkit-scrollbar {
 .qual-list{
   padding-left: 20px;
   margin-top: 30px;
-
+  margin-bottom: 30px;
 }
 
 .qual-list-item{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .grad-info{
@@ -514,13 +516,13 @@ body::-webkit-scrollbar {
 
 .about-top-text{
   margin-top: 0px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   border-bottom: none;
   padding-bottom: 0px;
 }
 
 .about-content{
-  line-height: 28px;
+  line-height: 26px;
 }
 
 /* *********************************** */
@@ -794,6 +796,12 @@ body::-webkit-scrollbar {
   border-bottom: 1px solid var(--tsb-blue);
 }
 
+.coaching-info-final{
+  border-bottom: none;
+  border-top: 1px solid var(--tsb-blue);
+  padding-top: 60px
+}
+
 .coaching-info-title{
   margin-top: 0;
   border: none;
@@ -808,8 +816,7 @@ body::-webkit-scrollbar {
 .statement-container{
   width: 750px;
   margin-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--tsb-blue);
+  margin-bottom: 10px;
 }
 
 .text-statement{
@@ -1104,7 +1111,7 @@ text-align: center;
 }
 
 .consultancy-list-item, .text-list-item{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .consultancy-quote-container{
