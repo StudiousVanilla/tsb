@@ -563,7 +563,7 @@ body::-webkit-scrollbar {
   width: 810px;
   padding: 20px;
   margin-bottom: 20px;
-  color: var(--tsb-blue);
+  color: var(--tsb-navy);
 }
 
 .what-quote{
