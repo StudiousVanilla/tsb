@@ -24,9 +24,8 @@ function App() {
           <Sidebar/>
           <div className='non-side-content'>
             <Switch>
-              <Route exact path="/tsb"> <Home /> </Route>
               <Route exact path="/about"> <About /> </Route>
-              <Route exact path="/coaching/explained"> <WhatIsCoaching/> </Route>
+              <Route exact path="/coaching"> <WhatIsCoaching/> </Route>
               <Route exact path="/coaching/executive"> <ExCoaching /> </Route>
               <Route exact path="/coaching/lifestyle"> <LifeCoaching /> </Route>
               <Route exact path="/coaching/career"> <CareerCoaching /> </Route>
@@ -37,6 +36,7 @@ function App() {
               <Route exact path="/contact"> <Contact /> </Route>
               <Route exact path="/consultancy"> <Consultancy /> </Route>
               <Route exact path="/storage"> <StorageTest /> </Route>
+              <Route path="/"> <Home /> </Route>
             </Switch>
           </div>
         </div>

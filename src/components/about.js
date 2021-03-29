@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import placeholderImg from '../imgs/about-img.png';
-import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
+import aboutImg from '../imgs/about-img.png';
 import grad from '../imgs/remote-grad.png'
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
             <div className='about-top'>
                 <div className='about-images-container'>
                     <div className='about-image'>
-                        <img src={placeholderImg} alt='book' className='about-img'/>
+                        <img src={aboutImg} alt='book' className='about-img'/>
                     </div>
                 </div>
                 <div className=" about-info about-top-text">

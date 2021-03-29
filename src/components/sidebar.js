@@ -179,7 +179,7 @@ const Sidebar = () => {
                            </Link>
                         </li>
                         <li className='about-link link'>
-                           <Link to='/coaching/explained' 
+                           <Link to='/coaching' 
                            className='link-text'
                            onClick={highlightLink}>
                                What is Coaching?

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
+import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
-import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import fbIcon from '../icons/fb-navy.svg'
 import inIcon from '../icons/in-navy.svg'
 import mailIcon from '../icons/mail.svg'

@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
 import what1 from '../imgs/what/what1.png'
 import what2 from '../imgs/what/what2.png'
