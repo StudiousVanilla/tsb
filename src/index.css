@@ -627,7 +627,6 @@ body::-webkit-scrollbar {
   font-weight: 700;
   text-align: center;
   background-color: var(--bg-grey);
-  border: 1px solid var(--tsb-navy);
   border-radius: 10px;
   z-index: 1;
 }
@@ -973,14 +972,48 @@ body::-webkit-scrollbar {
 }
 
 .contact-response-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-top: 20px;
-  padding: 15px 8px;
+  padding: 15px 50px 15px 8px;
   font-family: sans-serif;
   color: var(--tsb-navy);
 }
 
 .contact-response-msg{
-  font-size: 20px;;
+  font-size: 20px;
+}
+
+.sending-symbol{
+  position: relative;
+  height: 8px;
+  width: 8px;
+  margin-left: 5px;
+  animation: MoveUpDown 1s linear infinite;
+  background-color: var(--tsb-orange);
+}
+
+
+@keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: 10px;
+    transform: translate(0px)
+  }
+  50% {
+    bottom: 10px;
+    transform: translate(10px)
+  }
+  75% {
+    bottom: 0px;
+    transform: translate(10px)
+  }
+  100%{
+    transform: translate(0px)
+  }
 }
 
 /* *********************************** */

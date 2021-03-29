@@ -8,7 +8,7 @@ import mailIcon from '../icons/mail.svg'
 
 const Contact = () => {
 
-    const [formMessage, setFormMessage] = useState({messasge: ''});
+    const [formMessage, setFormMessage] = useState({message: ''});
 
     // fires to copy email address to clipboard
     const copyEmail = () =>{
@@ -37,6 +37,11 @@ const Contact = () => {
     // sends a POST request to mail server using form data
     const postMessage = async (formData) =>{
 
+        // To change message color to red on fail (See catch block of this function)
+        const formMessageFail = document.getElementById('contactMessage')
+        formMessageFail.style.color = null
+        setFormMessage({message: 'Sending...'})
+
         const requestOptions = {
             method: 'POST',
             headers: { 
@@ -56,7 +61,10 @@ const Contact = () => {
         } catch (error) {
             console.log(error);
             // sets formMessage state due to error
-            setFormMessage({message: "There was a probelm sending your message. Please Refresh the page and try again"})
+
+            setTimeout(()=>{
+                formMessageFail.style.color = 'red'
+                setFormMessage({message: "There was a probelm sending your message. Please refresh the page and try again"})}, 5000 )
         }
     }
 
@@ -154,7 +162,13 @@ const Contact = () => {
                     <button className="contact-form-btn">Send</button>
                 </form>
                 <div className="contact-response-container">
-                    <p className="contact-response-msg">{formMessage.message}</p>
+                    <p className="contact-response-msg" id="contactMessage">
+                        {formMessage.message}
+                    </p>
+                    {/* A little 'working' symbol */}
+                    {formMessage.message === 'Sending...' &&
+                        <div className="sending-symbol"></div>
+                    }
                 </div>
             </div>
             <Bookingbtn/>

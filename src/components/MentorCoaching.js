@@ -43,7 +43,11 @@ const MentorCoaching = () => {
                 <div className="statement-container">
                     <h2 className="text-statement">Considering how to move towards your next Coaching credential?</h2>
                     <br/><br/>
-                    <h2 className="text-statement">Book your complimentary coaching conversation now.</h2>
+                    <h2 className="text-statement link">
+                        <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer">
+                            Book your complimentary coaching conversation now.
+                        </a>
+                    </h2>
                 </div>
                 <div className='coaching-info coaching-info-final'>
                     <h2 className='coaching-info-title'>Get your ICF Credential</h2>
