@@ -321,6 +321,19 @@ body::-webkit-scrollbar {
   transform: scale(1.08) translateZ(0);
 }
 
+.side-badges{
+  position: relative;
+  top:0px;
+  margin-top: 80px;
+  display: flex;
+  transition: 0.75s;
+  transform: translateZ(0);
+}
+
+.badge-container{
+  margin: 5px;
+}
+
 .link{
   cursor: pointer;
 }
@@ -357,7 +370,7 @@ body::-webkit-scrollbar {
 }
 
 .home-container{
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 200px;
   padding-left: 50px;
 }
@@ -366,6 +379,10 @@ body::-webkit-scrollbar {
   margin-bottom: 40px;
   font-size: 25px;
   line-height: 50px;
+}
+
+.welcome-main{
+  margin-top: 10px;
 }
 
 .welcome-sub{
@@ -386,7 +403,7 @@ body::-webkit-scrollbar {
 }
 
 .quote{
-  width: 460px;
+  width: 600px;
   padding-left: 5px;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
@@ -399,7 +416,7 @@ body::-webkit-scrollbar {
 
 .quote-name{
   font-family: 'PT Serif', serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
@@ -433,7 +450,7 @@ body::-webkit-scrollbar {
 
 .credentials-container{
   margin-bottom: 45px;
-  padding-top: 10px;
+  padding-top: 0px;
   color: var(--tsb-navy);
 }
 
@@ -451,7 +468,7 @@ body::-webkit-scrollbar {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .about-info-container{
@@ -496,19 +513,24 @@ body::-webkit-scrollbar {
 
 .grad-info{
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   columns: var(--tsb-navy);
 }
 
 .grad-info-text{
-  margin-left: 20px;
-  width: 200px;
+  width: 550px;
+  margin-bottom: 30px;
+  margin-top: 14px;
+  padding-bottom: 35px;
+  font-family: sans-serif;
+  border-bottom: 1px solid var(--tsb-blue);
 }
 
 /* below only applies to the top text part */
 
 .about-top{
   width: 1000px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid var(--tsb-blue);
@@ -516,9 +538,11 @@ body::-webkit-scrollbar {
 
 .about-top-text{
   margin-top: 0px;
-  margin-bottom: 120px;
   border-bottom: none;
   padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-content{
@@ -550,6 +574,7 @@ body::-webkit-scrollbar {
 .what-info-title{
   margin-bottom: 15px;
   font-size: 32px;
+  line-height: 40px;
 }
 
 .what-info{
@@ -582,6 +607,7 @@ body::-webkit-scrollbar {
   padding: 20px 20px 20px 0px;
   margin-left: 20px;
   font-size: 34px;
+  line-height: 40px;
   font-weight: 600;
   border-top: 1px solid var(--tsb-blue);
 }
@@ -623,7 +649,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   text-align: center;
   background-color: var(--bg-grey);
@@ -742,9 +768,9 @@ body::-webkit-scrollbar {
 
 .testimony-container{
   display: flex;
-  width: 720px;
-  /* min-width: 650px;
-  max-width: 650px; */
+  flex-direction: column;
+  min-width: 550px;
+  max-width: 550px;
   margin-top: 40px;
 }
 
@@ -755,21 +781,22 @@ body::-webkit-scrollbar {
 .coaching-category-testimony{
   width: 100%;
   margin-right: 80px;
-  font-size: 18px;
+  font-size: 19px;
   font-style: italic;
   line-height: 25px;
 }
 
 .attestant-container{
-  display: flex;
-  justify-content: flex-end;
-  width: 200px;
+  max-width: 650px;
+  margin-top: 25px;
+
 }
 
 .attestant{
   width: 100%;
-  max-width: 150px;
-  font-size: 14.5px;
+  max-width: 650px;
+  font-size: 18px;
+  font-style: italic;
   font-weight: 600;
 }
 
@@ -821,6 +848,7 @@ body::-webkit-scrollbar {
 .text-statement{
   font-family: 'PT serif', serif;
   font-size: 45px;
+  line-height: 56px;
   font-weight: 700;
 }
 
@@ -857,7 +885,7 @@ body::-webkit-scrollbar {
   margin-top: 10px;
   margin-bottom: 40px;
   font-family: 'PT sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .map-container{
@@ -1129,6 +1157,7 @@ text-align: center;
 .consultancy-info-title{
   margin-bottom: 20px;
   font-size: 35px;
+  line-height: 40px;
   font-weight: 700;
   color: var(--tsb-orange);
 }
@@ -1161,6 +1190,20 @@ text-align: center;
 .consultancy-quote-ref{
   font-size: 24px;
   font-weight: 700;
+}
+
+.consultancy-img-container{
+  width: 666px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.consultancy-img-text{
+  width: 450px;
+  padding: 25px 0px;
+  color: var(--tsb-navy);
+  font-family: 'PT sans', sans-serif;
+  border-bottom: 2px solid var(--tsb-blue);
 }
 
 
@@ -1261,19 +1304,20 @@ text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700px;
   color: var(--tsb-orange);
 }
 
 .blog-title{
   margin: 5px 0px 10px 0px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   font-family: 'PT serif', serif;
 }
 
 .blog-upper{
+  font-size: 13px;
   margin-bottom: 10px;
 }
 
@@ -1284,7 +1328,7 @@ text-align: center;
 }
 
 .theme-list-title{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .theme-list{
@@ -1367,6 +1411,7 @@ text-align: center;
 
 .blog-post-quote-container{
   font-size: 32px;
+  line-height: 42px;
   font-weight: 700;
   font-family: 'PT serif', serif;
   color: var(--tsb-orange);
@@ -1454,10 +1499,10 @@ text-align: center;
 }
 
 .booking-btn{
-  padding: 9px 20px;
+  padding: 10px 20px;
   font-size: 18px;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   color: var(--bg-grey);
   background-color: var(--bg-navy);

@@ -67,7 +67,7 @@ const FilteredBlogs = () => {
         <main className='blogs-container'>
             <div className="blogs-title-container">
                 <h2 className="blogs-title">
-                    TSB BLog - <span className="theme-highlight">{theme}</span>
+                    TSB Blog - <span className="theme-highlight">{theme}</span>
                 </h2>
             </div>
             

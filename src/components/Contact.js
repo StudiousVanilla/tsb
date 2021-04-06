@@ -52,7 +52,7 @@ const Contact = () => {
             body: JSON.stringify(formData)
         };
         try {
-            const response = await fetch('https://tsb-mailer.herokuapp.com/', requestOptions)
+            const response = await fetch('https://tsb-mailer.herokuapp.com', requestOptions)
             // response will be a success or error message
             const data = await response.json()
             // sets formMessage state to response (positive or negative)
@@ -99,7 +99,9 @@ const Contact = () => {
                 <p>Contact</p>
             </div>
             <div className='contact-intro-container'>
-                <p className='contact-intro'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                <p className='contact-intro'>Wherever you are in your life, career, or the world, I’d love to hear from you.</p>
+                <br/>
+                <p className='quote-name'>- Mona</p>
             </div>
             <div className="map-container">
                 <iframe title="tsb-map" width="500" height="250" style={{border: "0"}} loading="lazy" allowFullScreen 

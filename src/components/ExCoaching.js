@@ -42,7 +42,6 @@ const ExCoaching = () => {
                 </div>
                 <div className="statement-container" >
                     <h2 className="text-statement">Invest in yourself.</h2>
-                    <br/><br/>
                     <h2 className="text-statement link">
                         <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer">
                             Book your complimentary coaching conversation now.

@@ -4,6 +4,7 @@ import Card from './Card'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import logo from '../icons/logo-navy.svg'
 import Carousel from 'react-elastic-carousel'
+import landing from '../imgs/landing.png'
 
 
 const Consultancy = () => {
@@ -46,6 +47,14 @@ const Consultancy = () => {
                         <li className="consultancy-list-item">Provision of ongoing accountability support as identified</li>
                     </ul>
                 </div>
+                
+                <div className="consultancy-info consultancy-img-container">
+                    <div className="consultancy-img">
+                        <img src={landing} alt="Virtual Graduation from UCC in 2020" className="HR & Consultancy"/>
+                    </div>
+                    <p className="consultancy-img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
                 <div className="consultancy-info">
                     <h2 className="consultancy-info-title">Women in Leadership —Mentoring</h2>
                     <p className="consultancy-info-text">

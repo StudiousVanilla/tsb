@@ -131,11 +131,11 @@ const Blogs = () => {
                 </div>
                 <div className="blog-post-nav-container">
                     <Link to='/blog'>
-                        <p className="post-nav">Return to Blog Feed</p>
+                        <p className="post-nav link">Return to Blog Feed</p>
                     </Link>
-                    <Link to='/tsb'>
+                    {/* <Link to='/tsb'>
                         <p className="post-nav">Visit The Sounding Board Home</p>
-                    </Link>
+                    </Link> */}
                 </div >
             </main>
             }

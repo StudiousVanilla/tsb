@@ -1,7 +1,8 @@
 import menuIcon from "../icons/menu.svg";
 import brandLogo from "../icons/logo-navy.svg"
-import fbIcon from "../icons/fb-grey.svg";
-import inIcon from "../icons/in-grey.svg";
+import fbIcon from "../icons/fb-orange.svg";
+import inIcon from "../icons/in-orange.svg";
+import badge from '../imgs/badge.png'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import firebase from '../configs/fbConfig'
@@ -84,19 +85,29 @@ const Sidebar = () => {
         // grabs icons
         let sideIcons = document.getElementById('side-icons')
 
-        //grabs blog
+        // grabs blog
         let blog = document.getElementById('side-blog')
+
+        // grabs badges
+        let badge = document.getElementById('badge')
 
         // triggers if style is pulled from style sheet
         if(links.style.opacity === ''){
-            // slides sub-links in from the left
-            links.style.opacity = 1
-            links.style.left = '0%'
-            links.style.transition = '1s'
+            
             // moves standard links, icons and blog down 
             moveableList.style.top = '0%'
             sideIcons.style.top = '0%'
             blog.style.top = '0%'
+            badge.style.top = '0%'
+
+            // allows content to drop in sidebar before lnks slide in
+            setTimeout(function(){
+                // slides sub-links in from the left
+                links.style.opacity = 1
+                links.style.left = '0%'
+                links.style.transition = '1s'
+            }, 250);
+
             return
         }
         else{
@@ -104,10 +115,16 @@ const Sidebar = () => {
             links.style.opacity = null
             links.style.left = null
             links.style.transition = '0.25s'
-            // revert moveableList, icons and blog back to stylesheet
-            moveableList.style.top = null
-            sideIcons.style.top = null
-            blog.style.top = null
+
+            // allows coaching links to slide back in before sidebar returns to default
+            setTimeout(function(){
+                // revert moveableList, icons and blog back to stylesheet
+                moveableList.style.top = null
+                sideIcons.style.top = null
+                blog.style.top = null
+                badge.style.top = null
+            }, 250);
+
         }
 
     }
@@ -158,7 +175,7 @@ const Sidebar = () => {
                 </button>
             </div>
             <div className="sidebar-content" id="side-content">
-                <Link to='/tsb'>
+                <Link to='/tsb' onClick={allLinksNavy}>
                     <div className="side-brand side">
                         <div className="logo-container">
                             <img src={brandLogo} id="logo" alt="The Sounding Board" className="logo"/>
@@ -249,9 +266,9 @@ const Sidebar = () => {
                 </div>
                 <div className="side-blog side side-grey" id="side-blog">
                     {/* Pulls title, subtitle and link id from most recent 'blog' set by the component state */}
-                    <Link to={'/blog/'+blog.blogID} className='link'>
+                    <Link to={'/blog'} className='link'>
                         <p className='side-blog-title'>
-                            {blog.title}: <br/> {blog.subtitle}
+                            {blog.title}: {blog.subtitle}
                         </p>
                     </Link>
                     <Link to='/blog' className='link' onClick={highlightLink}>
@@ -259,17 +276,34 @@ const Sidebar = () => {
                     </Link>
                 </div>
                 
+                <div className=" side-badges side side-grey" id="badge">
+                    <div className="badge-container">
+                        <img src={badge} alt="ICF Membership"/>
+                    </div>
+
+                    {/* // this badge to be added later */}
+                    <div className="badge-container" style={{visibility: "hidden"}}>
+                        <img src={badge} alt="ICF Membership"/>
+                    </div>
+
+                    {/* // this badge to be added later */}
+                    <div className="badge-container" style={{visibility: "hidden"}}>
+                        <img src={badge} alt="ICF Membership"/>
+                    </div>
+                </div>
+
+
                 {/* only appears on blog pages */}
                 <div className="side-blogs-nav-container side side-navy">
                     <div className="side-blog-nav">
-                        <Link to='/blog'>
+                        {/* <Link to='/blog'>
                             <p className='link side-blog-nav-link link-text'
                              onClick={highlightLink}>Blog Feed</p>
                         </Link>
                         <Link to='/tsb'>
                             <p className='link side-blog-nav-link link-text' 
                             onClick={highlightLink}>Visit The Sounding Board Home</p>
-                        </Link>
+                        </Link> */}
                     </div>
                     <div className="side-blog-themes">
                         <p className="theme-list-title">Blog Themes</p>
@@ -287,6 +321,9 @@ const Sidebar = () => {
                         }
                     </div>
                 </div>           
+            
+
+
             </div>
         </div>
 
