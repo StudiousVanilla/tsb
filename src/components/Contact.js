@@ -105,7 +105,7 @@ const Contact = () => {
             </div>
             <div className="map-container">
                 <iframe title="tsb-map" width="500" height="250" style={{border: "0"}} loading="lazy" allowFullScreen 
-                src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeRg67omJXEgRIsx4awwoJhY&key="+process.env.REACT_APP_API_KEY}/>            
+                src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjUgjOoFiXEgROhJi-y2oKb0&key="+process.env.REACT_APP_API_KEY}/>            
             </div>
             <div className="contact-info-container">
                 <div className="contact-text-container">
