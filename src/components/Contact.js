@@ -53,8 +53,10 @@ const Contact = () => {
         };
         try {
             const response = await fetch('https://tsb-mailer.herokuapp.com', requestOptions)
+
             // response will be a success or error message
             const data = await response.json()
+
             // sets formMessage state to response (positive or negative)
             setFormMessage(data)
             
