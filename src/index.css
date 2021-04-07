@@ -324,7 +324,7 @@ body::-webkit-scrollbar {
 .side-badges{
   position: relative;
   top:0px;
-  margin-top: 80px;
+  margin-top: 30px;
   display: flex;
   transition: 0.75s;
   transform: translateZ(0);
