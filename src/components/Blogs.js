@@ -1,41 +1,22 @@
 import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
-import firebase from '../configs/fbConfig'
+import {fetchBlogs} from '../functions/dataFetch'
 import { Link } from "react-router-dom"
 import logo from '../icons/logo-grey.svg'
 
 const Blogs = () => {
 
-
     // sets sate for blogs that will populate page
     const [blogs, setBlogs] = useState('');
 
     // pulls blog information based on number of blogs to fetch
-    const getData = () =>{
+    const getData = async () =>{
 
-        // connects to firestore db
-        const db = firebase.firestore()
-        
-        // pulls blog information based on number of blogs and if they are published
-        db.collection("blogs").where('published', '==', true)
-        .get()
-        .then((querySnapshot) => {
-            // addes blog data to blogsArray
-            let blogArray = []
-            querySnapshot.docs.forEach(doc =>{
-                blogArray.push(doc.data())
-            })
+        const blogData = await fetchBlogs()
 
-            // sort blogArray by date
-            const sortedArray = blogArray.sort((a, b) => a.date > b.date ? -1 : 1)
+        setBlogs(blogData)
 
-            // update Sate
-            setBlogs(sortedArray)
-        })
-        .catch((error) => {
-            console.log("Error getting documents: ", error);
-        });
     }
 
     const convertDate = (timeStamp) => {

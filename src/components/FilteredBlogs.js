@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
-import firebase from '../configs/fbConfig'
+import {fetchFilteredBlogs} from '../functions/dataFetch'
 import { Link, useParams } from "react-router-dom"
 import logo from '../icons/logo-grey.svg'
 
@@ -15,33 +15,11 @@ const FilteredBlogs = () => {
     const {theme} = useParams();
 
     // pulls blog information based on number of blogs to fetch
-    const getData = () =>{
+    const getData = async () =>{
 
-        // connects to firestore db
-        const db = firebase.firestore()
-        
-        // pulls blog information based on if they are published and if they match the filtered theme from the url params
-        db.collection("blogs")
-        .where('published', '==', true)
-        .where('theme', '==', theme)
-        .get()
-        .then((querySnapshot) => {
-            // adds blog data to blogsArray
-            let blogArray = []
-            querySnapshot.docs.forEach(doc =>{
-                blogArray.push(doc.data())
-            })
+        const blogData = await fetchFilteredBlogs(theme)
 
-            // sort blogArray by date
-            const sortedArray = blogArray.sort((a, b) => a.date > b.date ? -1 : 1)
-
-            // update Sate
-            setBlogs(sortedArray)
-            
-        })
-        .catch((error) => {
-            console.log("Error getting documents: ", error);
-        });
+        setBlogs(blogData)   
     }
 
     const convertDate = (timeStamp) => {

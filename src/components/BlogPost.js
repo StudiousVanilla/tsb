@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
-import firebase from '../configs/fbConfig'
+import {fetchBlogPost} from '../functions/dataFetch'
 import { Link, useParams } from "react-router-dom"
 import logo from '../icons/logo-grey.svg'
 import fbIcon from '../icons/fb-navy.svg'
@@ -42,28 +42,14 @@ const Blogs = () => {
         logoSRC(logo)
 
         // pulls blog information based on blogTitle
-        const getBlogPost = () =>{
+        const getBlogPost = async () =>{
 
-            // // connects to firestore db
-            const db = firebase.firestore()
-            
-            // pulls blog information for blog that matches title (the blogRef)
-            db.collection("blogs").where('blogID', '==', blogNumber)
-            .get()
-            .then((querySnapshot) => {
-                // addes blog data to blogsArray
-                let blog = null
-                querySnapshot.docs.forEach(doc =>{
-                    blog = doc.data()
-                })
+            const blogData = await fetchBlogPost(blogNumber)
 
-                // update Sate
-                setBlog(blog)
-            })
-            .catch((error) => {
-                console.log("Error getting documents: ", error);
-            });
+            setBlog(blogData)
+
         }
+        
         getBlogPost()
         
     }, [blogNumber])

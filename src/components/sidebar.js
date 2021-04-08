@@ -5,7 +5,7 @@ import inIcon from "../icons/in-orange.svg";
 import badge from '../imgs/badge.png'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from "react";
-import firebase from '../configs/fbConfig'
+import {fetchBlogThemes} from '../functions/dataFetch'
 
 
 
@@ -23,54 +23,14 @@ const Sidebar = () => {
     const [blog, setBlog] = useState('')
 
     // gets blog themes, and newest blog for the side bar
-    const getBlogThemes = () => {
+    const getBlogThemes = async () => {
 
-        // connects to firestore db
-        const db = firebase.firestore()
-        
-        // pulls blog information based on number of blogs and if they are published
-        db.collection("blogs").where('published', '==', true)
-        .get()
-        .then((querySnapshot) => {
-            // addes blog data to blogsArray
-            let blogArray = []
-            querySnapshot.docs.forEach(doc =>{
-                let blog = doc.data()
-                blogArray.push(blog)
-            })
+        // returns an array with the earliest blog at position 0 and a sorted array of blogs by theme in posiotn 1
+        const blogData = await fetchBlogThemes()
 
-            // sort blogArray by date
-            const sortedByDate = blogArray.sort((a, b) => a.date > b.date ? -1 : 1)
-            // grab mosr recent blog
-            let recentBlog = sortedByDate[0]
-            // sets blog state to recent blog object
-            setBlog(recentBlog)
-
-
-            // holds all the themes from the blog database
-            let blogThemeArray = []
-            
-            // sort blogArray by date
-            const sortedByTheme = blogArray.sort((a, b) => a.theme > b.theme ? 1 : -1)
-
-            // filters blogs based on theme
-            const filteredArray = sortedByTheme.filter((blog)=>{
-                if(blogThemeArray.includes(blog.theme)){
-                    
-                }
-                else{
-                    blogThemeArray.push(blog.theme)
-                    return blog
-                }
-                return null
-            })
-
-            // update Sate
-            setBlogThemes(filteredArray)
-        })
-        .catch((error) => {
-            console.log("Error getting documents: ", error);
-        });
+        setBlog(blogData[0])
+        setBlogThemes(blogData[1])
+   
     }
 
     // reveals coaching links within side bar
