@@ -13,7 +13,6 @@ import CareerCoaching from './components/CareerCoaching'
 import MentorCoaching from './components/MentorCoaching'
 import Contact from './components/Contact';
 import Consultancy from './components/Consultancy';
-import Test from './components/Test';
 
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
               <Route exact path="/blog/theme/:theme"> <FilteredBlogs/> </Route>
               <Route exact path="/contact"> <Contact /> </Route>
               <Route exact path="/consultancy"> <Consultancy /> </Route>
-              <Route exact path="/test"> <Test /> </Route>
               <Route path="/"> <Home /> </Route>
             </Switch>
           </div>
