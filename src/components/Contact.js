@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import scrollToTop from '../functions/scrollToTop'
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
 import fbIcon from '../icons/fb-navy.svg'
@@ -91,6 +92,7 @@ const Contact = () => {
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
+        scrollToTop()
     })
 
 

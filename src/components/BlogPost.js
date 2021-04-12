@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
+import scrollToTop from '../functions/scrollToTop'
 import {fetchBlogPost} from '../functions/dataFetch'
 import { Link, useParams } from "react-router-dom"
 import logo from '../icons/logo-grey.svg'
@@ -40,6 +41,7 @@ const Blogs = () => {
         buttonToOrange()
         sideBarNavy()
         logoSRC(logo)
+        scrollToTop()
 
         // pulls blog information based on blogTitle
         const getBlogPost = async () =>{

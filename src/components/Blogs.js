@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarNavy, logoSRC, navySide} from '../functions/colorChanges'
+import scrollToTop from '../functions/scrollToTop'
 import {fetchBlogs} from '../functions/dataFetch'
 import { Link } from "react-router-dom"
 import logo from '../icons/logo-grey.svg'
@@ -34,6 +35,7 @@ const Blogs = () => {
         buttonToOrange()
         sideBarNavy()
         logoSRC(logo)
+        scrollToTop()
         getData()
     }, [])
 

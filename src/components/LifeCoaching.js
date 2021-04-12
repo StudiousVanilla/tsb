@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import lifeImg from '../imgs/lifeImg.png'
 import Bookingbtn from './Bookingbtn'
 import {buttonToNavy, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import scrollToTop from '../functions/scrollToTop'
 import logo from '../icons/logo-navy.svg'
 
 const LifeCoaching = () => {
@@ -11,6 +12,7 @@ const LifeCoaching = () => {
         buttonToNavy()
         sideBarGrey()
         logoSRC(logo)
+        scrollToTop()
     })
 
     return ( 

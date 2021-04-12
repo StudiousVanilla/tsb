@@ -2,6 +2,7 @@ import Bookingbtn from "./Bookingbtn";
 import landingImg from "../imgs/landing.png"
 import { useEffect } from "react";
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import scrollToTop from '../functions/scrollToTop'
 import logo from '../icons/logo-navy.svg'
 import { Link } from "react-router-dom";
 
@@ -12,6 +13,7 @@ const Home = () => {
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
+        scrollToTop()
     })
 
     return ( 

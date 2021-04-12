@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import scrollToTop from '../functions/scrollToTop'
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
 
@@ -11,6 +12,7 @@ const Privacy = () =>{
         sideBarGrey()
         logoSRC(logo)
         buttonToOrange()
+        scrollToTop()
     })
 
     return ( 

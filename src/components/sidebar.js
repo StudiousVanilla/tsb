@@ -14,7 +14,6 @@ const Sidebar = () => {
 
     useEffect(()=>{
         getBlogThemes()
-
     },[])
 
     // used to populatres sidebar themes list
