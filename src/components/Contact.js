@@ -105,10 +105,45 @@ const Contact = () => {
                 <br/>
                 <p className='quote-name'>- Mona</p>
             </div>
+            
+
+            <div className='contact-form-container'>
+                <div className="contact-form-title">
+                    <p>Get in Touch</p>
+                </div>
+                <form className="contact-form" id="contactForm" 
+                onSubmit={handleSubmit}>
+                    <label htmlFor="name" className="contact-form-labels">
+                        Name</label>
+                    <input type="text" name='name' className="contact-form-input" required/>
+                    <label htmlFor="email" className="contact-form-labels">
+                        Email</label>
+                    <input type="email" name='email' className="contact-form-input" required/>
+                    <label htmlFor="name" className="contact-form-labels">
+                        Message</label>
+                    <textarea type="text" name='message' className="contact-form-textarea"
+                    rows="10" cols="50" required/>
+                    <button className="contact-form-btn">Send</button>
+                </form>
+                <div className="contact-response-container">
+                    <p className="contact-response-msg" id="contactMessage">
+                        {formMessage.message}
+                    </p>
+                    {/* A little 'working' symbol */}
+                    {formMessage.message === 'Sending...' &&
+                        <div className="sending-symbol"></div>
+                    }
+                </div>
+            </div>
+            
+            
             <div className="map-container">
                 <iframe title="tsb-map" width="500" height="250" style={{border: "0"}} loading="lazy" allowFullScreen 
                 src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjUgjOoFiXEgROhJi-y2oKb0&key="+process.env.REACT_APP_API_KEY}/>            
             </div>
+            
+
+
             <div className="contact-info-container">
                 <div className="contact-text-container">
                     <p className='contact-text'>The Sounding Board <br/> Ballyshrule<br/> Portumna<br/> Co. Galway <br/> <br/> +353 85 160 2956 </p>
@@ -147,34 +182,18 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className='contact-form-container'>
-                <div className="contact-form-title">
-                    <p>Get in Touch</p>
-                </div>
-                <form className="contact-form" id="contactForm" 
-                onSubmit={handleSubmit}>
-                    <label htmlFor="name" className="contact-form-labels">
-                        Name</label>
-                    <input type="text" name='name' className="contact-form-input" required/>
-                    <label htmlFor="email" className="contact-form-labels">
-                        Email</label>
-                    <input type="email" name='email' className="contact-form-input" required/>
-                    <label htmlFor="name" className="contact-form-labels">
-                        Message</label>
-                    <textarea type="text" name='message' className="contact-form-textarea"
-                    rows="10" cols="50" required/>
-                    <button className="contact-form-btn">Send</button>
-                </form>
-                <div className="contact-response-container">
-                    <p className="contact-response-msg" id="contactMessage">
-                        {formMessage.message}
-                    </p>
-                    {/* A little 'working' symbol */}
-                    {formMessage.message === 'Sending...' &&
-                        <div className="sending-symbol"></div>
-                    }
-                </div>
-            </div>
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
             <Bookingbtn/>
         </main>
      );

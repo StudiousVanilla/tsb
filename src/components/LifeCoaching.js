@@ -19,10 +19,10 @@ const LifeCoaching = () => {
             <div className='color-tile life-color-tile'>
                 <main className='coaching-main'>
                     <h1 className='coaching-category-title  life-title'>
-                        Lifetsyle Coaching
+                        Lifestyle Coaching
                     </h1>
                     <div className='testimony-container'>
-                        <p className='coaching-category-testimony'>“By raising my awareness of the issues and all the angles and the options, I was able to see more opportunities and different perspectives. Mona’s questions were thought proving and really made me explore my own thinking and approaches
+                        <p className='coaching-category-testimony'>"By raising my awareness of the issues and all the angles and the options, I was able to see more opportunities and different perspectives. Mona’s questions were thought proving and really made me explore my own thinking and approaches"
                         </p>
                         <div className='attestant-container'>
                             <p className='attestant'>
@@ -42,7 +42,7 @@ const LifeCoaching = () => {
                 </div>
                 <div className="statement-container">
                     <h2 className="text-statement">Press pause and consider what really matters to you in your life.</h2>
-                    <br/><br/>
+                    <br/>
                     <h2 className="text-statement link">
                         <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer">
                             Book your complimentary coaching conversation now.

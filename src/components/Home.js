@@ -3,6 +3,7 @@ import landingImg from "../imgs/landing.png"
 import { useEffect } from "react";
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import logo from '../icons/logo-navy.svg'
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -25,7 +26,11 @@ const Home = () => {
                     <img src={landingImg} alt="" className='home-img'/>
                 </div>
                 <div className='quote'>
-                    <p className='quote-text'>I help individuals and teams to develop themselves through <b> bespoke coaching solutions </b> that provide sustainable personal and professional development, enabling them to take <b>positive action.</b> <br/><br/> If you’d like any further information, please don’t hesitate to get in touch.</p>
+                    <p className='quote-text'>
+                        I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their lives/careers/roles.
+                        <br/><br/>
+                        If you'd like any further information, please don't hesitate to <b><Link className="link" to='/contact'>get in touch.</Link> </b>
+                    </p>
                     <p className='quote-name'>- Mona</p>
                 </div>
             </main>

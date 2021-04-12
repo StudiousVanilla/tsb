@@ -331,7 +331,14 @@ body::-webkit-scrollbar {
 }
 
 .badge-container{
+  height: 84px;
+  width: 84px;
   margin: 5px;
+}
+
+.badgeImg{
+  height: 100%;
+  width: 100%;
 }
 
 .link{
@@ -468,7 +475,7 @@ body::-webkit-scrollbar {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .about-info-container{
@@ -567,7 +574,7 @@ body::-webkit-scrollbar {
 }
 
 .what-info-container{
-  padding: 20px;
+  padding: 20px 20px 23px 20px;
   width: 500px;
 }
 
@@ -603,13 +610,16 @@ body::-webkit-scrollbar {
 
 .competency-title{
   width: 500px;
-  margin-bottom: 20px;
-  padding: 20px 20px 20px 0px;
+  padding: 30px 20px 10px 0px;
   margin-left: 20px;
   font-size: 34px;
   line-height: 40px;
   font-weight: 600;
   border-top: 1px solid var(--tsb-blue);
+}
+
+.competency-info{
+  margin-bottom: 20px;
 }
 
 .competency-tiles-container{
@@ -644,15 +654,17 @@ body::-webkit-scrollbar {
 .competency-reverse{
   position: absolute;
   height: 103%;
-  width: 100%;
+  width: 103%;
   padding: 5px 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  background-color: var(--bg-grey);
+  font-style: italic;
+  background-color: white;
   border-radius: 10px;
   z-index: 1;
 }
@@ -892,6 +904,7 @@ body::-webkit-scrollbar {
   width: 500px;
   height: 250px;
   margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 .map{
@@ -906,7 +919,6 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   font-family: 'PT sans', sans-serif;
-  border-bottom: 1px solid var(--tsb-blue);
 }
 
 .contact-text{
@@ -952,6 +964,9 @@ body::-webkit-scrollbar {
   width: 500px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid var(--tsb-blue);
 }
 
 .contact-form-title{

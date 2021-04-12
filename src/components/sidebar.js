@@ -3,6 +3,7 @@ import brandLogo from "../icons/logo-navy.svg"
 import fbIcon from "../icons/fb-orange.svg";
 import inIcon from "../icons/in-orange.svg";
 import badge from '../imgs/badge.png'
+import badge2 from '../imgs/badge2.png'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import {fetchBlogThemes} from '../functions/dataFetch'
@@ -190,7 +191,7 @@ const Sidebar = () => {
                                 <Link to='/coaching/mentor'
                                 className='link-text'
                                 onClick={highlightLink}>
-                                    Coach Mentoring
+                                    Mentor Coaching
                                 </Link>
                             </li>
                         </ul>
@@ -238,17 +239,23 @@ const Sidebar = () => {
                 
                 <div className=" side-badges side side-grey" id="badge">
                     <div className="badge-container">
-                        <img src={badge} alt="ICF Membership"/>
+                        <a className="link-text" href="https://coachingfederation.org">
+                            <img src={badge} alt="ICF Membership" className="badge-img"/>
+                        </a>
+                    </div>
+
+                    {/* // this badge to be added later */}
+                    <div className="badge-container">
+                        <a className="link-text" href="https://connectacoach.org">
+                            <img src={badge2} alt="ICF Membership" className="badge-img"/>
+                        </a>
                     </div>
 
                     {/* // this badge to be added later */}
                     <div className="badge-container" style={{visibility: "hidden"}}>
-                        <img src={badge} alt="ICF Membership"/>
-                    </div>
-
-                    {/* // this badge to be added later */}
-                    <div className="badge-container" style={{visibility: "hidden"}}>
-                        <img src={badge} alt="ICF Membership"/>
+                        <a className="link-text" href="https://connectacoach.org">
+                            <img src={badge2} alt="ICF Membership" className="badge-img"/>
+                        </a>
                     </div>
                 </div>
 
@@ -256,10 +263,11 @@ const Sidebar = () => {
                 {/* only appears on blog pages */}
                 <div className="side-blogs-nav-container side side-navy">
                     <div className="side-blog-nav">
-                        {/* <Link to='/blog'>
+                        <Link to='/blog'>
                             <p className='link side-blog-nav-link link-text'
                              onClick={highlightLink}>Blog Feed</p>
                         </Link>
+                        {/* 
                         <Link to='/tsb'>
                             <p className='link side-blog-nav-link link-text' 
                             onClick={highlightLink}>Visit The Sounding Board Home</p>

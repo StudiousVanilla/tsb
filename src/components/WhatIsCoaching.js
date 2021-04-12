@@ -35,47 +35,62 @@ const WhatIsCoaching = () =>{
                 <p className='competency-title'>
                     Competencies of a Professional Coach
                 </p>
+                <div className='what-info-container'>
+                    <p className='what-info competency-info'>
+                        Hover over the images below to explore in more detail
+                    </p>
+                </div>
                 <div className='competency-tiles-container'>
                     <div className='competency-tile'>
                         <img src={what1} alt="Embodies a Coaching Mindest"
                         className="competency-img"/>
                         <p className="competency-reverse">
-                            A coach develops a mindset that is open, curious, flexible and client-centred.
+                            "A coach develops a mindset <br/>
+                            that is open, curious, flexible <br/>
+                            and client-centred."
                         </p>                      
                     </div>
                     <div className='competency-tile'>
                         <img src={what2} alt="Cultivates Trust and Safety"
                         className="competency-img"/>
                        <p className="competency-reverse reverse-unique">
-                            A coach partners with the client to create a safe supportive environment that allows the client to share freely. <br/><br/> They maintain a relationship of mutual respect and trust.
+                            "A coach partners with the client to <br/>
+                            create a safe supportive environment<br/>
+                            that allows the client to share freely.<br/>
+                            They maintain a relationship<br/>
+                            of mutual respect and trust."
                         </p>                       
                     </div>
                     <div className='competency-tile'>
                         <img src={what3} alt="Maintinas Presence"
                         className="competency-img"/>
                        <p className="competency-reverse">
-                            A coach is fully present with the client.
+                           "A coach is fully present<br/>
+                           with the client."
                         </p>                       
                     </div>
                     <div className='competency-tile'>
                         <img src={what4} alt="Listens Actively"
                         className="competency-img"/>
                        <p className="competency-reverse">
-                            A coach focuses on what the client is and is not sayingd.
+                            "A coach focuses on what the<br/> client is and is not saying."
                         </p>                     
                     </div>
                     <div className='competency-tile'>
                         <img src={what5} alt="Evokes Awerness"
                         className="competency-img"/>
                        <p className="competency-reverse">
-                            A coach facilitates client insight and learning by using tools and techniques.
+                            "A coach facilitates client<br/>
+                            insight and learning by using<br/>
+                            tools and techniques."
                         </p>                       
                     </div>
                     <div className='competency-tile'>
                         <img src={what6} alt="Facilitates Client Growth"
                         className="competency-img"/> 
                        <p className="competency-reverse">
-                            A coach partners with the client to transform learning into action.
+                            "A coach partners with the client<br/>
+                            to transform learning into action."
                         </p>                      
                     </div>
                 </div>
@@ -86,12 +101,12 @@ const WhatIsCoaching = () =>{
                     <p className='what-info'>Coaching helps the client to transform learning and insights into actions. This generally happens over a number of months. Five or six sessions are advisable and the frequency will be agreed between coach and client in the first session which sets the foundation and identifies the goals for the coaching.</p>
                 </div>
                 <div className='what-info-container faq-container'>
-                    <h2 className='what-info-title'>FAQ: How do Counselling and Mentoring differ from Coaching?</h2>
+                    <h2 className='what-info-title'>FAQ: How does coaching differ from counselling and mentoring?</h2>
                     <p className='what-info'> <b>Counselling</b> is the provision of professional assistance and guidance in resolving personal or psychological problems. <br/><br/> <b>Mentoring</b> is a system of semi-structured guidance whereby one person shares their knowledge, skills and experience to assist others to progress in their own lives and careers</p>
                 </div>
                 <div className='what-info-container faq-container'>
                     <h2 className='what-info-title'>FAQ: Are TSB sessions face-to-face or online?</h2>
-                    <p className='what-info'>Currently, coaching sessions are being held virtually, online. Coaching by phone is also available and face-to-face coaching will resume when Covid-19 restrictions allow. <br/><br/> You can book your appointment using the button at the top of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking. You and your coach will join this Zoom call at the agreed time and proceed from there.</p>
+                    <p className='what-info'>Currently, coaching sessions are being held virtually, online. Coaching by phone is also available and face-to-face coaching will resume when Covid-19 restrictions allow. <br/><br/> You can book your introductory appointment time using the button at the top of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.</p>
                 </div>
             </div>
             <Bookingbtn/>

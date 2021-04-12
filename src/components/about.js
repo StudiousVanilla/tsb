@@ -26,8 +26,8 @@ const About = () => {
                 <div className=" about-info about-top-text">
                     <div className='credentials-container'>
                         <p className='credential credential-title'>Mona Eames MSc</p>
-                        <p className='credential'>Muers Briggs (MBTI) Practitioner</p>
-                        <p className='credential'>Certified Professional ICF Coacg and Mentor Coach</p>
+                        <p className='credential'>Certified ICF Coach and Mentor Coach</p>
+                        <p className='credential'>Myers Briggs (MBTI) Practitioner</p>
                         <p className='credential'>International Coaching Federation Member</p>
                     </div>
                     <div>
@@ -66,7 +66,7 @@ const About = () => {
                         <li className='qual-list-item'>Personality Analysis and Individual Difference</li>
                         <li className='qual-list-item'>Systemic Psychodynamic Coaching with Teams and Individuals</li>
                     </ul>
-                    <p className='about-content'>I have also achieved a <b> Certificate in Remote Working</b> (TUD, 2020), a <b> Certificate in Excellence in Career Coaching Service and Delivery</b> (Dr Terry Connors – Psychometric, 2018) and a <b> Certificate of Achievement – Business Start Up </b> (Galway Enterprise Office, 2018).</p>
+                    <p className='about-content'>I have also achieved a <b> Certificate in Remote Working</b> (TUD, 2020), <br/> a <b> Certificate in Excellence in Career Coaching Service and Delivery</b> (Dr Terry Connors – Psychometric, 2018) and a <b> Certificate of Achievement – Business Start Up </b> (Galway Enterprise Office, 2018).</p>
                 </div>
             </div>
             <Bookingbtn/>
