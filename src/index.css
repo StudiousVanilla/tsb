@@ -134,7 +134,7 @@ body::-webkit-scrollbar {
 /* Side Bar */
 
 .sidebar-container{
-  position: static;
+  position: fixed;
   width: 30%;
   min-width: 360px;
   max-width: 360px;
@@ -323,9 +323,9 @@ body::-webkit-scrollbar {
 
 .side-badges{
   position: relative;
-  top:0px;
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
+  align-items: flex-start;
   transition: 0.75s;
   transform: translateZ(0);
 }
@@ -361,6 +361,7 @@ body::-webkit-scrollbar {
 /* Home */
 
 .non-side-content{
+  margin-left: 360px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -564,7 +565,7 @@ body::-webkit-scrollbar {
 
 /* what is coaching */
 
-.what-container{
+.what-container, .privacy-container{
   margin-top: 150px;
   max-width: 1000px;
   min-width: fit-content;
@@ -573,18 +574,18 @@ body::-webkit-scrollbar {
   color: var(--tsb-orange);
 }
 
-.what-info-container{
+.what-info-container, .privacy-title-container,   .privacy-info-container{
   padding: 20px 20px 23px 20px;
   width: 500px;
 }
 
-.what-info-title{
+.what-info-title, .privacy-info-title{
   margin-bottom: 15px;
   font-size: 32px;
   line-height: 40px;
 }
 
-.what-info{
+.what-info, .privacy-info{
   color: var(--tsb-navy);
   font-family: 'PT sans', sans-serif;
   font-size: 16px;
@@ -1177,17 +1178,17 @@ text-align: center;
   color: var(--tsb-orange);
 }
 
-.consultancy-info-text{
+.consultancy-info-text, .privacy-info-text{
   margin-bottom: 20px;
   font-family: 'PT sans', sans-serif;
   color: var(--tsb-navy);
 }
 
-.consultancy-list, .text-list{
+.consultancy-list, .text-list, .privacy-list{
   padding-left: 20px;
 }
 
-.consultancy-list-item, .text-list-item{
+.consultancy-list-item, .text-list-item,        .privacy-list-item{
   margin-bottom: 10px;
 }
 
@@ -1533,6 +1534,40 @@ text-align: center;
 .booking-btn:focus{
   outline: none;
   color: var(--orange-color);
+}
+
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+
+/* privacy */
+
+/* shares some style with 'what', 'what-info' and 'consultancy-list */
+
+.privacy-container{
+  padding-bottom: 120px;
+}
+
+.privacy-title-container {
+  width: 600px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.privacy-title{
+  color: var(--tsb-navy);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.privacy-title-lg{
+  font-size: 60px;
+}
+
+.privacy-list{
+  list-style-type: none;
 }
 
 

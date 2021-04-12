@@ -235,8 +235,7 @@ const Sidebar = () => {
                     <Link to='/blog' className='link' onClick={highlightLink}>
                         <p className='link-text blog-link'> Visit TSB Blog </p>
                     </Link>
-                </div>
-                
+                </div>           
                 <div className=" side-badges side side-grey" id="badge">
                     <div className="badge-container">
                         <a className="link-text" href="https://coachingfederation.org">
@@ -258,8 +257,6 @@ const Sidebar = () => {
                         </a>
                     </div>
                 </div>
-
-
                 {/* only appears on blog pages */}
                 <div className="side-blogs-nav-container side side-navy">
                     <div className="side-blog-nav">
@@ -289,9 +286,6 @@ const Sidebar = () => {
                         }
                     </div>
                 </div>           
-            
-
-
             </div>
         </div>
 

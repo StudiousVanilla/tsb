@@ -13,6 +13,7 @@ import CareerCoaching from './components/CareerCoaching'
 import MentorCoaching from './components/MentorCoaching'
 import Contact from './components/Contact';
 import Consultancy from './components/Consultancy';
+import Privacy from './components/Privacy';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
               <Route exact path="/blog/theme/:theme"> <FilteredBlogs/> </Route>
               <Route exact path="/contact"> <Contact /> </Route>
               <Route exact path="/consultancy"> <Consultancy /> </Route>
+              <Route exact path="/privacy"> <Privacy /> </Route>
               <Route path="/"> <Home /> </Route>
             </Switch>
           </div>
