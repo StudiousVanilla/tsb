@@ -28,8 +28,8 @@ const Sidebar = () => {
         // returns an array with the earliest blog at position 0 and a sorted array of blogs by theme in posiotn 1
         const blogData = await fetchBlogThemes()
 
-        setBlog(blogData[0])
-        setBlogThemes(blogData[1])
+        // setBlog(blogData[0])
+        // setBlogThemes(blogData[1])
    
     }
 
