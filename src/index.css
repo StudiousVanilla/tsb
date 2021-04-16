@@ -323,7 +323,8 @@ body::-webkit-scrollbar {
 
 .side-badges{
   position: relative;
-  margin-top: 40px;
+  top: -10%;
+  margin-top: 20px;
   display: flex;
   align-items: flex-start;
   transition: 0.75s;
@@ -331,8 +332,8 @@ body::-webkit-scrollbar {
 }
 
 .badge-container{
-  height: 84px;
-  width: 84px;
+  height: 64px;
+  width: 64px;
   margin: 5px;
 }
 
@@ -1582,20 +1583,89 @@ text-align: center;
 
 
 .footer{
-  width: 100%;
+  width: 100vw;
   margin-top: 0px;
-  margin-left: 359px;
-  padding: 10px 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 369px;
+  display: flex;
+  justify-content: space-between;
   font-size: 12px;
   border-top: 1px solid var(--tsb-blue);
   border-left: 1px solid var(--tsb-blue);
-  color: var(--tsb-blue);
+  color: var(--tsb-navy);
   background-color: var(--bg-grey);
 }
 
 .dev-credit{
   font-weight: 600;
 }
+
+
+
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+
+
+
+
+
+
+
+@media only screen and (max-width: 1250px) {
+
+  .sidebar-container{
+    width: 30%;
+    min-width: 250px;
+    max-width: 250px;
+  }
+
+  .side-brand{
+    padding: 0
+  }
+  
+  .logo{
+    height: 70%;
+    max-height: 50.5px;
+    max-width: 50.5px;
+  }
+  
+  .logo-text{
+    font-size: 0.85em;
+  }
+  .brand-name{
+    font-size: 1em;
+  }
+
+  .non-side-content{
+    margin-left: 250px;
+  }
+
+  .what-quote, .text-statement{
+    width: 650px;
+  }
+
+  .text-statement{
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .what-quote{
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .booking-btn{
+    font-size: 15px;
+  }
+
+
+}
+
+
+
 
 
 

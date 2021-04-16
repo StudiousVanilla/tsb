@@ -58,7 +58,7 @@ const Sidebar = () => {
             moveableList.style.top = '0%'
             sideIcons.style.top = '0%'
             blog.style.top = '0%'
-            badge.style.top = '0%'
+            badge.style.top = '3%'
 
             // allows content to drop in sidebar before lnks slide in
             setTimeout(function(){

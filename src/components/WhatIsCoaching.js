@@ -108,7 +108,7 @@ const WhatIsCoaching = () =>{
                 </div>
                 <div className='what-info-container faq-container'>
                     <h2 className='what-info-title'>FAQ: Are TSB sessions face-to-face or online?</h2>
-                    <p className='what-info'>Currently, coaching sessions are being held virtually, online. Coaching by phone is also available and face-to-face coaching will resume when Covid-19 restrictions allow. <br/><br/> You can book your introductory appointment time using the button at the top of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.</p>
+                    <p className='what-info'>Currently, coaching sessions are being held virtually, online. Coaching by phone is also available and face-to-face coaching will resume when Covid-19 restrictions allow. <br/><br/> You can <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer" class='link'> <u>book your introductory appointment time here </u> </a> and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.</p>
                 </div>
             </div>
             <Bookingbtn/>
