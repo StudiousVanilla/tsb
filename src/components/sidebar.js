@@ -20,7 +20,7 @@ const Sidebar = () => {
     const [blogThemes, setBlogThemes] = useState('')
 
     // used to set most recent blog - title and link is pulled for side bar menu
-    const [blog, setBlog] = useState('')
+    const [blog, setBlog] = useState({title:'Loading', subtitle:'blogs'})
 
     // gets blog themes, and newest blog for the side bar
     const getBlogThemes = async () => {
@@ -28,9 +28,11 @@ const Sidebar = () => {
         // returns an array with the earliest blog at position 0 and a sorted array of blogs by theme in posiotn 1
         const blogData = await fetchBlogThemes()
 
-        // setBlog(blogData[0])
-        // setBlogThemes(blogData[1])
-   
+        // gives time for data to fetch, can be a slittle slow using free heroku backend ( no dyno)
+        setTimeout(()=>{
+            // setBlog(blogData[0])
+            // setBlogThemes(blogData[1])
+        }, 2000 )
     }
 
     // reveals coaching links within side bar
@@ -131,11 +133,11 @@ const Sidebar = () => {
             <div className='top-bar'>
                 {/* triggers side bar reveal on tablet sized devices */}
                 <button className='top-bar-btn' onClick={sideBarReveal}>
-                    <img src={menuIcon} alt=""/>
+                    <img src={menuIcon} alt="" className="menubtn"/>
                 </button>
             </div>
             <div className="sidebar-content" id="side-content">
-                <Link to='/tsb' onClick={allLinksNavy}>
+                <Link to='/tsb' onClick={allLinksNavy} className="home-link">
                     <div className="side-brand side">
                         <div className="logo-container">
                             <img src={brandLogo} id="logo" alt="The Sounding Board" className="logo"/>

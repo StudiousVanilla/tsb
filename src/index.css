@@ -1681,6 +1681,166 @@ text-align: center;
     font-size: 10px;
   }
 
+}
 
+
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+
+/* Mobile screens */
+
+@media only screen and (max-width: 510px) {
+
+  
+
+  .sidebar-container{
+    width: 100vw;
+    max-width: 100%;
+    min-width: none;
+    max-height: fit-content;
+    min-height: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+
+  .top-bar{
+    height: 100%;
+    min-height: none;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-bar-btn{
+    border: none;
+    background-color: transparent;
+  }
+
+  .sidebar-content{
+    width: 85vw;
+    height: 11vh;
+    max-height: fit-content;
+    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--tsb-blue);
+  }
+
+  .home-link{
+    height: 100%;
+    width: 100%;
+    margin-top: max(2vh, 5px);
+    padding: 0px;
+  }
+
+  .side-brand{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-container{
+    height: 100%;
+  }
+
+  .logo{
+    height: 100%;
+    max-height: 50.5px;
+    max-width: 50.5px;
+  }
+
+  .brand-text{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-text{
+    font-size: 1em;
+    width: fit-content;
+  }
+
+  .brand-name{
+    font-size: 1.5em;
+  }
+
+
+  .side-links{display: none}
+
+  .side-blog{display: none}
+
+  .side-badges{ display: none}
+
+  .non-side-content{margin: 0;}
+
+  .booking-btn{
+    display: none;
+  }
 
 }
+
+
+/* very small Mobile screens */
+
+@media only screen and (max-width: 360px) {
+
+  .sidebar-content{
+    max-height: 65px;
+    min-width: 230px;
+  }
+
+  .top-bar-btn{
+    padding: 0;
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .menubtn{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .logo{
+    height: 100%;
+    max-height: 40.5px;
+    max-width: 40.5px;
+  }
+  
+  .brand-text{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo-text{
+    font-size: 0.85em;
+    width: fit-content;
+  }
+  
+  .brand-name{
+    font-size: 1.1em;
+  }
+
+}
+
+
+
