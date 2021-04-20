@@ -1693,9 +1693,13 @@ text-align: center;
 
 @media only screen and (max-width: 510px) {
 
-  
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
 
   .sidebar-container{
+    position: static;
     width: 100vw;
     max-width: 100%;
     min-width: none;
@@ -1782,7 +1786,6 @@ text-align: center;
     font-size: 1.5em;
   }
 
-
   .side-links{display: none}
 
   .side-blog{display: none}
@@ -1791,9 +1794,160 @@ text-align: center;
 
   .non-side-content{margin: 0;}
 
-  .booking-btn{
+  .footer{
+    width: 100vw;
+    margin: 4px 0px 3px 0px;
+    padding: 4px 0px 3px 0px;
+  }
+
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+
+  /* general grid */
+
+  .no-mob{
     display: none;
   }
+
+  .content-container{
+    width: 100vw;
+    margin: 25px 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "mob-title1"
+    "mob-par1"
+    "mob-form"
+    "mob-pic1"
+    "mob-title2"
+    "mob-par2"
+    "mob-title3"
+    "mob-par3"
+    "mob-icon"
+    "mob-map"
+    "mob-contact-info"
+    "mob-button"
+  }
+
+  .mob-title1{
+    grid-area: mob-title1;
+    min-width: none;
+    width: 80vw;
+
+  }
+
+  .mob-par1{
+    grid-area: mob-par1;
+    min-width: none;
+    width: 100vw;
+    font-size: 1em;
+    margin-bottom: 100px;
+    padding: 5px 10px;
+  }
+
+  .mob-form{
+    grid-area: mob-form;
+    width: 100vw;
+    padding: 0px 20px;
+  }
+
+  .mob-pic1{
+    grid-area: mob-pic1;
+    min-width: none;
+    width: 100vw;
+    height: 75vw;
+    padding: 0px;
+    margin: 50px 0px;
+  }
+
+  .mob-par2{
+    grid-area: mob-par2;
+    min-width: none;
+    width: 100vw;
+  }
+
+  .mob-button{
+    grid-area: mob-button;
+    position: static;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 00px;
+    padding: 30px 0px 80px 0px;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+
+  .mob-icon{
+    grid-area: mob-icon;
+  }
+
+  .mob-map{
+    grid-area: mob-map;
+    min-width: none;
+    max-width: none;
+    width: 100vw;
+  }
+
+  .mob-contact-info{
+    grid-area: mob-contact-info;
+    min-width: none;
+    max-width: none;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+
+  /* home page */
+
+  .welcome{
+    display: none;
+  }
+
+  .booking-btn{
+    font-size: 1em;
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+  
+  .quote-text{
+    margin: 0px;
+  }
+
+  /* contact page */
+
+  .contact-form-input{
+    min-width: none;
+    max-width: none;
+    width: 80vw;
+  }
+
+  .contact-text-container, .contact-links-container{
+    padding: 0px 20px;
+    margin-bottom: 50px;
+  }
+
+  iframe{
+    width: 100vw;
+    height: 50vw;
+  }
+
+
+
+
+
+
+
 
 }
 

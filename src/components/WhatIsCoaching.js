@@ -24,16 +24,16 @@ const WhatIsCoaching = () =>{
     return ( 
 
         <div className='what-container content-container'>
-            <div className='what-info-container'>
+            <div className='what-info-container mob-title1'>
                 <h2 className='what-info-title'>What is Coaching?</h2>
                 <p className='what-info'>Coaching can be viewed as a resource to support the individual to take the space to “Press Pause” and consider what really matters to them both personally and professionally. The International Coaching Federation defines coaching as:</p>
             </div>
-            <div className='what-quote-container'>
+            <div className='what-quote-container mob-par1'>
                 <p className='what-quote'>
                 “Partnering with clients in a thought-provoking and creative process that inspires them to maximize their personal and professional potential”
                 </p>
             </div>
-            <div className='competency-container'>
+            <div className='competency-container mob-pic1'>
                 <p className='competency-title'>
                     Competencies of a Professional Coach
                 </p>
@@ -97,7 +97,7 @@ const WhatIsCoaching = () =>{
                     </div>
                 </div>
             </div>
-            <div className='faq'>
+            <div className='faq mob-par2'>
                 <div className='what-info-container faq-container'>
                     <h2 className='what-info-title'>FAQ: How long does the coaching process take?</h2>
                     <p className='what-info'>Coaching helps the client to transform learning and insights into actions. This generally happens over a number of months. Five or six sessions are advisable and the frequency will be agreed between coach and client in the first session which sets the foundation and identifies the goals for the coaching.</p>

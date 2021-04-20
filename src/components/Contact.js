@@ -99,17 +99,17 @@ const Contact = () => {
 
     return ( 
         <main className='contact-container content-container'>
-            <div className='contact-title'>
+            <div className='contact-title no-mob'>
                 <p>Contact</p>
             </div>
-            <div className='contact-intro-container'>
+            <div className='contact-intro-container no-mob'>
                 <p className='contact-intro'>Wherever you are in your life, career, or the world, I’d love to hear from you.</p>
                 <br/>
-                <p className='quote-name'>- Mona</p>
+                <p className='quote-name no-mob'>- Mona</p>
             </div>
             
 
-            <div className='contact-form-container'>
+            <div className='contact-form-container mob-form'>
                 <div className="contact-form-title">
                     <p>Get in Touch</p>
                 </div>
@@ -139,14 +139,14 @@ const Contact = () => {
             </div>
             
             
-            <div className="map-container">
+            <div className="map-container mob-map">
                 <iframe title="tsb-map" width="500" height="250" style={{border: "0"}} loading="lazy" allowFullScreen 
                 src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjUgjOoFiXEgROhJi-y2oKb0&key=AIzaSyCRA1D6IKIuYtKF016SYEiTThh6nljicWo"}/>            
             </div>
             
 
 
-            <div className="contact-info-container">
+            <div className="contact-info-container mob-contact-info">
                 <div className="contact-text-container">
                     <p className='contact-text'>The Sounding Board <br/> Ballyshrule<br/> Portumna<br/> Co. Galway <br/> <br/> +353 85 160 2956 </p>
                 </div>
