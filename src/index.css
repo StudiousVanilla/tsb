@@ -110,6 +110,7 @@ body, .root, .App{
   height: 100%;
   overflow-x: hidden;
   overflow-y: visible;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -144,6 +145,7 @@ body::-webkit-scrollbar {
   justify-content: flex-start;
   border-right: 1px solid var(--tsb-blue);
   background-color: var(--bg-grey);
+  z-index: 2;
 }
 
 .top-bar{
@@ -266,6 +268,7 @@ body::-webkit-scrollbar {
   position: relative;
   top: -120px;
   height: fit-content;
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,8 +326,8 @@ body::-webkit-scrollbar {
 
 .side-badges{
   position: relative;
-  top: -10%;
-  margin-top: 0px;
+  top: -130px;
+  margin-top: 2vh;
   display: flex;
   align-items: flex-start;
   transition: 0.75s;
@@ -1577,6 +1580,8 @@ text-align: center;
 
 
 .footer{
+  position: absolute;
+  bottom: 5px;
   width: 100vw;
   margin-top: 0px;
   padding-top: 10px;
@@ -1594,6 +1599,10 @@ text-align: center;
 
 .dev-credit{
   font-weight: 600;
+}
+
+.mob-only{
+  display: none;
 }
 
 
@@ -1693,6 +1702,10 @@ text-align: center;
 
 @media only screen and (max-width: 510px) {
 
+  .mob-only{
+    display: block;
+  }
+
   .main-container{
     display: flex;
     flex-direction: column;
@@ -1716,8 +1729,9 @@ text-align: center;
   }
 
   .top-bar{
-    height: 100%;
-    min-height: none;
+    height: 11vh;
+    max-height: fit-content;
+    min-height: 65px;
     width: 15vw;
     display: flex;
     justify-content: center;
@@ -1797,8 +1811,53 @@ text-align: center;
   .footer{
     width: 100vw;
     margin: 4px 0px 3px 0px;
-    padding: 4px 0px 3px 0px;
+    padding: 7px 0px 3px 3px;
+    border-left: none;
   }
+
+
+
+ /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+
+  /* mobile menu */
+
+  .mobileMenu{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--tsb-blue);
+    z-index: 3;
+  }
+
+  .mob-menu-option{
+    height: 7.75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mob-menu-btn{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+  }
+
+  .mob-menu-text{
+    font-size: 2em;
+    font-family: 'Pt sans';
+    color: var(--tsb-navy);
+  }
+
 
 
   /* ************************** */
@@ -1844,15 +1903,16 @@ text-align: center;
     grid-area: mob-par1;
     min-width: none;
     width: 100vw;
-    font-size: 1em;
-    margin-bottom: 100px;
-    padding: 5px 10px;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+    padding: 5px 22px;
   }
 
   .mob-form{
     grid-area: mob-form;
     width: 100vw;
     padding: 0px 20px;
+    border-bottom: none;
   }
 
   .mob-pic1{
@@ -1868,6 +1928,9 @@ text-align: center;
     grid-area: mob-par2;
     min-width: none;
     width: 100vw;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+    padding: 5px 22px;
   }
 
   .mob-button{
@@ -1880,7 +1943,7 @@ text-align: center;
     align-items: center;
     margin: 50px 00px;
     padding: 30px 0px 80px 0px;
-    border-bottom: 1px solid var(--tsb-blue);
+    border-bottom: none;
   }
 
   .mob-icon{
@@ -1892,6 +1955,7 @@ text-align: center;
     min-width: none;
     max-width: none;
     width: 100vw;
+    height: 75vw;
   }
 
   .mob-contact-info{
@@ -1924,6 +1988,11 @@ text-align: center;
     margin: 0px;
   }
 
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
   /* contact page */
 
   .contact-form-input{
@@ -1935,6 +2004,12 @@ text-align: center;
   .contact-text-container, .contact-links-container{
     padding: 0px 20px;
     margin-bottom: 50px;
+  }
+
+  .contact-links-container{
+    height: 25vh;
+    max-height: 180px;
+    min-height: 120px;
   }
 
   iframe{
@@ -1955,6 +2030,14 @@ text-align: center;
 /* very small Mobile screens */
 
 @media only screen and (max-width: 360px) {
+
+  .mob-menu-text{
+    font-size: 1.6em;
+  }
+
+  .mob-menu-option{
+    height: 6.5%;
+  }
 
   .sidebar-content{
     max-height: 65px;

@@ -184,19 +184,9 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            <Bookingbtn/>
+            <div className="no-mob">
+                <Bookingbtn/>
+            </div>
         </main>
      );
 }

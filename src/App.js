@@ -14,15 +14,27 @@ import MentorCoaching from './components/MentorCoaching'
 import Contact from './components/Contact';
 import Consultancy from './components/Consultancy';
 import Privacy from './components/Privacy';
+import MobileMenu from "./components/MobileMenu";
+import { useState } from 'react';
 
 
 function App() {
+
+  // used to togggle mobile menu
+  const [menuToggle, setMenuToggle] = useState(false)
+
+
   return (
     <Router>
       <div className="App" id="App">
         <div className='main-container'>
           <Sidebar/>
           <div className='non-side-content'>
+            {/* Mobile menu only appears on mobile  */}
+          <div className='mob-only'>
+                <MobileMenu/>
+            </div>
+            {/*  */}
             <Switch>
               <Route exact path="/about"> <About /> </Route>
               <Route exact path="/coaching"> <WhatIsCoaching/> </Route>

@@ -28,7 +28,7 @@ const Home = () => {
                     <img src={landingImg} alt="" className='home-img'/>
                 </div>
                 <div className='quote'>
-                    <p className='quote-text mob-par1'>
+                    <p className='quote-text no-mob'>
                         I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their lives/careers/roles.
                     </p>
                     <p className='quote-text no-mob'>
@@ -39,7 +39,10 @@ const Home = () => {
                 </div>
 
                 {/* Only for mobile view */}
-                <p className='quote-text mob-only mob-par2'>
+                <p className='mob-only mob-par1' style={{fontFamily: 'PT sans'}}>
+                    I help individuals and teams to develop themselves through <b> bespoke coaching solutions </b>  that provide sustainable personal and professional development, enabling them to take <b> positive action.</b>
+                </p>
+                <p className='mob-only mob-par2' style={{fontFamily: 'PT sans'}}>
                      If you'd like any further information, please don't hesitate to <b><Link className="link" to='/contact'>get in touch.</Link> </b>
                 </p>
             </main>
