@@ -1716,7 +1716,7 @@ text-align: center;
     width: 100vw;
     max-width: 100%;
     min-width: none;
-    max-height: fit-content;
+    max-height: 11vh;
     min-height: none;
     padding: 0;
     margin: 0;
@@ -1738,6 +1738,11 @@ text-align: center;
   }
 
   .top-bar-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background-color: transparent;
   }
@@ -1825,15 +1830,15 @@ text-align: center;
   /* mobile menu */
 
   .mobileMenu{
-    position: absolute;
-    height: 100%;
+    position: fixed;
+    height: 100vh;
     width: 100vw;
     background-color: var(--tsb-blue);
     z-index: 3;
   }
 
   .mob-menu-option{
-    height: 7.75%;
+    height: 11.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1845,15 +1850,19 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-bottom: 20px;
     border: none;
     border-bottom: 1px solid white;
     background-color: transparent;
   }
 
+  .mob-icon-btn{
+    width: 40%;
+  }
+
   .mob-menu-text{
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Pt sans';
     color: var(--tsb-navy);
   }
@@ -1890,6 +1899,7 @@ text-align: center;
     "mob-map"
     "mob-contact-info"
     "mob-button"
+    "mob-badge"
   }
 
   .mob-title1{
@@ -1967,6 +1977,18 @@ text-align: center;
     flex-direction: column;
   }
 
+  .mob-badge{
+    grid-area: mob-badge;
+    width: 100vw;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+
   /* ************************** */
   /* ************************** */
   /* ************************** */
@@ -1986,6 +2008,16 @@ text-align: center;
   
   .quote-text{
     margin: 0px;
+  }
+
+  .mob-badge-link{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mob-badge-img{
+    width: 40%;
   }
 
 
@@ -2029,19 +2061,27 @@ text-align: center;
 
 /* very small Mobile screens */
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 376px) {
 
   .mob-menu-text{
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   .mob-menu-option{
-    height: 6.5%;
+    height: 11.5%;
+  }
+
+  .sidebar-container{
+    height: 11vh;
   }
 
   .sidebar-content{
-    max-height: 65px;
-    min-width: 230px;
+    margin-bottom: 1px;
+    height: 11vh;
+  }
+
+  .top-bar{
+    height: 11vh;
   }
 
   .top-bar-btn{
@@ -2051,8 +2091,10 @@ text-align: center;
   }
 
   .menubtn{
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
+    min-width: 30px;
+    min-height: 30px;
   }
   
   .logo{
@@ -2078,6 +2120,16 @@ text-align: center;
   }
 
 }
+
+@media only screen and (max-width: 376px) {
+
+  .sidebar-content{
+    margin-bottom: 3px;
+  }
+
+}
+
+
 
 
 

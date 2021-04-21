@@ -10,7 +10,7 @@ import {fetchBlogThemes} from '../functions/dataFetch'
 
 
 
-const Sidebar = () => {
+const Sidebar = ({toggleMenu, menuToggle}) => {
 
     useEffect(()=>{
         getBlogThemes()
@@ -21,9 +21,6 @@ const Sidebar = () => {
 
     // used to set most recent blog - title and link is pulled for side bar menu
     const [blog, setBlog] = useState({title:'Loading', subtitle:'blogs'})
-
-    // used to togggle mobile menu
-    const [menuToggle, setMenuToggle] = useState(false)
 
     // gets blog themes, and newest blog for the side bar
     const getBlogThemes = async () => {
@@ -96,21 +93,8 @@ const Sidebar = () => {
 
     // toggles phone menu
     const mobileMenuToggle = () =>{
-        const sideBar = document.getElementById('side-bar')
-        const topBar = document.getElementById('top-bar')
-        const sideContent = document.getElementById('side-content')
-        if(menuToggle){
-            sideBar.style.borderColor = null
-            sideContent.style.borderColor = null
-            topBar.style.backgroundColor = null
-            setMenuToggle(!menuToggle)
-        }
-        else{
-            sideBar.style.borderColor = '#fefefe'
-            sideContent.style.borderColor = '#fefefe'
-            topBar.style.backgroundColor = 'var(--tsb-blue)'
-            setMenuToggle(!menuToggle)
-        }
+        // renders phone menu
+        toggleMenu()
     }
 
     // reverts all links back to navy
@@ -140,14 +124,9 @@ const Sidebar = () => {
         <div className='sidebar-container' id='side-bar'>
             {/* only visible on mobile sized devices */}
             <div className='top-bar' id='top-bar'>
-                {/* triggers mobile menu reveal */}
-
-                {/* need to send toggle mesage to 'App' component to render mobile menu on and off
-
-                also needs to be sent from each button within the menu */}
-
-                <button className='top-bar-btn' onClick={mobileMenuToggle}>
-                    <img src={menuIcon} alt="" className="menubtn"/>
+                {/* toggle mobile menu on/off (prop function) */}
+                <button  className='top-bar-btn' onClick={mobileMenuToggle}>
+                    <img src={menuIcon} alt="menu" className="menubtn"/>
                 </button>
             </div>
             {/*  */}
@@ -261,14 +240,14 @@ const Sidebar = () => {
 
                     {/* // this badge to be added later */}
                     <div className="badge-container">
-                        <a className="link-text" href="https://connectacoach.org">
+                        <a className="link-text" href="https://connectacoach.org" target="_blank" rel="noreferrer">
                             <img src={badge2} alt="ICF Membership" className="badge-img"/>
                         </a>
                     </div>
 
                     {/* // this badge to be added later */}
                     <div className="badge-container" style={{visibility: "hidden"}}>
-                        <a className="link-text" href="https://connectacoach.org">
+                        <a className="link-text" href="https://connectacoach.org" target="_blank" rel="noreferrer">
                             <img src={badge2} alt="ICF Membership" className="badge-img"/>
                         </a>
                     </div>

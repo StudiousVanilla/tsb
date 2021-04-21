@@ -1,5 +1,7 @@
 import Bookingbtn from "./Bookingbtn";
 import landingImg from "../imgs/landing.png"
+import badge from '../imgs/badge.png'
+import badge2 from '../imgs/badge2.png'
 import { useEffect } from "react";
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
@@ -45,6 +47,14 @@ const Home = () => {
                 <p className='mob-only mob-par2' style={{fontFamily: 'PT sans'}}>
                      If you'd like any further information, please don't hesitate to <b><Link className="link" to='/contact'>get in touch.</Link> </b>
                 </p>
+                <div className='mob-only mob-badge'>
+                    <a className="mob-badge-link" href="https://coachingfederation.org" target="_blank" rel="noreferrer">
+                        <img src={badge} alt="ICF Member" className="mob-badge-img"/>
+                    </a>
+                    <a className="mob-badge-link" href="https://connectacoach.org" target="_blank" rel="noreferrer">
+                        <img src={badge2} alt="Connect a coach" className="mob-badge-img"/>
+                    </a>
+                </div>
             </main>
         </div>
      );

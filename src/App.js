@@ -23,17 +23,45 @@ function App() {
   // used to togggle mobile menu
   const [menuToggle, setMenuToggle] = useState(false)
 
+  const toggleMenu = () =>{
+    setMenuToggle(!menuToggle)
+    // changes color for mobile top bar and prevents scrolling of body
+
+    // TODO: this creates a bug if moving from mobile, on the menu screen, to desktop on a device without refeshing the page as 'main' position is locked into fixed
+    const sideBar = document.getElementById('side-bar')
+    const topBar = document.getElementById('top-bar')
+    const sideContent = document.getElementById('side-content')
+    const main = document.getElementById('main')
+      if(menuToggle){
+          sideBar.style.borderColor = null
+          sideContent.style.borderColor = null
+          topBar.style.backgroundColor = null
+          main.style.position = null
+      }
+      else{
+          sideBar.style.borderColor = '#fefefe'
+          sideContent.style.borderColor = '#fefefe'
+          topBar.style.backgroundColor = 'var(--tsb-blue)'
+          main.style.position = 'fixed'
+      }
+  }
+
 
   return (
     <Router>
       <div className="App" id="App">
-        <div className='main-container'>
-          <Sidebar/>
+        <div className='main-container' id="main">
+          <Sidebar toggleMenu={toggleMenu} menuToggle={menuToggle}/>
           <div className='non-side-content'>
             {/* Mobile menu only appears on mobile  */}
-          <div className='mob-only'>
-                <MobileMenu/>
-            </div>
+
+            { menuToggle && 
+              <div className='mob-only'>
+                  {/* sending menuToggle as prop to MobileMenu component */}
+                  <MobileMenu toggleMenu={toggleMenu}/>
+              </div>
+            }
+
             {/*  */}
             <Switch>
               <Route exact path="/about"> <About /> </Route>
