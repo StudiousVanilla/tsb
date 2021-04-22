@@ -11,6 +11,7 @@ import ExCoaching from './components/ExCoaching'
 import LifeCoaching from './components/LifeCoaching'
 import CareerCoaching from './components/CareerCoaching'
 import MentorCoaching from './components/MentorCoaching'
+import MobIndCoaching from './components/MobIndCoaching'
 import Contact from './components/Contact';
 import Consultancy from './components/Consultancy';
 import Privacy from './components/Privacy';
@@ -70,6 +71,9 @@ function App() {
               <Route exact path="/coaching/lifestyle"> <LifeCoaching /> </Route>
               <Route exact path="/coaching/career"> <CareerCoaching /> </Route>
               <Route exact path="/coaching/mentor"> <MentorCoaching /> </Route>
+              {/* mobile only */}
+              <Route exact path="/coaching/individual"> <MobIndCoaching /> </Route>
+              {/*  */}
               <Route exact path="/blog"> <Blogs /> </Route>
               <Route exact path="/blog/:blogRef"> <BlogPost /> </Route>
               <Route exact path="/blog/theme/:theme"> <FilteredBlogs/> </Route>

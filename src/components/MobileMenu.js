@@ -26,7 +26,7 @@ const MobileMenu = ({toggleMenu}) => {
                 </div>
                 <div className="mob-menu-option">
                     <button className="mob-menu-btn">
-                        <Link className="mob-menu-text" onClick={toggleMenu}>
+                        <Link to="/coaching/individual" className="mob-menu-text" onClick={toggleMenu}>
                             Individual Coaching
                         </Link>
                     </button>

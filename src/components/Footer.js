@@ -8,7 +8,7 @@ const Footer = () => {
                     | Company No. 660778
                     | <Link to="/privacy" className='link'> Privacy Policy </Link> 
                 </p>
-                <p>
+                <p className="no-mob">
                     Website developed by <a href="https://studiousvanilla.github.io/portfolio/" className='dev-credit link'> Oisín Byrne </a> 
                     | Photography: Paudie Bourke
                 </p>

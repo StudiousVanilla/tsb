@@ -16,7 +16,7 @@ const ExCoaching = () => {
     })
 
     return ( 
-        <div className='content-container coaching-container'>
+        <div className='content-container coaching-container no-mob'>
             <Bookingbtn/>
             <div className='color-tile ex-color-tile'>
                 <main className='coaching-main'>
@@ -64,8 +64,7 @@ const ExCoaching = () => {
                             <li className="text-list-item">Building emotional intelligence</li>
                         </ul>
                 </div>
-            </section>
-            
+            </section> 
         </div>
      );
 }

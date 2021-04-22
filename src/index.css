@@ -1995,6 +1995,23 @@ text-align: center;
 
   }
 
+  .booking-btn{
+    font-size: 1em;
+    padding: 15px 10px;
+    color: var(--bg-grey);
+    background-color: var(--tsb-orange);
+    border: none;
+  }
+
+  .booking-btn-container a{
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+
+  footer, p{
+    font-size: 1.1em;
+  }
+
 
   /* ************************** */
   /* ************************** */
@@ -2005,12 +2022,6 @@ text-align: center;
 
   .welcome{
     display: none;
-  }
-
-  .booking-btn{
-    font-size: 1em;
-    padding: 15px 10px;
-    border-bottom: 1px solid var(--tsb-blue);
   }
   
   .quote-text{
@@ -2161,6 +2172,57 @@ text-align: center;
       padding-bottom: 50px;
     }
 
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+
+    /* coaching page */
+
+    .mob-coaching-container, .coaching-container, .coaching-main, .coaching-category-title, .coaching-info, .testimony-container{
+      width: 100vw;
+      min-width: 0px;
+      max-width: 100vw;
+      padding: 0px;
+      margin: 10px 0px;
+      border: none
+    }
+
+    .mobile-coaching-title, .coaching-img-container{
+      width: 90vw;
+      margin: 10px auto;
+      padding: 5px 10px;
+    }
+
+    .mobile-coaching-title{
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 1.25em;
+      color: var(--tsb-navy);
+      border-bottom: 1px solid var(--tsb-blue);
+    }
+
+    .coaching-category-title{
+      color: var(--tsb-orange);
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .coaching-info-text, .coaching-category-testimony, .attestant{
+        width: 94vw;
+        margin: 10px auto;
+        padding: 5px 10px;
+        font-size: 0.8em;
+        line-height: 1.3em;
+    }
+
+    .coaching-category-testimony, .attestant{
+      font-size: 1em;
+    }
+
+
+
+
 
   /* ************************** */
   /* ************************** */
@@ -2189,11 +2251,6 @@ text-align: center;
     width: 100vw;
     height: 50vw;
   }
-
-
-
-
-
 
 
 
@@ -2270,6 +2327,10 @@ text-align: center;
 
   .competency-title{
     font-size: 1.5em;
+  }
+
+  footer, p{
+    font-size: 0.85em;
   }
 
   
