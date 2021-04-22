@@ -21,14 +21,14 @@ const About = () => {
         <div className='about-container content-container'>
             <div className='about-top'>
                 <div className="top-img-title-credentials">
-                    <div className='about-images-container mob-pic1'>
+                    <div className='about-images-container no-mob'>
                         <div className='about-image'>
-                        <img src={aboutImg} alt='book' className='about-img'/>
+                            <img src={aboutImg} alt='book' className='about-img'/>
                         </div>
                     </div>
                     <div className='credentials-container'>
                         <h2 className='about-head mob-title1'> About Me </h2>
-                        <div>
+                        <div className="no-mob">
                             <p className='credential credential-title'>
                                 Mona Eames MSc
                             </p>
@@ -52,13 +52,8 @@ const About = () => {
                     </p> 
                 </div>
             </div>
-
-
-
-
-
-            <div className='about-bottom'>
-                <div className="about-info mob-par2">
+            <div className='about-bottom no-mob'>
+                <div className="about-info">
                     <h2 className='about-head'> About The Sounding Board </h2>
                     <p className='about-content'> My coaching practice <b>The Sounding Board</b> is designed to give my clients a confidential safe space to sound out their direction in business, career or life in general. <br/><br/> My practice is based on the belief that my clients are autonomous and have their own solutions. I accompany them to initiate what can seem like unsurmountable change and I help them to design goals and actions to which they can be accountable.</p>
                 </div>
@@ -89,6 +84,33 @@ const About = () => {
                 </div>
             </div>
             <Bookingbtn className="no-mob"/>
+            {/* Mobile only */}
+            <div className='about-image-mob-container mob-only mob-pic1'>
+                <img src={aboutImg} alt='book' className='about-img'/>
+                <div className="credential-container">
+                    <p className='credential credential-title'>
+                        Mona Eames MSc
+                    </p>
+                    <p className='credential'>
+                        Myers Briggs (MBTI) Practitioner Certified
+                    </p>
+                    <p className='credential'>
+                        Professional ICF Coach and Mentor Coach
+                    </p>
+                    <p className='credential'>
+                        International Coaching Federation Member
+                    </p>
+                </div>
+            </div>
+            <div className="about-info mob-par2">
+                <h2 className='about-head mob-about-head'> About TSB </h2>
+                <p className='about-content'>
+                    My coaching practice <b>The Sounding Board</b> is designed to give my clients a confidential safe space to sound out their direction in business, career or life in general.
+                    <br/><br/> 
+                    My practice is based on the belief that my clients are autonomous and have their own solutions. I accompany them to initiate what can seem like unsurmountable change and I help them to design goals and actions to which they can be accountable.
+                </p>
+            </div>
+            {/* */}
         </div>
 
      );

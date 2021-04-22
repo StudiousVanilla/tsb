@@ -605,6 +605,7 @@ body::-webkit-scrollbar {
 
 .competency-container{
   width: 720px;
+  height: fit-content;
 }
 
 .competency-title{
@@ -1702,6 +1703,8 @@ text-align: center;
 
 @media only screen and (max-width: 510px) {
 
+  /* Mobible 'sidebar' (top nav bar for mobile) */
+
   .mob-only{
     display: block;
   }
@@ -1932,6 +1935,10 @@ text-align: center;
     height: 75vw;
     padding: 0px;
     margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .mob-par2{
@@ -2020,6 +2027,140 @@ text-align: center;
     width: 40%;
   }
 
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+
+    /* about page */
+
+    .about-container, .credentials-container, .about-top, .top-img-title-credentials{
+      width: 100vw;
+    }
+
+    .credentials-container{
+     width: 90vw;
+     height: fit-content;
+     margin: 5px auto;
+    }
+
+    .about-head{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .about-info{
+      margin-top: 10px;
+      border: none;
+    }
+
+    .about-content{
+      font-size: 0.8em;
+    }
+
+    .about-image-mob-container{
+      width: 100vw;
+      height: 75vh;
+      margin: 10px 0px;
+    }
+
+    .about-img{
+      width: 75%;
+      height: 75%;
+      margin-bottom: 30px;
+    }
+
+    .credential-container{
+      width: 85%;
+      padding-left: 5%;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+      border-bottom: 1px solid var(--tsb-blue);
+    }
+
+    .credential{
+      font-size: 0.8em;
+      line-height: 1em;
+    }
+
+    .credential-title{
+      font-size: 1em;
+    }
+
+    .mob-about-head{
+      margin-bottom: 30px;
+    }
+
+    
+
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+
+    /* what page */
+
+    .what-info-container{
+      width:90vw;
+      margin: 10px auto;
+      padding: 5px 5px;
+    }
+
+    .what-info-title{
+      font-size: 1.8em;
+      margin-bottom: 30px;
+    }
+
+
+    .what-quote-container{
+      width: 90vw;
+      margin: 10px auto;
+      padding: 5px 5px;
+      font-style: italic;
+    }
+
+    .what-quote{
+      width: 100%;
+      font-size: 0.85em;
+      line-height: 1.3em;
+    }
+
+    .competency-container{
+      width: 100vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .competency-title{
+      width: 90vw;
+      margin: 2px auto;
+      padding: 5px 5px;
+      padding-top: 40px;
+      font-size: 1.7em;
+      text-align: center;
+    }
+
+    .competency-tiles-container{
+      width: 90vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0px auto;
+    }
+
+    .competency-tile{
+      margin-bottom: 2vh;
+      margin-right: 0px;
+    }
+
+    .faq-container{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
 
   /* ************************** */
   /* ************************** */
@@ -2076,7 +2217,7 @@ text-align: center;
   }
 
   .sidebar-content{
-    margin-bottom: 1px;
+    margin-bottom: 3px;
     height: 11vh;
   }
 
@@ -2119,13 +2260,19 @@ text-align: center;
     font-size: 1.1em;
   }
 
-}
-
-@media only screen and (max-width: 376px) {
-
-  .sidebar-content{
-    margin-bottom: 3px;
+  .competency-title{
+    width: 90vw;
+    margin: 2px auto;
+    padding: 5px 5px;
+    padding-top: 40px;
+    font-size: 1.7em;
   }
+
+  .competency-title{
+    font-size: 1.5em;
+  }
+
+  
 
 }
 
