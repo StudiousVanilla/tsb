@@ -253,7 +253,7 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
                     </div>
                 </div>
                 {/* only appears on blog pages */}
-                <div className="side-blogs-nav-container side side-navy">
+                <div className="side-blogs-nav-container side side-navy no-mob">
                     <div className="side-blog-nav">
                         <Link to='/blog'>
                             <p className='link side-blog-nav-link link-text'
@@ -281,6 +281,7 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
                         }
                     </div>
                 </div>           
+                {/*  */}
             </div>
         </div>
 

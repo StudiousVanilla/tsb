@@ -2223,8 +2223,6 @@ text-align: center;
 
 
 
-
-
   /* ************************** */
   /* ************************** */
   /* ************************** */
@@ -2251,6 +2249,103 @@ text-align: center;
   iframe{
     width: 100vw;
     height: 50vw;
+  }
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* blogs page */
+
+  .blogs-container{
+    width: 100vw;
+    margin: 5px auto;
+  }
+
+  .blogs-title-container{
+    margin: 5px auto;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  .blogs-title{
+    width: 80vw;
+    min-width: 0px;
+    padding-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+
+  .blog-post-container{
+    width: 90vw;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-post-container a{
+    width: fit-content;
+  }
+  
+  .blog-img-container{
+    align-self: center;
+    width: 80vw;
+    height: 70vw;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .blog-info-container{
+    width: 100%;
+  }
+
+  .blog-date-theme{
+    margin-bottom: 10px;
+  }
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* blog post page */
+
+  .post-container, .blog-post-title-container, .blog-post-img-container, .blog-post-upper-container, .blog-post-quote-container, .blog-post-lower-container, .blog-post-footer-container, .blog-post-tags-container, .blog-post-info-share-container, .blog-post-nav-container{
+    width: 90vw;
+    margin: 20px auto;
+  }
+
+  .post-container{
+    margin-top: 25px;
+  }
+
+  .date-theme-container{
+    justify-content: space-around;
+  }
+
+  .blog-post-img-container{
+    height: 90vw;
+  }
+
+  .post-upper, .post-lower{
+    font-size: 1em;
+  }
+
+  .blog-post-info-share-container{
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .post-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    margin-top: 40px;
   }
 
 
@@ -2330,7 +2425,7 @@ text-align: center;
     font-size: 1.5em;
   }
 
-  footer, p{
+  footer p{
     font-size: 0.85em;
   }
 
