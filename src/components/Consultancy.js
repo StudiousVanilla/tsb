@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import BookingbtnAlt from './BookingbtnAlt'
 import Card from './Card'
-import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import {buttonToOrange, sideBarGrey, logoSRC, menuSRC, greySide} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
-import logo from '../icons/logo-navy.svg'
+import logo from '../icons/logo-navy.svg' 
+import menu from '../icons/menu.svg' 
 import Carousel from 'react-elastic-carousel'
 import landing from '../imgs/landing.png'
 
@@ -15,6 +16,7 @@ const Consultancy = () => {
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
+        menuSRC(menu)
         scrollToTop()
     })
     return ( 

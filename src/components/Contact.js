@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
-import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import {buttonToOrange, sideBarGrey, logoSRC, greySide, menuSRC} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
+import menu from '../icons/menu.svg'
 import fbIcon from '../icons/fb-navy.svg'
 import inIcon from '../icons/in-navy.svg'
 import mailIcon from '../icons/mail.svg'
@@ -92,6 +93,7 @@ const Contact = () => {
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
+        menuSRC(menu)
         scrollToTop()
     })
 

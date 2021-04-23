@@ -1,8 +1,9 @@
 import { useEffect } from "react"
-import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import {buttonToOrange, sideBarGrey, logoSRC, greySide, menuSRC} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
+import menu from '../icons/menu.svg'
 import what1 from '../imgs/what/what1.png'
 import what2 from '../imgs/what/what2.png'
 import what3 from '../imgs/what/what3.png'
@@ -18,6 +19,7 @@ const WhatIsCoaching = () =>{
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
+        menuSRC(menu)
         scrollToTop()
     })
 

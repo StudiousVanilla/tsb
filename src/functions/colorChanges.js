@@ -47,6 +47,13 @@ const logoSRC = (src) =>{
     let logo = document.getElementById('logo')
     logo.src= src
 }
+
+const menuSRC = (src) =>{
+
+    let menuSRC = document.getElementById('menuBtn')
+    menuSRC.src= src
+}
+
 const navySide = () =>{
     const hideElements = document.getElementsByClassName('side-grey')
     for(let element of hideElements){
@@ -71,7 +78,30 @@ const greySide = () =>{
     }
 }
 
+const mobileMenu = (menuToggle) =>{
+
+    const sideBar = document.getElementById('side-bar')
+    const topBar = document.getElementById('top-bar')
+    const sideContent = document.getElementById('side-content')
+    const main = document.getElementById('main')
+      if(menuToggle){
+          sideBar.style.borderColor = null
+          sideContent.style.borderColor = null
+          topBar.style.backgroundColor = null
+          main.style.position = null
+      }
+      else{
+          sideBar.style.borderColor = '#fefefe'
+          sideContent.style.borderColor = '#fefefe'
+          topBar.style.backgroundColor = 'var(--tsb-blue)'
+          main.style.position = 'fixed'
+      }
+}
 
 
-export {buttonToOrange, buttonToNavy, sideBarNavy, sideBarGrey, logoSRC, greySide, navySide}
+// mobileMenu function imported in 'App' component as it uses menuToggle
+
+// the other functions are imported into each page component as needed (including menuSRC)
+
+export {buttonToOrange, buttonToNavy, sideBarNavy, sideBarGrey, logoSRC, greySide, navySide, menuSRC, mobileMenu}
 

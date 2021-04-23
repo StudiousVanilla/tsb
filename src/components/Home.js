@@ -3,9 +3,10 @@ import landingImg from "../imgs/landing.png"
 import badge from '../imgs/badge.png'
 import badge2 from '../imgs/badge2.png'
 import { useEffect } from "react";
-import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import {buttonToOrange, sideBarGrey, logoSRC, greySide, menuSRC} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
 import logo from '../icons/logo-navy.svg'
+import menu from '../icons/menu.svg'
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
+        menuSRC(menu)
         scrollToTop()
     })
 

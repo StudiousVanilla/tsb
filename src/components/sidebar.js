@@ -111,9 +111,7 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
 
     // highlights selected link in orange
     const highlightLink = (e) =>{
-
         allLinksNavy()
-
         e.target.style.color = 'var(--tsb-orange)'
         e.target.style.fontWeight = '700'
 
@@ -126,7 +124,7 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
             <div className='top-bar' id='top-bar'>
                 {/* toggle mobile menu on/off (prop function) */}
                 <button  className='top-bar-btn' onClick={mobileMenuToggle}>
-                    <img src={menuIcon} alt="menu" className="menubtn"/>
+                    <img src={menuIcon} alt="menu" className="menubtn" id="menuBtn"/>
                 </button>
             </div>
             {/*  */}

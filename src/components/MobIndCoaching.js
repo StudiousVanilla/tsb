@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
+import {menuSRC} from '../functions/colorChanges'
 import Home from './Home'
+import menu from '../icons/menu.svg'
 import exImg from '../imgs/exImg.png'
 import lifeImg from '../imgs/lifeImg.png'
 import carImg from '../imgs/carImg.png'
@@ -6,6 +9,11 @@ import menImg from '../imgs/menImg.png'
 import Bookingbtn from './Bookingbtn'
 
 const MobIndCoaching = () => {
+
+    useEffect(()=>{
+        menuSRC(menu)
+    })
+
     return ( 
         <div>
             

@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
-import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
+import {buttonToOrange, sideBarGrey, logoSRC, menuSRC, greySide} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
 import Bookingbtn from './Bookingbtn'
 import logo from '../icons/logo-navy.svg'
+import menu from '../icons/menu.svg'
 import aboutImg from '../imgs/about-img.png';
 import grad from '../imgs/remote-grad.png'
 
@@ -13,6 +14,7 @@ const About = () => {
         buttonToOrange()
         sideBarGrey()
         logoSRC(logo)
+        menuSRC(menu)
         scrollToTop()
     }, [])
 
