@@ -33,7 +33,7 @@ const MobileMenu = ({toggleMenu}) => {
                 </div>
                 <div className="mob-menu-option">
                     <button className="mob-menu-btn">
-                        <Link to="/consultancy" className="mob-menu-text" onClick={toggleMenu}>
+                        <Link to="/individual" className="mob-menu-text" onClick={toggleMenu}>
                             HR Consultancy
                         </Link>
                     </button>
