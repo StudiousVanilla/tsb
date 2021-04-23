@@ -221,6 +221,10 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 510px) {
 
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Mobible 'sidebar' (top nav bar for mobile) */
 
   .mob-only{
