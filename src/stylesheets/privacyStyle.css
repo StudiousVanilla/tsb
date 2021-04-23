@@ -1,0 +1,27 @@
+/* privacy */
+
+/* shares some style with 'what', 'what-info' and 'consultancy-list */
+
+.privacy-container{
+    padding-bottom: 120px;
+  }
+  
+  .privacy-title-container {
+    width: 600px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+  
+  .privacy-title{
+    color: var(--tsb-navy);
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .privacy-title-lg{
+    font-size: 60px;
+  }
+  
+  .privacy-list{
+    list-style-type: none;
+  }

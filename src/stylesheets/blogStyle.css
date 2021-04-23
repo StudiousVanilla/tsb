@@ -1,0 +1,237 @@
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+
+/* blogs */
+
+
+
+.blogs-container{
+  margin: 160px 0px 250px 60px;
+  width: 100%;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: var(--tsb-navy);
+  background-color: var(--bg-grey);
+}
+
+.blogs-title-container{
+  width: 70%;
+  min-width: fit-content;
+  margin-bottom: 60px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.blogs-title{
+  min-width: 300px;
+  font-size: 45px;
+}
+
+.blog-post-container{
+  width: 650px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-family: 'PT sans', sans-serif;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.blog-img-container{
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.blog-img{
+  height: 100%;
+  width: 100%;
+}
+
+.blog-info-container{
+  width: 60%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+}
+
+.blog-date-theme{
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700px;
+  color: var(--tsb-orange);
+}
+
+.blog-title{
+  margin: 5px 0px 10px 0px;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'PT serif', serif;
+}
+
+.blog-upper{
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.read-more-link{
+  margin-top: 10px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.theme-list-title{
+  font-size: 18px;
+}
+
+.theme-list{
+  list-style-type: none;
+}
+
+.theme-highlight{
+  color: var(--tsb-orange);
+}
+
+
+
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+
+/* single blog post */
+
+.post-container{
+  width: 725px;
+  margin: 160px 0px 250px 60px;
+  color: var(--tsb-navy);
+}
+
+.date-theme-container{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--tsb-orange);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
+.post-theme{
+  font-weight: 700
+}
+
+.blog-post-title-container{
+  width: 650px;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700
+}
+
+.post-title{
+  line-height: 50px;
+}
+
+.blog-post-subtitle-container{
+  width: 550px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.post-subtitle{
+  line-height: 22px;
+}
+
+.blog-post-img-container{
+  width: 725px;
+  height: 450px;
+  margin-bottom: 30px;
+}
+
+.blog-post-img{
+  height: 100%;
+  width: 100%;
+}
+
+.blog-post-upper-container, .blog-post-quote-container, .blog-post-lower-container, .blog-post-footer-container, .blog-post-tags-container, .blog-post-info-share-container, .blog-post-nav-container{
+  width: 550px;
+  margin-bottom: 30px;
+  font-family: 'PT sans', sans-serif;
+  font-weight: 500;
+  white-space: pre-wrap;
+}
+
+.blog-post-quote-container{
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+  font-family: 'PT serif', serif;
+  color: var(--tsb-orange);
+}
+
+.blog-post-footer-container{
+  margin-bottom: 55px;
+  font-style: italic;
+  color: var(--tsb-mauve);
+}
+
+.blog-post-tags-container{
+  padding-bottom: 30px;
+  font-style: italic;
+  color: var(--tsb-blue);
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.tags{
+  margin-bottom: 15px;
+}
+
+.img-credit{
+  margin-bottom: 10px;
+}
+
+.blog-post-info-share-container{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.post-author{
+  font-family: 'PT serif', serif;
+  font-weight: 700;
+}
+
+.post-date{
+  color: var(--tsb-orange);
+}
+
+.post-share{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.share-icon{
+  margin: 0px 10px;
+  color: red;
+  cursor: pointer;
+}
+
+.share-icon:hover{
+  transform: scale(1.01) translateZ(0);
+}
+
+.blog-post-nav-container{
+  font-family: 'PT serif', serif;
+}

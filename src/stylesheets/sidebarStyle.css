@@ -1,0 +1,241 @@
+/* Side Bar */
+
+.sidebar-container{
+    position: fixed;
+    width: 30%;
+    min-width: 360px;
+    max-width: 360px;
+    padding: 50px 19px 2.5vh 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid var(--tsb-blue);
+    background-color: var(--bg-grey);
+    z-index: 2;
+  }
+  
+  .top-bar{
+    transition: 0s;
+    display: none;
+  }
+  
+  .sidebar-content{
+    height: 100vh;
+    width: 99%;
+    color: var(--tsb-navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+  }
+  
+  .side{
+    height: 19%;
+    padding: 0px 18px;
+  }
+  
+  .side-brand{
+    height: 68px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 0px 0px 15px;
+    cursor: pointer;
+  }
+  
+  .logo-container{
+    height: 75%;
+    width: auto;
+  }
+  
+  .logo{
+    height: 100%;
+    max-height: 68.5px;
+    max-width: 68.5px;
+  }
+  
+  .brand-text{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 10px;
+  }
+  
+  .logo-text, .brand-name{
+    line-height: 20px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .brand-name{
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: bold;
+  }
+  
+  .side-links{
+    height: fit-content;
+    display: flex;
+    margin-top: 1vh;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .side-links-list{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-links-list li{
+    display: flex;
+    align-items: space-evenly;
+    margin-bottom: 10px;
+  }
+  
+  .coaching-links{
+    position: relative;
+    left: -20%;
+    opacity: 0;
+    list-style-type: none;
+  }
+  
+  .coaching-links li{
+    font-size: 17px; 
+  }
+  
+  .moveable-list{
+    position: relative;
+    top: -142px;
+    transition: 0.75s;
+    margin-bottom: 10px;
+  }
+  
+  .about-link, .coaching-link{
+    transition: 0s;
+  }
+  
+  .border-div{
+    width: 100%;
+    border-top: 1.8px solid white;
+    margin: 1vh 0px 2vh 0px;
+    opacity: 0.5;
+  }
+  
+  .side-blog{
+    position: relative;
+    top: -120px;
+    height: fit-content;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.75s;
+  }
+  
+  .side-blog-title{
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    border-top: 1px solid var(--tsb-blue);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .blog-link{
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .side-icons{
+    position: relative;
+    top:-130px;
+    height: 3vh;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    transition: 0.75s;
+    transform: translateZ(0);
+  }
+  
+  .side-icon-container{
+    height: 2.5vh;
+    width: 2.5vh;
+    min-height: 22px;
+    min-width: 22px;
+    max-height: 30px;
+    max-width: 30px;
+    display: flex;
+    margin-top: -25px;
+    margin-right: 7px;
+    color: red;
+    transform: translateZ(0);
+    cursor: pointer;
+  }
+  
+  .side-icon-container:hover{
+    transform: scale(1.08) translateZ(0);
+  }
+  
+  .side-badges{
+    position: relative;
+    top: -130px;
+    margin-top: 2vh;
+    display: flex;
+    align-items: flex-start;
+    transition: 0.75s;
+    transform: translateZ(0);
+  }
+  
+  .badge-container{
+    height: 64px;
+    width: 64px;
+    margin: 5px;
+  }
+  
+  .badgeImg{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .link{
+    cursor: pointer;
+  }
+  
+  .link:hover{
+    transition:0.1s;
+    color: var(--tsb-orange);
+  }
+
+  /* sidebar for blogs */
+
+.side-blogs-nav-container{
+  padding-top: 50px;
+}
+
+.side-blog-nav{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-bottom: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--tsb-blue);
+}
+
+.side-blog-nav-link{
+  margin-bottom: 5px;
+}

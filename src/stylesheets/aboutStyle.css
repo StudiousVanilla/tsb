@@ -1,0 +1,116 @@
+/* About */
+
+
+.about-container{
+    width: 100%;
+    min-width: 1250px;
+    margin-top: 140px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .about-images-container{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  .credentials-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--tsb-navy);
+  }
+  
+  .credential{
+    color: var(--tsb-navy);
+    font-family: 'PT sans', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 5px;
+    line-height: 18px;
+  }
+  
+  .credential-title{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .about-info-container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 10px 5px 10px;
+  }
+  
+  .about-info{
+    width: 550px;
+    margin: 40px 0px 40px 0px;
+    padding-bottom: 60px;
+    font-size: 19px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    color: var(--tsb-navy);
+    border-bottom: 1px solid var(--tsb-blue);
+    line-height: 26px;
+  }
+  
+  .about-head{
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: var(--tsb-orange);
+    font-family: 'PT serif', serif;
+  }
+  
+  .qual{
+    margin-bottom: 200px;
+  }
+  
+  .qual-list{
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .qual-list-item{
+    margin-bottom: 10px;
+  }
+  
+  .grad-info{
+    display: flex;
+    flex-direction: column;
+    columns: var(--tsb-navy);
+  }
+  
+  .grad-info-text{
+    width: 550px;
+    margin-bottom: 30px;
+    margin-top: 14px;
+    padding-bottom: 35px;
+    font-family: sans-serif;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+  
+  /* below only applies to the top text part of about page */
+  
+  .about-top{
+    width: 600px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-img-title-credentials{
+    display: flex;
+  }
+  
+  

@@ -1,0 +1,156 @@
+/* consultancy */
+
+.consultancy-container{
+    min-width: 75px;
+    margin-bottom: 250px;
+  }
+  
+  .consultancy-color-tile{
+    margin-bottom: 60px;
+    padding-top: 150px;
+    padding-left: 60px;
+  }
+  
+  .consultancy-title-container{
+    width: 650px;
+    margin-bottom: 80px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(67, 86, 107, 0.493);
+  }
+  
+  .consultancy-title{
+    font-size: 46px;
+  }
+  
+  .consultancy-Carousel-container{
+    width: 650px;
+    margin-top: 50px;
+  }
+  
+  .rec{
+    background-color: transparent;
+  }
+  
+  /* components  of Carousel ↓  */
+  
+  .rec-slider-container{
+    border: 2px solid var(--bg-grey);
+  }
+  
+  .rec.rec-arrow{
+    color: var(--bg-grey);
+    box-shadow: transparent;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .rec.rec-arrow:focus:enabled{
+    background-color: transparent;
+  }
+  
+  .rec.rec-arrow:hover:enabled{
+    background-color: transparent;
+    font-size: 1.8em;
+  }
+  
+  .rec.rec-arrow:disabled{
+    opacity: 0.2;
+  }
+  
+  button.rec-dot{
+    box-shadow: 0 0 1px 2px var(--bg-grey);
+  }
+  
+  button.rec-dot:active, button.rec-dot_active{
+    background-color: var(--bg-grey);
+    box-shadow: 0 0 1px 2px var(--bg-grey);
+  }
+  
+  button.rec-dot:hover, button.rec-dot:focus  {
+    transition: 0s;
+    background-color: var(--bg-grey);
+    box-shadow: 0 0 1px 2px var(--bg-grey);
+  }
+  
+  /* components  of Carousel ↑ */
+  
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 45px;
+  }
+  
+  .card-senario{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .card-text{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  }
+  
+  .consultancy-info{
+    width: 450px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+  
+  .consultancy-info-title{
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--tsb-orange);
+  }
+  
+  .consultancy-info-text, .privacy-info-text{
+    margin-bottom: 20px;
+    font-family: 'PT sans', sans-serif;
+    color: var(--tsb-navy);
+  }
+  
+  .consultancy-list, .text-list, .privacy-list{
+    padding-left: 20px;
+  }
+  
+  .consultancy-list-item, .text-list-item,        .privacy-list-item{
+    margin-bottom: 10px;
+  }
+  
+  .consultancy-quote-container{
+    width: 650px;
+    margin-left: 60px;
+    color: var(--tsb-navy);
+  }
+  
+  .consultancy-quote{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .consultancy-quote-ref{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .consultancy-img-container{
+    width: 666px;
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  .consultancy-img-text{
+    width: 450px;
+    padding: 25px 0px;
+    color: var(--tsb-navy);
+    font-family: 'PT sans', sans-serif;
+    border-bottom: 2px solid var(--tsb-blue);
+  }
+  

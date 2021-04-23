@@ -2,5 +2,12 @@ The Sounding Board
 
 Website developed by Oisín Byrne - https://www.oisinbyrne.me
 
+# Site Details :computer: #
 
-TODO: bug moving from mobile, on the menu screen, to desktop on a device without refeshing the page as 'main' position is locked into fixed
+
+
+
+## CSS organisation :art: ##
+    * All pages have a dedicated stylesheet for desktop/large screens. Those stylesheets are them imported into 'index.css'
+
+    * Mobile styling is written directly into 'index.css'

@@ -1,0 +1,33 @@
+/* Booking button */
+
+.booking-btn-container{
+    position: fixed;
+    right: 2%;
+    top: 5%;
+    width: fit-content;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0s;
+  }
+  
+  .booking-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--bg-grey);
+    background-color: var(--bg-navy);
+    border: 2px solid var(--tsb-navy);
+    border-radius: 10px;
+  }
+  
+  .booking-btn-container:hover{
+    transform: scale(1.01);
+    transition: 0s;
+  }
+  
+  .booking-btn:focus{
+    outline: none;
+    color: var(--orange-color);
+  }

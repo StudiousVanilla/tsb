@@ -1,0 +1,170 @@
+/* coaching */
+
+.coaching-container{
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+  
+  .color-tile{
+    width: 102%;
+    min-width: 100%;
+    height: 35%;
+    min-height: 620px;
+  }
+  
+  .ex-color-tile{
+    color: var(--bg-grey);
+    background-color: var(--tsb-navy);
+  }
+  
+  .life-color-tile{
+    color: var(--bg-grey);
+    background-color: var(--tsb-orange);
+  }
+  
+  .career-color-tile{
+    color: var(--bg-grey);
+    background-color: var(--tsb-mauve);
+  }
+  
+  .mentor-color-tile{
+    color: var(--tsb-navy);
+    background-color: var(--tsb-blue);
+  }
+  
+  .coaching-main{
+    height: 100%;
+    width: 55%;
+    min-width: 75px;
+    padding-top: 200px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .coaching-category-title, .coaching-info-title{
+    width: 100%;
+    min-width: 650px;
+    max-width: 720px;
+    margin-top: -50px;
+    padding-bottom: 10px;
+    font-size: 45px;
+    font-family: 'PT Serif', serif;
+    border-bottom: 1px solid var(--bg-grey);
+  }
+  
+  .ex-title{
+    border-bottom: 1px solid rgba(155, 208, 243, 0.5);
+  }
+  
+  .life-title{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .workshop-list{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .workshop-list-item{
+    margin-bottom: 15px;
+  }
+  
+  .career-title{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .mentor-title{
+    border-bottom: 2px solid rgba(134, 164, 192, 0.5);
+  }
+  
+  .testimony-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 550px;
+    max-width: 550px;
+    margin-top: 40px;
+  }
+  
+  .coaching-category-testimony, .coaching-info, .attestant{
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .coaching-category-testimony{
+    width: 100%;
+    margin-right: 80px;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 25px;
+  }
+  
+  .attestant-container{
+    max-width: 650px;
+    margin-top: 25px;
+  
+  }
+  
+  .attestant{
+    width: 100%;
+    max-width: 650px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  .coaching-img-conatiner{
+    width: 60%;
+    min-width: 650px;
+    max-width: 780px;
+    margin-top: -130px;
+    padding-left: 60px;
+  }
+  
+  .coaching-info-container{
+    width: 40%;
+    min-width: 75px;
+    padding-left: 60px;
+  }
+  
+  .coaching-info{
+    width: 65%;
+    min-width: 470px;;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--tsb-blue);
+  }
+  
+  .coaching-info-final{
+    border-bottom: none;
+    border-top: 1px solid var(--tsb-blue);
+    padding-top: 60px
+  }
+  
+  .coaching-info-title{
+    margin-top: 0;
+    border: none;
+    font-size: 28px;
+    color: var(--tsb-orange);
+  }
+  
+  .coaching-info-text{
+   color: var(--tsb-navy);
+  }
+  
+  .statement-container{
+    width: 750px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .text-statement{
+    font-family: 'PT serif', serif;
+    font-size: 45px;
+    line-height: 56px;
+    font-weight: 700;
+  }
