@@ -30,8 +30,8 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
 
         // gives time for data to fetch, can be a little slow using free heroku backend ( no dyno)
         setTimeout(()=>{
-            // setBlog(blogData[0])
-            // setBlogThemes(blogData[1])
+            setBlog(blogData[0])
+            setBlogThemes(blogData[1])
         }, 2000 )
     }
 
