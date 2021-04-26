@@ -66,7 +66,9 @@ const Consultancy = () => {
                     <div className="consultancy-img">
                         <img src={landing} alt="Virtual Graduation from UCC in 2020" className="HR & Consultancy"/>
                     </div>
-                    <p className="consultancy-img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <p className="consultancy-img-text">
+                        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit... */}
+                    </p>
                 </div>
 
                 <div className="consultancy-info">
