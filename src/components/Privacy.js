@@ -232,8 +232,9 @@ const Privacy = () =>{
                 </p>
             </div>      
 
-
-            <Bookingbtn/>
+            <div className="no-mob">
+                <Bookingbtn/>
+            </div>
         </div>
 
      );

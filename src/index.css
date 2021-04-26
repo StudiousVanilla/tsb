@@ -870,6 +870,47 @@ body::-webkit-scrollbar {
     margin-top: 40px;
   }
 
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* HR Consultancy page */
+  
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* privacy policy page */
+
+  .privacy-container{
+    margin-bottom: 50px;
+  }
+
+  .privacy-container, .privacy-title-container, .privacy-info-container{
+    width: 100vw;
+  }
+
+  .privacy-title{
+    font-size: 1.75em;
+  }
+
+  .privacy-title-lg{
+    font-size: 2.4em;
+  }
+
+  .privacy-info-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .privacy-info-title{
+    font-size: 1.4em;
+  }
+
+  .privacy-info, .privacy-list{
+    font-size: 0.9em;
+  }
+
 
 
 }
