@@ -57,22 +57,6 @@ const MobIndCoaching = () => {
                         <Bookingbtn/>
                     </main> 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div className='content-container coaching-container'>
                     <main className='coaching-main'>
                         <h2 className='coaching-category-title  ex-title mob-title1'>
@@ -96,25 +80,6 @@ const MobIndCoaching = () => {
                         <Bookingbtn/>
                     </main> 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div className='content-container coaching-container'>
                     <main className='coaching-main'>
                         <h2 className='coaching-category-title  ex-title mob-title1'>
@@ -138,20 +103,10 @@ const MobIndCoaching = () => {
                         <Bookingbtn/>
                     </main> 
                 </div>
-
-
-
-
-
-
-
-
-
-
                 <div className='content-container coaching-container'>
                     <main className='coaching-main'>
                         <h2 className='coaching-category-title  ex-title mob-title1'>
-                            Coach Mentoring
+                            Mentor Coaching
                         </h2>
                         <div className='coaching-info mob-par1'>
                             <p className='coaching-info-text'>Mentor Coaching involves being coached on your coaching skills in preparation for certification as a coach, rather than coaching on work goals, personal elements, life balance or other topics unrelated to the development of your coaching skills.</p>
@@ -171,17 +126,7 @@ const MobIndCoaching = () => {
                         <Bookingbtn/>
                     </main> 
                 </div>
-
-
-
-
-
-
-
-
-
             </div>
-
         </div>
      );
 }

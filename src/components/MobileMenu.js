@@ -67,7 +67,7 @@ const MobileMenu = ({toggleMenu}) => {
                 <div className="mob-menu-option">
                     <button className="mob-menu-btn" style ={{border: 'none'}}>
                         <Link className="mob-menu-text" onClick={toggleMenu}>
-                            X
+                           <b>X</b>
                         </Link>
                     </button>
                 </div>

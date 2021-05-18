@@ -338,12 +338,17 @@ body::-webkit-scrollbar {
 
   .non-side-content{margin: 0;}
 
-  .footer{
+  .mob-footer{
+    min-width: 0px;
     width: 100vw;
-    margin: 4px 0px 3px 0px;
-    padding: 7px 0px 3px 3px;
-    border-left: none;
+    padding: 10px 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 0.9em;
+    border-left: 0px;
   }
+
+  
 
 
 
@@ -358,12 +363,13 @@ body::-webkit-scrollbar {
     position: fixed;
     height: 100vh;
     width: 100vw;
+    padding-top: 30px;
     background-color: var(--tsb-blue);
     z-index: 3;
   }
 
   .mob-menu-option{
-    height: 11.5%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,7 +393,7 @@ body::-webkit-scrollbar {
   }
 
   .mob-menu-text{
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: 'Pt sans';
     color: var(--tsb-navy);
   }
@@ -519,7 +525,7 @@ body::-webkit-scrollbar {
 
   .booking-btn{
     font-size: 1em;
-    padding: 15px 10px;
+    padding: 15px 15px;
     color: var(--bg-grey);
     background-color: var(--tsb-orange);
     border: none;
@@ -527,7 +533,6 @@ body::-webkit-scrollbar {
 
   .booking-btn-container a{
     padding-bottom: 40px;
-    border-bottom: 1px solid var(--tsb-blue);
   }
 
   footer, p{
@@ -610,10 +615,11 @@ body::-webkit-scrollbar {
     }
 
     .credential-container{
-      width: 85%;
+      width: 75%;
       padding-left: 5%;
       padding-bottom: 20px;
       margin-bottom: 50px;
+      text-align: center;
       border-bottom: 1px solid var(--tsb-blue);
     }
 
@@ -725,16 +731,19 @@ body::-webkit-scrollbar {
 
     .mobile-coaching-title{
       padding-top: 40px;
-      padding-bottom: 40px;
       font-size: 1.25em;
+      line-height: 1.95em;
       color: var(--tsb-navy);
-      border-bottom: 1px solid var(--tsb-blue);
     }
 
     .coaching-category-title{
+      width: 90vw;
+      margin: 5px auto;
+      padding-top: 40px;
       color: var(--tsb-orange);
       text-align: center;
       font-size: 2em;
+      border-top: 1px solid var(--tsb-blue);
     }
 
     .coaching-info-text, .coaching-category-testimony, .attestant{
