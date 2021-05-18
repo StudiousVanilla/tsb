@@ -566,9 +566,26 @@ body::-webkit-scrollbar {
     height: 40%
   }
 
+  .home-img-container{
+    margin-top: 10px;
+  }
+
+  .mob-home-text-container{
+    padding: 0px;
+    margin: 10px 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mob-home-text{
+    font-size: 1em;
+    width: 75%;
+  }
+
   .home-img{
     width: 75%;
-    height: 75%;
+    height: 100%;
   }
 
   /* ************************** */
@@ -990,6 +1007,10 @@ body::-webkit-scrollbar {
     font-size: 1.1em;
   }
 
+  .mob-home-text{
+    font-size: 0.75em;
+  }
+
   .competency-title{
     width: 90vw;
     margin: 2px auto;
@@ -997,18 +1018,19 @@ body::-webkit-scrollbar {
     padding-top: 40px;
     font-size: 1.7em;
   }
-
+  
   .competency-title{
     font-size: 1.5em;
   }
-
+  
+  .coaching-img-container{
+    max-height: 160px;
+  }
+  
   footer p{
     font-size: 0.85em;
   }
 
-  .coaching-img-container{
-    max-height: 160px;
-  }
 
   
 
