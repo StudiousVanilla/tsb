@@ -561,6 +561,11 @@ body::-webkit-scrollbar {
     height: 40%
   }
 
+  .home-img{
+    width: 75%;
+    height: 75%;
+  }
+
   /* ************************** */
   /* ************************** */
   /* ************************** */
@@ -713,7 +718,8 @@ body::-webkit-scrollbar {
 
     .mobile-coaching-title, .coaching-img-container{
       width: 90vw;
-      margin: 10px auto;
+      max-height: 220px;
+      margin: 5px auto;
       padding: 5px 10px;
     }
 
@@ -989,6 +995,10 @@ body::-webkit-scrollbar {
 
   footer p{
     font-size: 0.85em;
+  }
+
+  .coaching-img-container{
+    max-height: 160px;
   }
 
   

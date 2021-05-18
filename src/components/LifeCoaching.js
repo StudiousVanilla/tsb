@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import lifeImg from '../imgs/lifeImg.png'
+import lifeImg from '../imgs/lifeImg.jpg'
 import Bookingbtn from './Bookingbtn'
 import {buttonToNavy, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'

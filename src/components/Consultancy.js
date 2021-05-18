@@ -6,7 +6,7 @@ import scrollToTop from '../functions/scrollToTop'
 import logo from '../icons/logo-navy.svg' 
 import menu from '../icons/menu.svg' 
 import Carousel from 'react-elastic-carousel'
-import landing from '../imgs/landing.png'
+import conImg from '../imgs/conImg.jpg'
 
 
 const Consultancy = () => {
@@ -45,10 +45,10 @@ const Consultancy = () => {
                     </p>
                     <ul className="consultancy-list consultancy-info-text">
                         <li className="consultancy-list-item">
-                            An Initial consultation to sound out where you are now in your individual or team scenario
+                            An Initial consultation to sound out where you are now in your individual or team scenario and to agree Ways of Working
                         </li>
                         <li className="consultancy-list-item">
-                            Attendance at Management Team meeting(s) (with confidentiality contracted) to Listen and Explore and assess needs.
+                            Attendance at Management Team meeting(s) to Listen and Explore and assess needs.
                         </li>
                         <li className="consultancy-list-item">
                             Exploration of Training and Development Needs to devise an action plan for virtual / face to face delivery
@@ -57,14 +57,14 @@ const Consultancy = () => {
                             Provision of Executive Coaching to Management Team / Staff as a supportive resource
                         </li>
                         <li className="consultancy-list-item">
-                            Provision of ongoing accountability support as identifieded
+                            Provision of ongoing accountability support as identified
                         </li>
                     </ul>
                 </div>
                 
                 <div className="consultancy-info consultancy-img-container">
                     <div className="consultancy-img">
-                        <img src={landing} alt="Virtual Graduation from UCC in 2020" className="HR & Consultancy"/>
+                        <img src={conImg} alt="Virtual Graduation from UCC in 2020" className="HR & Consultancy"/>
                     </div>
                     <p className="consultancy-img-text">
                         {/* Lorem ipsum dolor sit amet consectetur adipisicing elit... */}
@@ -77,7 +77,7 @@ const Consultancy = () => {
                         The Sounding Board can help you by providing you with:
                     </p>
                     <ul className="consultancy-list consultancy-info-text">
-                        <li className="consultancy-list-item">A confindetianl space to talk about where you are in your leadership journey</li>
+                        <li className="consultancy-list-item">A confidential space to talk about where you are in your leadership journey</li>
                         <li className="consultancy-list-item">A source of advice</li>
                         <li className="consultancy-list-item">A place to explore your self-awareness and self-confidence in your leadership</li>
                     </ul>
@@ -85,7 +85,7 @@ const Consultancy = () => {
                 <div className="consultancy-info" style={{border: 'none'}}>
                     <h2 className="consultancy-info-title">Traning & Facilitation</h2>
                     <p className="consultancy-info-text">
-                        The Sounding Board offers a suite of training and facilitation offerings that are made up of classroom (face-to-face) or blended learning programmes through virtual classroom programmes such as:
+                        The Sounding Board offers a suite of training and facilitation delivered in the classroom (face-to-face) and through virtual classroom programmes such as:
                     </p>
                     <ul className="consultancy-list consultancy-info-text">
                         <li className="consultancy-list-item">

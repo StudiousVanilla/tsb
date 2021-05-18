@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import menImg from '../imgs/menImg.png'
+import menImg from '../imgs/menImg.jpg'
 import Bookingbtn from './Bookingbtn'
 import {buttonToNavy, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
@@ -39,7 +39,7 @@ const MentorCoaching = () => {
             </div>
             <section className='coaching-info-container'>
                 <div className='coaching-info'>
-                    <h2 className='coaching-info-title'>What is Coaching Mentoring?</h2>
+                    <h2 className='coaching-info-title'>What is Mentor Coaching?</h2>
                     <p className='coaching-info-text'>Mentor Coaching involves a coach being coached on your coaching skills, to support your coaching practice, and to help you to prepare for certification as a coach, rather than being coached on work goals, personal elements, life balance or other topics unrelated to the development of your coaching skills</p>
                 </div>
                 <div className="statement-container">

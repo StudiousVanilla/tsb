@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import exImg from '../imgs/exImg.png'
+import exImg from '../imgs/exImg.jpg'
 import Bookingbtn from './Bookingbtn'
 import {buttonToOrange, sideBarGrey, logoSRC, greySide} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'

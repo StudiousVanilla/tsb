@@ -48,7 +48,7 @@ const About = () => {
                 </div> 
                 <div className="about-info mob-par1">
                     <p className='about-content'>
-                        I have over 30 years of experience working in Human Resources, and since 2010 I have put particular focus on developing myself as an Executive, Career and Lifestyle Coach. My personal journey with coaching empowered me to set up my own Coaching practice in 2016 called <b>The Sounding Board.</b>
+                        I have over 30 years of experience working in Human Resources, and since 2010 I have put particular focus on developing myself as an Executive Coach, Career coach and Lifestyle Coach. My personal journey with coaching empowered me to set up my own Coaching practice in 2016 called <b>The Sounding Board.</b>
                         <br/><br/>
                         In 2011, I qualified with Coaching Development and in 2019, I completed my MSc in Personal & Management Coaching which widened my focus from Executive Coaching to Career and Lifestyle Coaching thus empowering individuals to look at both their professional and personal dimensions. <br/><br/> I provide 1-to-1 coaching—virtually and face to face—and I also offer training through blended learning and the virtual classroom. I also provide advice and training to management teams, and I work to foster a coaching culture in organisations. 
                     </p> 
@@ -75,7 +75,7 @@ const About = () => {
                     <p className='about-content'>I achieved a Master of Science (MSc) in <b>Personal & Management Coaching </b> (2017-2019) from University College Cork. <br/><br/> My dissertation was titled ‘How Values Exploration affects Goal Setting in general population Acceptance and Commitment Coaching practice’ <br/><br/> The modules I studied included: </p>
                     <ul className='qual-list'>
                         <li className='qual-list-item'>Cognitive Behavioural Coaching</li>
-                        <li className='qual-list-item'>Research Methodology and Reflective analysis</li>
+                        <li className='qual-list-item'>Research Methodology and Reflective Analysis</li>
                         <li className='qual-list-item'>Mindfulness Based Self-Management</li>
                         <li className='qual-list-item'>Business and Management Coaching for Leadership</li>
                         <li className='qual-list-item'>Change and Organisational Development</li>
@@ -104,7 +104,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className="about-info mob-par2">
+            <div className="about-info mob-par2 mob-only">
                 <h2 className='about-head mob-about-head'> About TSB </h2>
                 <p className='about-content'>
                     My coaching practice <b>The Sounding Board</b> is designed to give my clients a confidential safe space to sound out their direction in business, career or life in general.
