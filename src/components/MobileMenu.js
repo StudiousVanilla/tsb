@@ -53,16 +53,18 @@ const MobileMenu = ({toggleMenu}) => {
                     </button>
                 </div>
                 <div className="mob-menu-option">
-                    <button className="mob-menu-btn mob-icon-btn">
-                        <a href="https://www.facebook.com/thesoundingboardtsb/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
-                            <img src={fbIcon} alt="Facebook"/>
-                        </a>
-                    </button>
-                    <button className="mob-menu-btn mob-icon-btn">
-                        <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
-                            <img src={inIcon} alt="LinkedIn"/>
-                        </a>
-                    </button>
+                    <div className=" mob-icon-option">
+                        <button className="mob-menu-btn mob-icon-btn" style ={{border: 'none'}} >
+                            <a href="https://www.facebook.com/thesoundingboardtsb/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
+                                <img src={fbIcon} alt="Facebook"/>
+                            </a>
+                        </button>
+                        <button className="mob-menu-btn mob-icon-btn" style ={{border: 'none'}}>
+                            <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
+                                <img src={inIcon} alt="LinkedIn"/>
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div className="mob-menu-option">
                     <button className="mob-menu-btn" style ={{border: 'none'}}>

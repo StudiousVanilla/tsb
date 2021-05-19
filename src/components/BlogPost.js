@@ -121,18 +121,23 @@ const Blogs = () => {
                             to share or comment
                         </p>
                     </div>
+                    <div className="blog-post-nav-container mob-only">
+                        <Link to='/blog'>
+                            <button className="post-nav-mob link">Return to Blog Feed</button>
+                        </Link>
+                    </div >
                 </div>
-                <div className="blog-post-nav-container">
+                <div className="blog-post-nav-container no-mob">
                     <Link to='/blog'>
-                        <p className="post-nav link no-mob">Return to Blog Feed</p>
+                        <p className="post-nav link">Return to Blog Feed</p>
                     </Link>
-                    {/* <Link to='/tsb'>
-                        <p className="post-nav">Visit The Sounding Board Home</p>
-                    </Link> */}
                 </div >
             </main>
             }
-            <Bookingbtn/>
+
+            <div className="no-mob">
+                <Bookingbtn/>
+            </div>
         </div>
      );
 }
