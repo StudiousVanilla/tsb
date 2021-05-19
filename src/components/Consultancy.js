@@ -20,8 +20,9 @@ const Consultancy = () => {
         scrollToTop()
     })
     return ( 
-        <main className="consultancy-container">
-            <div className="color-tile ex-color-tile consultancy-color-tile">
+        <main className="consultancy-container content-container">
+
+            <div className="color-tile ex-color-tile consultancy-color-tile no-mob">
                 <div className="consultancy-title-container">
                     <h1 className="consultancy-title">HR Consultancy</h1>
                 </div>
@@ -37,7 +38,7 @@ const Consultancy = () => {
                     </div>
                 </div>
             </div>
-            <div className="consultancy-info-container">
+            <div className="consultancy-info-container no-mob">
                 <div className="consultancy-info">
                     <h2 className="consultancy-info-title">HR Consultancy</h2>
                     <p className="consultancy-info-text">
@@ -83,7 +84,7 @@ const Consultancy = () => {
                     </ul>
                 </div>
                 <div className="consultancy-info" style={{border: 'none'}}>
-                    <h2 className="consultancy-info-title">Traning & Facilitation</h2>
+                    <h2 className="consultancy-info-title">Training & Facilitation</h2>
                     <p className="consultancy-info-text">
                         The Sounding Board offers a suite of training and facilitation delivered in the classroom (face-to-face) and through virtual classroom programmes such as:
                     </p>
@@ -106,7 +107,82 @@ const Consultancy = () => {
                     </ul>
                 </div>
             </div>
-            <BookingbtnAlt/>
+            <div className="no-mob">
+                <BookingbtnAlt/>
+            </div>
+
+
+            {/* Mobile only */}
+            <div className="mob-only">
+
+                <div className="consultancy-title-container">
+                    <h1 className="consultancy-title">HR Consultancy</h1>
+                </div>
+                <div className='con-image-mob-container mob-pic1'>
+                    <img src={conImg} alt='HR Consultancy' className='con-img'/>
+                </div>
+
+                <div className="consultancy-info">
+                    <p className="consultancy-info-text">
+                        The Sounding Board can help you with:
+                    </p>
+                    <ul className="consultancy-list consultancy-info-text">
+                        <li className="consultancy-list-item">
+                            An Initial consultation to sound out where you are now in your individual or team scenario and to agree Ways of Working
+                        </li>
+                        <li className="consultancy-list-item">
+                            Attendance at Management Team meeting(s) to Listen and Explore and assess needs.
+                        </li>
+                        <li className="consultancy-list-item">
+                            Exploration of Training and Development Needs to devise an action plan for virtual / face to face delivery
+                        </li>
+                        <li className="consultancy-list-item">
+                            Provision of Executive Coaching to Management Team / Staff as a supportive resource
+                        </li>
+                        <li className="consultancy-list-item">
+                            Provision of ongoing accountability support as identified
+                        </li>
+                    </ul>
+                </div>
+                
+                <div className="consultancy-info">
+                    <h2 className="consultancy-info-title">Women in <br/> Leadership — Mentoring</h2>
+                    <p className="consultancy-info-text">
+                        The Sounding Board can help you by providing you with:
+                    </p>
+                    <ul className="consultancy-list consultancy-info-text">
+                        <li className="consultancy-list-item">A confidential space to talk about where you are in your leadership journey</li>
+                        <li className="consultancy-list-item">A source of advice</li>
+                        <li className="consultancy-list-item">A place to explore your self-awareness and self-confidence in your leadership</li>
+                    </ul>
+                </div>
+                <div className="consultancy-info">
+                    <h2 className="consultancy-info-title">Training & Facilitation</h2>
+                    <p className="consultancy-info-text">
+                        The Sounding Board offers a suite of training and facilitation delivered in the classroom (face-to-face) and through virtual classroom programmes such as:
+                    </p>
+                    <ul className="consultancy-list consultancy-info-text">
+                        <li className="consultancy-list-item">
+                            Coaching Skills for Managers
+                        </li>
+                        <li className="consultancy-list-item">
+                            Building Resilience / Stress Management
+                        </li>
+                        <li className="consultancy-list-item">
+                            Keeping connected in a Remote Working environment
+                        </li>
+                        <li className="consultancy-list-item">
+                            Promoting Diversity Equality and Inclusion in the Workplace
+                        </li>
+                        <li className="consultancy-list-item">
+                            Managing Conflict
+                        </li>
+                    </ul>
+                </div>
+                <BookingbtnAlt/>
+            </div>
+            {/* */}
+
         </main>
      );
 }

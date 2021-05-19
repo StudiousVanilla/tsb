@@ -77,7 +77,9 @@ const Blogs = () => {
                     </div>
                 </div>
             ))}
+            <div className="no-mob">
                 <Bookingbtn/>
+            </div>
         </main>
      );
 }

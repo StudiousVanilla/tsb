@@ -68,6 +68,7 @@ const Blogs = () => {
             <main className='post-container'>
                 <div className="date-theme-container">
                     <p className="post-date">{ convertDate(blog.date) }</p>
+                    <span className="mob-only">|</span>
                     <p className="post-theme">{blog.theme}</p>
                 </div>
                 <div className="blog-post-title-container">

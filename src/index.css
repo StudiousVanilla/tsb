@@ -275,7 +275,7 @@ body::-webkit-scrollbar {
   .sidebar-content{
     width: 85vw;
     height: 11vh;
-    max-height: fit-content;
+    max-height: 100%;
     min-height: 65px;
     display: flex;
     justify-content: center;
@@ -286,12 +286,14 @@ body::-webkit-scrollbar {
   .home-link{
     height: 100%;
     width: 100%;
-    margin-top: max(2vh, 5px);
     padding: 0px;
+   
   }
 
   .side-brand{
-    height: 100%;
+    height: 11vh;
+    max-height: fit-content;
+    min-height: 65px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -299,12 +301,14 @@ body::-webkit-scrollbar {
   }
 
   .side{
-    height: 100%;
+    height: 50%;
     margin: 0;
     padding: 0;
+    margin-top: 5px;
   }
 
   .logo-container{
+
     height: 100%;
   }
 
@@ -613,12 +617,17 @@ body::-webkit-scrollbar {
     .about-info{
       margin-top: 10px;
       border: none;
+      margin-bottom: 20px;
     }
 
     .about-content{
       font-size: 0.8em;
     }
 
+    .about-content-mob{
+      margin-bottom: 150px;
+    }
+    
     .about-image-mob-container{
       width: 100vw;
       height: 75vh;
@@ -626,14 +635,13 @@ body::-webkit-scrollbar {
     }
 
     .about-img{
-      width: 75%;
+      width: 70%;
       height: 75%;
       margin-bottom: 30px;
     }
 
     .credential-container{
       width: 75%;
-      padding-left: 5%;
       padding-bottom: 20px;
       margin-bottom: 50px;
       text-align: center;
@@ -877,7 +885,16 @@ body::-webkit-scrollbar {
   }
 
   .date-theme-container{
-    justify-content: space-around;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .post-date{
+    margin-right: 10px;
+  }
+
+  .post-theme{
+    margin-left: 10px;
   }
 
   .blog-post-img-container{
@@ -907,6 +924,45 @@ body::-webkit-scrollbar {
   /* ************************** */
 
   /* HR Consultancy page */
+  
+  .consultancy-title-container{
+    width: 85vw;
+    margin: 10px auto;
+    padding: 0px;
+    border-bottom: none;
+  }
+
+  .consultancy-title{
+    width: 85vw;
+    margin: 20px auto;
+    font-size: 2.5em;
+  }
+
+  .con-image-mob-container{
+    width: 82vw;
+    margin: 20px auto;
+
+  }
+
+  .consultancy-info{
+    width: 82vw;
+    margin: 10px auto;
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+  }
+
+  .consultancy-info-title{
+    margin-bottom: 30px;
+    line-height: 1.3em;
+  }
+
+  .consultancy-info-text{
+    margin-bottom: 30px;
+  }
+
+  .consultancy-list-item{
+    margin-bottom: 15px;
+  }
   
   /* ************************** */
   /* ************************** */
@@ -964,7 +1020,6 @@ body::-webkit-scrollbar {
   }
 
   .sidebar-content{
-    margin-bottom: 3px;
     height: 11vh;
   }
 
@@ -1011,6 +1066,11 @@ body::-webkit-scrollbar {
     font-size: 0.75em;
   }
 
+  .about-img{
+    width: 65%;
+    height: 60%;
+  }
+
   .competency-title{
     width: 90vw;
     margin: 2px auto;
@@ -1026,12 +1086,21 @@ body::-webkit-scrollbar {
   .coaching-img-container{
     max-height: 160px;
   }
+
+  .consultancy-title{
+    font-size: 2em;
+  }
   
   footer p{
     font-size: 0.85em;
   }
 
+}
 
-  
+@media only screen and (max-width: 360px) {
 
+  .about-img{
+    width: 75%;
+    height: 60%;
+  }
 }

@@ -85,7 +85,9 @@ const About = () => {
                     <p className='about-content'>I have also achieved a <b> Certificate in Remote Working</b> (TUD, 2020), <br/> a <b> Certificate in Excellence in Career Coaching Service and Delivery</b> (Dr Terry Connors – Psychometric, 2018) and a <b> Certificate of Achievement – Business Start Up </b> (Galway Enterprise Office, 2018).</p>
                 </div>
             </div>
-            <Bookingbtn className="no-mob"/>
+            <div className="no-mob">
+                <Bookingbtn/>
+            </div>
             {/* Mobile only */}
             <div className='about-image-mob-container mob-only mob-pic1'>
                 <img src={aboutImg} alt='book' className='about-img'/>
@@ -106,7 +108,7 @@ const About = () => {
             </div>
             <div className="about-info mob-par2 mob-only">
                 <h2 className='about-head mob-about-head'> About TSB </h2>
-                <p className='about-content'>
+                <p className='about-content about-content-mob'>
                     My coaching practice <b>The Sounding Board</b> is designed to give my clients a confidential safe space to sound out their direction in business, career or life in general.
                     <br/><br/> 
                     My practice is based on the belief that my clients are autonomous and have their own solutions. I accompany them to initiate what can seem like unsurmountable change and I help them to design goals and actions to which they can be accountable.

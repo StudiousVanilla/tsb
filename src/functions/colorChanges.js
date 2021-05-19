@@ -94,7 +94,7 @@ const mobileMenu = (menuToggle) =>{
           sideBar.style.borderColor = '#fefefe'
           sideContent.style.borderColor = '#fefefe'
           topBar.style.backgroundColor = 'var(--tsb-blue)'
-          main.style.position = 'fixed'
+        //   main.style.position = 'fixed'
       }
 }
 
