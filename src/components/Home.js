@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
                 <div className='quote'>
                     <p className='quote-text no-mob'>
-                        I help individuals and teams to develop themselves through <b>bespoke coaching solutions</b> that provide sustainable personal and professional development, enabling them to take <b>positive action.</b>
+                        I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their lives/careers/roles.
                     </p>
                     <p className='quote-text no-mob'>
                         <br/>
