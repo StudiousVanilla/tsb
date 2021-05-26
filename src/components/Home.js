@@ -49,7 +49,7 @@ const Home = () => {
                 {/* Only for mobile view */}
                 <div className='mob-only mob-par1 mob-home-text-container'>
                     <p className='mob-home-text' style={{fontFamily: 'PT sans'}}>
-                        I help individuals and teams to develop themselves through <b> bespoke coaching solutions </b>  that provide sustainable personal and professional development, enabling them to take <b> positive action.</b>
+                        I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their lives/careers/roles.
                     </p>
                 </div>
                 <div className='mob-only mob-par2 mob-home-text-container'>
