@@ -143,7 +143,7 @@ const Contact = () => {
             
             <div className="map-container mob-map">
                 <iframe title="tsb-map" width="500" height="250" style={{border: "0"}} loading="lazy" allowFullScreen 
-                src={"https://www.google.com/maps/embed/v1/view?zoom=17&center=53.1004,-8.2996&key=AIzaSyCRA1D6IKIuYtKF016SYEiTThh6nljicWo"}/>            
+                src={"https://www.google.com/maps/embed/v1/view?zoom=16&center=53.10275,-8.31475&key=AIzaSyCRA1D6IKIuYtKF016SYEiTThh6nljicWo"}/>            
             </div>
             
 
