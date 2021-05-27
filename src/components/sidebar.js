@@ -2,6 +2,7 @@ import menuIcon from "../icons/menu.svg";
 import brandLogo from "../icons/logo-navy.svg"
 import fbIcon from "../icons/fb-orange.svg";
 import inIcon from "../icons/in-orange.svg";
+import instaIcon from "../icons/insta-orange.svg";
 import badge from '../imgs/badge.png'
 import badge2 from '../imgs/badge2.png'
 import { Link } from 'react-router-dom'
@@ -215,6 +216,11 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
                      <span className='side-icon-container'>
                          <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer">
                             <img src={inIcon} alt="LinkedIn"/>
+                         </a>
+                    </span>
+                     <span className='side-icon-container'>
+                         <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer">
+                            <img src={instaIcon} alt="Instagram"/>
                          </a>
                     </span>
                 </div>

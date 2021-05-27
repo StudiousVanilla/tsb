@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fbIcon from "../icons/fb-navy.svg";
 import inIcon from "../icons/in-navy.svg";
+import instaIcon from "../icons/insta-navy.svg";
 
 
 const MobileMenu = ({toggleMenu}) => {
@@ -57,6 +58,11 @@ const MobileMenu = ({toggleMenu}) => {
                         <button className="mob-menu-btn mob-icon-btn" style ={{border: 'none'}} >
                             <a href="https://www.facebook.com/thesoundingboardtsb/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
                                 <img src={fbIcon} alt="Facebook"/>
+                            </a>
+                        </button>
+                        <button className="mob-menu-btn mob-icon-btn" style ={{border: 'none'}}>
+                            <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
+                                <img src={instaIcon} alt="Instagram"/>
                             </a>
                         </button>
                         <button className="mob-menu-btn mob-icon-btn" style ={{border: 'none'}}>

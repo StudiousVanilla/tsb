@@ -92,11 +92,11 @@ const MobIndCoaching = () => {
                             <img src={carImg} alt="boardroom" className='coaching-img'/>
                         </div>
                         <div className='testimony-container mob-par3'>
-                            <p className='coaching-category-testimony'>“Mona Eames is a fantastic life coach, she made me feel so at ease and went above and beyond to help me and guide me through the coaching process. She gave me guidance for the future. Opening my eyes to new possibilities and helping me achieve a new job. I now feel motivated and confident in many aspects of my life.”
+                            <p className='coaching-category-testimony'>“Mona Eames is a fantastic coach, she made me feel so at ease and went above and beyond to help me and guide me through the coaching process. She gave me guidance for the future. Opening my eyes to new possibilities and helping me achieve a new job. I now feel motivated and confident in many aspects of my life.”
                             </p>
                             <div className='attestant-container'>
                                 <p className='attestant'>
-                                    Testimony (2020) from Loraine, a career coaching client.
+                                    Testimony (2020) from Lorraine, a career coaching client.
                                 </p>
                             </div>
                         </div>
@@ -119,9 +119,20 @@ const MobIndCoaching = () => {
                             </p>
                             <div className='attestant-container'>
                                 <p className='attestant'>
-                                    Testimony (2021) from Michelle, a Mentee Coach.
+                                Testimony (2021) from Michelle, a Mentor Coaching Client
                                 </p>
                             </div>
+                        </div>
+                        <div className="coaching-info mob-par1">
+                            <p className='coaching-info-text'>
+                                <b>Get your ICF Credential</b>
+                            </p>
+                            <p className='coaching-info-text'>
+                                Coaching involves lifelong learning – keep at the cutting edge of your profession and explore your next credential with the support of your Mentor Coach.
+                            </p>
+                            <p className='coaching-info-text'>
+                                Mona at The Sounding Board is a certiﬁed coach (Associate Certified Coach) with the International Coaching Federation. With over 700 hours of coaching practice, she is currently studying for her next credential (PCC - Professional Certiﬁed Coach). She is passionate about the power of Coaching and thus interested in helping other coaches to move along their credentialing journey by helping them to explore their coaching competencies as they progress in their profession.
+                            </p>
                         </div>
                         <Bookingbtn/>
                     </main> 

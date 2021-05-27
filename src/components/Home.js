@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
                 <div className='quote'>
                     <p className='quote-text no-mob'>
-                        I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their lives/careers/roles.
+                        I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their life, career or role. 
                     </p>
                     <p className='quote-text no-mob'>
                         <br/>
@@ -49,7 +49,7 @@ const Home = () => {
                 {/* Only for mobile view */}
                 <div className='mob-only mob-par1 mob-home-text-container'>
                     <p className='mob-home-text' style={{fontFamily: 'PT sans'}}>
-                        I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their lives/careers/roles.
+                        I help individuals and teams to develop themselves personally and professionally through the coaching process, enabling them to get clarity and take positive actions to move forward in their life, career or role. 
                     </p>
                 </div>
                 <div className='mob-only mob-par2 mob-home-text-container'>

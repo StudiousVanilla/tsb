@@ -113,11 +113,22 @@ const WhatIsCoaching = () =>{
                     </h2>
                     <p className='what-info'>Coaching helps the client to transform learning and insights into actions. This generally happens over a number of months. Five or six sessions are advisable and the frequency will be agreed between coach and client in the first session which sets the foundation and identifies the goals for the coaching.</p>
                 </div>
+                
                 <div className='what-info-container faq-container mob-only'>
                     <h2 className='what-info-title'>
                         Are TSB sessions face-to-face or online?
                     </h2>
-                    <p className='what-info'>Currently, coaching sessions are being held virtually, online. Coaching by phone is also available and face-to-face coaching will resume when Covid-19 restrictions allow. You can book your appointment using the button at the top of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking. You and your coach will join this Zoom call at the agreed time and proceed from there.</p>
+                    <p className='what-info'>
+                        You, the client can decide if you would like to work in person with your coach, over the phone, or virtually by video call.
+                        <br /><br />
+                    </p>
+                    <p className='what-info'>
+                        You can book your introductory appointment time <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer" className="link">here</a> and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.  Alternatively you can book your introductory call on 085 1602956.
+                        <br /><br />
+                    </p>
+                    <p className='what-info'>
+                         You can book your appointment using the button at the bottom of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking. You and your coach will join this Zoom call at the agreed time and proceed from there.
+                    </p>
                 </div>
                 {/*  */}
 
@@ -131,7 +142,17 @@ const WhatIsCoaching = () =>{
                 </div>
                 <div className='what-info-container faq-container no-mob'>
                     <h2 className='what-info-title'>FAQ: Are TSB sessions face-to-face or online?</h2>
-                    <p className='what-info'>Currently, coaching sessions are being held virtually, online. Coaching by phone is also available and face-to-face coaching will resume when Covid-19 restrictions allow. <br/><br/> You can <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer" class='link'> <u>book your introductory appointment time here </u> </a> and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.</p>
+                    <p className='what-info'>
+                        You, the client can decide if you would like to work in person with your coach, over the phone, or virtually by video call.
+                        <br /><br />
+                    </p>
+                    <p className='what-info'>
+                        You can book your introductory appointment time <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer" className="link"> here </a> and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.  Alternatively you can book your introductory call on 085 1602956.
+                        <br /><br />
+                    </p>
+                    <p className='what-info'>
+                         You can book your appointment using the button at the top of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking. You and your coach will join this Zoom call at the agreed time and proceed from there.
+                    </p>
                 </div>
             </div>
             <Bookingbtn/>
