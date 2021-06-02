@@ -219,7 +219,7 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
                          </a>
                     </span>
                      <span className='side-icon-container'>
-                         <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer">
+                         <a href="https://www.instagram.com/tsbcoaching" target="_blank" rel="noreferrer">
                             <img src={instaIcon} alt="Instagram"/>
                          </a>
                     </span>

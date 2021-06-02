@@ -125,7 +125,7 @@ body, .root, .App{
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 .main-container{

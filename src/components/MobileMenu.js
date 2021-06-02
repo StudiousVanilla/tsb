@@ -61,7 +61,7 @@ const MobileMenu = ({toggleMenu}) => {
                             </a>
                         </button>
                         <button className="mob-menu-btn mob-icon-btn" style ={{border: 'none'}}>
-                            <a href="https://www.linkedin.com/in/monaeamestsb/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
+                            <a href="https://www.instagram.com/tsbcoaching/" target="_blank" rel="noreferrer" className="mob-menu-text" onClick={toggleMenu}>
                                 <img src={instaIcon} alt="Instagram"/>
                             </a>
                         </button>

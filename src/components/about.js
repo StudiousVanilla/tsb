@@ -48,7 +48,7 @@ const About = () => {
                 </div> 
                 <div className="about-info mob-par1">
                     <p className='about-content'>
-                        I have over 30 years of experience working in Human Resources, and since 2010 I have put particular focus on developing myself as an Executive Coach, Career coach and Lifestyle Coach. My personal journey with coaching empowered me to set up my own Coaching practice in 2016 called <b>The Sounding Board.</b>
+                        I have over 30 years of experience working in Human Resources, and since 2010 I have put particular focus on developing myself as an Executive Coach, Career Coach and Lifestyle Coach. My personal journey with coaching empowered me to set up my own Coaching practice in 2016 called <b>The Sounding Board.</b>
                         <br/><br/>
                         In 2011, I qualified with Coaching Development and in 2019, I completed my MSc in Personal & Management Coaching which widened my focus from Executive Coaching to Career and Lifestyle Coaching thus empowering individuals to look at both their professional and personal dimensions. <br/><br/> I provide 1-to-1 coaching—virtually and face to face—and I also offer training through blended learning and the virtual classroom. I also provide advice and training to management teams, and I work to foster a coaching culture in organisations. 
                     </p> 
