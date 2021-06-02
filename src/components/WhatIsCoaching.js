@@ -123,11 +123,8 @@ const WhatIsCoaching = () =>{
                         <br /><br />
                     </p>
                     <p className='what-info'>
-                        You can book your introductory appointment time <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer" className="link">here</a> and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.  Alternatively you can book your introductory call on 085 1602956.
+                        You can <a href="https://calendly.com/tsbcoaching/zoom-30-min-consultation-the-sounding-board?month=2021-03" target="_blank" rel="noreferrer" className="link" style={{textDecoration:'underline'}}>book your introductory appointment time here</a> and an invitation will be sent to your email address, along with a Zoom video-call link for your booking.  Alternatively you can book your introductory call on 085 1602956.
                         <br /><br />
-                    </p>
-                    <p className='what-info'>
-                         You can book your appointment using the button at the bottom of this page and an invitation will be sent to your email address, along with a Zoom video-call link for your booking. You and your coach will join this Zoom call at the agreed time and proceed from there.
                     </p>
                 </div>
                 {/*  */}
