@@ -12,7 +12,7 @@ The Sounding Board - A web development client that hired me to build their new w
 
 - The private CMS frontend uses Firestore to authenticate users and keep data secure.
 
-- Has a private backend used to handle data sent via the contact form. Built using Node, Express JS and the [node-mailer]('https://nodemailer.com/about/') package. This backend is hosted on Heroku.
+- Has a private backend used to handle data sent via the contact form. Built using Node, Express JS and the [node-mailer](https://nodemailer.com/about/) package. This backend is hosted on Heroku.
 
 - Deployed to Netlfiy
 
