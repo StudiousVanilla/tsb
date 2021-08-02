@@ -1,6 +1,6 @@
 Website developed by Oisín Byrne - https://www.oisinbyrne.me
 
-The Sounding Board - A web development client that hired me to build their new website.
+The Sounding Board - A web development client that hired me to build their new website. Code repo is public with thier permission although CMS frontend and the applications backend are private due to data privacy and security.
 
 # Site Details :computer: #
 
