@@ -1,6 +1,6 @@
-The Sounding Board
-
 Website developed by Oisín Byrne - https://www.oisinbyrne.me
+
+The Sounding Board - A web development client that hired me to build their new website.
 
 # Site Details :computer: #
 
