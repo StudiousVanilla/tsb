@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
+// import {useState}  from "react"
 import {buttonToOrange, sideBarGrey, logoSRC, greySide, menuSRC} from '../functions/colorChanges'
 import scrollToTop from '../functions/scrollToTop'
 import Bookingbtn from './Bookingbtn'
@@ -10,7 +11,7 @@ import mailIcon from '../icons/mail.svg'
 
 const Contact = () => {
 
-    const [formMessage, setFormMessage] = useState({message: ''});
+    // const [formMessage, setFormMessage] = useState({message: ''});
 
     // fires to copy email address to clipboard
     const copyEmail = () =>{
@@ -37,55 +38,57 @@ const Contact = () => {
     }
 
     // sends a POST request to mail server using form data
-    const postMessage = async (formData) =>{
+    // const postMessage = async (formData) =>{
 
-        // To change message color to red on fail (See catch block of this function)
-        const formMessageFail = document.getElementById('contactMessage')
-        formMessageFail.style.color = null
-        setFormMessage({message: 'Sending...'})
+    //     // To change message color to red on fail (See catch block of this function)
+    //     const formMessageFail = document.getElementById('contactMessage')
+    //     formMessageFail.style.color = null
+    //     setFormMessage({message: 'Sending...'})
 
-        const requestOptions = {
-            method: 'POST',
-            headers: { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            // parse formData into a JSON object
-            body: JSON.stringify(formData)
-        };
-        try {
-            const response = await fetch('https://tsb-mailer.herokuapp.com', requestOptions)
+    //     const requestOptions = {
+    //         method: 'POST',
+    //         headers: { 
+    //             'Content-Type': 'application/json',
+    //             'Accept': 'application/json'
+    //         },
+    //         // parse formData into a JSON object
+    //         body: JSON.stringify(formData)
+    //     };
+    //     try {
+    //         const response = await fetch('https://tsb-mailer.herokuapp.com', requestOptions)
 
-            // response will be a success or error message
-            const data = await response.json()
+    //         // response will be a success or error message
+    //         const data = await response.json()
 
-            // sets formMessage state to response (positive or negative)
-            setFormMessage(data)
+    //         // sets formMessage state to response (positive or negative)
+    //         setFormMessage(data)
             
-        } catch (error) {
-            console.log(error);
-            // sets formMessage state due to error
+    //     } catch (error) {
+    //         console.log(error);
+    //         // sets formMessage state due to error
 
-            setTimeout(()=>{
-                formMessageFail.style.color = 'red'
-                setFormMessage({message: "There was a probelm sending your message. Please refresh the page and try again"})}, 5000 )
-        }
-    }
+    //         setTimeout(()=>{
+    //             formMessageFail.style.color = 'red'
+    //             setFormMessage({message: "There was a probelm sending your message. Please refresh the page and try again"})}, 5000 )
+    //     }
+    // }
 
-    const handleSubmit = (e) =>{
-        e.preventDefault()
+    // const handleSubmit = (e) =>{
+    //     e.preventDefault()
 
-        // grabs data from form and puts into formData object
-        const form = document.getElementById('contactForm')
-        let formData = {
-            name: form.name.value, 
-            email: form.email.value, 
-            message: form.message.value
-        }
+    //     // grabs data from form and puts into formData object
+    //     const form = document.getElementById('contactForm')
+    //     let formData = {
+    //         name: form.name.value, 
+    //         email: form.email.value, 
+    //         message: form.message.value
+    //     }
 
-        // sends a POST request to mail server using form data
-        postMessage(formData)    
-    }
+    //     console.log(formData)
+
+    //     // sends a POST request to mail server using form data
+    //     postMessage(formData)    
+    // }
 
 
     useEffect(()=>{
@@ -111,41 +114,28 @@ const Contact = () => {
             </div>
             
 
-            <div className='contact-form-container mob-form'>
-                <div className="contact-form-title">
-                    <p>Get in Touch</p>
-                </div>
-                <form className="contact-form" id="contactForm" 
-                onSubmit={handleSubmit}>
-                    <label htmlFor="name" className="contact-form-labels">
-                        Name</label>
-                    <input type="text" name='name' className="contact-form-input" required/>
-                    <label htmlFor="email" className="contact-form-labels">
-                        Email</label>
-                    <input type="email" name='email' className="contact-form-input" required/>
-                    <label htmlFor="name" className="contact-form-labels">
-                        Message</label>
-                    <textarea type="text" name='message' className="contact-form-textarea"
-                    rows="10" cols="50" required/>
-                    <button className="contact-form-btn">Send</button>
-                </form>
-                <div className="contact-response-container">
-                    <p className="contact-response-msg" id="contactMessage">
-                        {formMessage.message}
-                    </p>
-                    {/* A little 'working' symbol */}
-                    {formMessage.message === 'Sending...' &&
-                        <div className="sending-symbol"></div>
-                    }
-                </div>
+            <div className='contact-form-container mob-form' style={{display:'block'}}>
+
+
+                <div className="elfsight-app-4b787122-799f-4270-8f62-ec9a7809d859"/>
+                
             </div>
+
+
+            
+
+
+
+
+
+
+
             
             
             <div className="map-container mob-map">
                 <iframe title="tsb-map" width="500" height="250" style={{border: "0"}} loading="lazy" allowFullScreen 
                 src={"https://www.google.com/maps/embed/v1/view?zoom=16&center=53.10275,-8.31475&key=AIzaSyCRA1D6IKIuYtKF016SYEiTThh6nljicWo"}/>            
             </div>
-            
 
 
             <div className="contact-info-container mob-contact-info">

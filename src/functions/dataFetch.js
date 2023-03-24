@@ -9,7 +9,7 @@ const fetchBlogs = async () => {
         }
     };
     try {
-        const response = await fetch('https://tsb-mailer.herokuapp.com/blogs', requestOptions)
+        const response = await fetch('https://tsb-mailer.onrender.com/blogs', requestOptions)
 
         // response will be a success or error message
         const data = await response.json()
@@ -35,7 +35,7 @@ const fetchBlogThemes = async () => {
         }
     };
     try {
-        const response = await fetch('https://tsb-mailer.herokuapp.com/blogthemes', requestOptions)
+        const response = await fetch('https://tsb-mailer.onrender.com/blogthemes', requestOptions)
 
         // response will be a success or error message
         const data = await response.json()
@@ -58,7 +58,7 @@ const fetchBlogPost = async (blogNumber) => {
         }
     };
     try {
-        const response = await fetch(`https://tsb-mailer.herokuapp.com/blogpost/${blogNumber}`, requestOptions)
+        const response = await fetch(`https://tsb-mailer.onrender.com/blogpost/${blogNumber}`, requestOptions)
 
         // response will be a success or error message
         const data = await response.json();
@@ -82,7 +82,7 @@ const fetchFilteredBlogs = async (theme) => {
         }
     };
     try {
-        const response = await fetch(`https://tsb-mailer.herokuapp.com/blogfilter/${theme}`, requestOptions)
+        const response = await fetch(`https://tsb-mailer.onrender.com/blogfilter/${theme}`, requestOptions)
 
         // response will be a success or error message
         const data = await response.json()

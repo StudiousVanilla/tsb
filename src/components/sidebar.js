@@ -27,9 +27,13 @@ const Sidebar = ({toggleMenu, menuToggle}) => {
     const getBlogThemes = async () => {
 
         // returns an array with the earliest blog at position 0 and a sorted array of blogs by theme in posiotn 1
+
+
         const blogData = await fetchBlogThemes()
 
         // gives time for data to fetch, can be a little slow using free heroku backend ( no dyno)
+
+
         setTimeout(()=>{
             setBlog(blogData[0])
             setBlogThemes(blogData[1])
